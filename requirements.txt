@@ -1,0 +1,17 @@
+# Core dependencies
+vosk
+pyttsx3
+selenium
+webdriver-manager
+pyautogui
+pywinauto
+psutil
+send2trash
+
+# For testing
+pytest
+
+# Optional: For colored terminal output (if used)
+colorama
+
+# If you use LLM APIs, add their SDKs here (e.g., openai, azure-
