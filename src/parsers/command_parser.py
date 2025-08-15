@@ -81,6 +81,24 @@ class CommandParser:
         """Fast rule-based parsing for common patterns"""
         command_lower = command.lower().strip()
         
+        # List and refresh applications patterns
+        if command_lower in ["list applications","list apps","show applications","show apps"]:
+            return {
+                "intent": "system_control",
+                "action": "list_apps",
+                "parameters": {},
+                "confidence": 0.95,
+                "method": "rule_based"
+            }
+        if command_lower in ["refresh applications","rescan applications","rescan apps","refresh apps"]:
+            return {
+                "intent": "system_control",
+                "action": "refresh_apps",
+                "parameters": {},
+                "confidence": 0.95,
+                "method": "rule_based"
+            }
+        
         # WhatsApp patterns
         whatsapp_patterns = [
             r"(?:send|message|text|whatsapp)\s+(?:message\s+to\s+)?(\w+)\s+(?:saying\s+)?['\"]?(.+?)['\"]?$",

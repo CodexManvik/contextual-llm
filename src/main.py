@@ -9,6 +9,13 @@ import logging
 import threading
 import time
 
+# Load environment variables from .env file if it exists
+try:
+    from dotenv import load_dotenv
+    load_dotenv()
+except ImportError:
+    pass  # python-dotenv not installed, continue without .env support
+
 # Add project root to path
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
@@ -21,6 +28,9 @@ from typing import List, Dict, Optional, Tuple
 class AIAssistant:
     def __init__(self):
         print("🤖 Initializing AI Assistant - Phase 2...")
+        
+        # Ensure logs folder exists before logging setup
+        os.makedirs('logs', exist_ok=True)
         
         # Set up logging
         logging.basicConfig(
@@ -39,8 +49,14 @@ class AIAssistant:
         self.system_controller = SystemController()
         self.voice_interface = VoiceInterface()
         
+        # Preload a sample list to confirm discovery is working
+        sample = self.system_controller.list_discovered_apps(limit=10)
+        self.logger.info(f"Discovered apps sample: {sample}")
+        
         # Set up voice command callback
-        self.voice_interface.set_command_callback(self.process_command)
+        def command_callback(command: str) -> None:
+            self.process_command(command)
+        self.voice_interface.set_command_callback(command_callback)
         
         # State tracking
         self.whatsapp_ready = False
@@ -61,11 +77,34 @@ class AIAssistant:
         
         # Start voice interface
         print("\n🎤 Starting voice interface...")
-        self.voice_interface.speak("AI Assistant is ready!")
+        self.voice_interface.speak("AI Assistant is ready! Voice detection mode active.")
         
         try:
             self.voice_interface.start_listening()
+            
+            # Keep the main thread alive
+            print("\n🔄 AI Assistant is running...")
+            print("💡 Try speaking to trigger voice detection!")
+            print("📝 You can also type commands directly in the terminal.")
+            
+            # Main loop to keep the application running
+            while self.is_running:
+                try:
+                    # Check for direct input commands
+                    user_input = input("\n🎯 Enter command (or press Enter to continue): ").strip()
+                    if user_input:
+                        self.process_command(user_input)
+                except (EOFError, KeyboardInterrupt):
+                    break
+                except Exception as e:
+                    self.logger.error(f"Input error: {e}")
+                    break
+                    
         except KeyboardInterrupt:
+            self.shutdown()
+        except Exception as e:
+            self.logger.error(f"Voice interface error: {e}")
+            print(f"❌ Voice interface error: {e}")
             self.shutdown()
     
     def _show_startup_menu(self):
@@ -77,8 +116,17 @@ class AIAssistant:
         print("   • Application Management")
         print("   • File Operations")
         
-        # Initialize WhatsApp if user wants
-        setup_whatsapp = input("\n❓ Setup WhatsApp Web now? (y/n): ").lower() == 'y'
+        # Initialize WhatsApp if user wants (skip prompt in non-interactive environments)
+        try:
+            is_interactive = sys.stdin is not None and sys.stdin.isatty()
+        except Exception:
+            is_interactive = False
+
+        if is_interactive:
+            setup_whatsapp = input("\n❓ Setup WhatsApp Web now? (y/n): ").lower() == 'y'
+        else:
+            print("\nℹ️ Non-interactive environment detected. Skipping WhatsApp setup prompt.")
+            setup_whatsapp = False
         if setup_whatsapp:
             if self._initialize_whatsapp():
                 self.whatsapp_ready = True
@@ -99,6 +147,20 @@ class AIAssistant:
         """Process voice/text commands and execute actions"""
         try:
             print(f"\n🎯 Processing command: {command}")
+            
+            # Check for quick utility commands before normal parsing
+            cmd_lower = (command or "").strip().lower()
+            if cmd_lower in ("list applications","list apps","show applications","show apps"):
+                names = self.system_controller.list_discovered_apps(limit=25)
+                msg = "Top discovered apps: " + ", ".join(names) if names else "No applications discovered."
+                self.voice_interface.speak(msg)
+                return msg
+
+            if cmd_lower in ("refresh applications","rescan applications","rescan apps","refresh apps"):
+                count = self.system_controller.refresh_app_registry()
+                msg = f"Rescanned applications. Found {count} entries."
+                self.voice_interface.speak(msg)
+                return msg
             
             # Parse the command
             parsed_command = self.command_parser.parse_command(command)
@@ -137,9 +199,22 @@ class AIAssistant:
                 message = params.get("message")
                 return self.whatsapp_controller.send_message(contact, message)
             elif intent == "system_control":
-                app_action = params.get("action")
+                app_action = params.get("action") or parsed_command.get("action")
                 application = params.get("application")
-                if app_action == "open" or app_action == "launch" or app_action == "start":
+
+                if app_action in ("list_apps",):
+                    names = self.system_controller.list_discovered_apps(limit=25)
+                    self.voice_interface.speak("Top applications: " + ", ".join(names) if names else "No applications found.")
+                    return True
+
+                if app_action in ("refresh_apps",):
+                    count = self.system_controller.refresh_app_registry()
+                    self.voice_interface.speak(f"Rescanned and found {count} applications.")
+                    return True
+
+                if app_action in ("open","launch","start"):
+                    if self.system_controller.open_discovered_app(application):
+                        return True
                     return self.system_controller.open_application(application)
                 elif app_action == "close":
                     return self.system_controller.close_application(application)

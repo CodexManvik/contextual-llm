@@ -1,0 +1,3390 @@
+{
+  "_generated_at": 1755094587,
+  "_dir_hash": "26bf04163d527baae1634df80b566ce09addb869",
+  "apps": [
+    {
+      "app_name": "7z",
+      "main_exe": "C:\\Program Files\\7-Zip\\7z.exe",
+      "folder": "C:\\Program Files\\7-Zip",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files\\7-Zip\\7zFM.exe",
+        "C:\\Program Files\\7-Zip\\7zG.exe"
+      ]
+    },
+    {
+      "app_name": "7z",
+      "main_exe": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA app\\7z.exe",
+      "folder": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA app",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files\\NVIDIA Corporation\\NVIDIA app\\DarkModeCheck.exe"
+      ]
+    },
+    {
+      "app_name": "7zr",
+      "main_exe": "C:\\Program Files (x86)\\Lenovo\\VantageService\\4.3.50.0\\x64\\7zr.exe",
+      "folder": "C:\\Program Files (x86)\\Lenovo\\VantageService\\4.3.50.0\\x64",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "acccheckui",
+      "main_exe": "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\arm64\\AccChecker\\acccheckui.exe",
+      "folder": "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\arm64\\AccChecker",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "acccheckui",
+      "main_exe": "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64\\AccChecker\\acccheckui.exe",
+      "folder": "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64\\AccChecker",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "acccheckui",
+      "main_exe": "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x86\\AccChecker\\acccheckui.exe",
+      "folder": "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x86\\AccChecker",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "accelerate-config",
+      "main_exe": "C:\\Program Files\\Python312\\Scripts\\accelerate-config.exe",
+      "folder": "C:\\Program Files\\Python312\\Scripts",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files\\Python312\\Scripts\\accelerate-estimate-memory.exe",
+        "C:\\Program Files\\Python312\\Scripts\\accelerate-launch.exe",
+        "C:\\Program Files\\Python312\\Scripts\\accelerate-merge-weights.exe",
+        "C:\\Program Files\\Python312\\Scripts\\accelerate.exe",
+        "C:\\Program Files\\Python312\\Scripts\\backend-test-tools.exe",
+        "C:\\Program Files\\Python312\\Scripts\\check-model.exe",
+        "C:\\Program Files\\Python312\\Scripts\\check-node.exe",
+        "C:\\Program Files\\Python312\\Scripts\\coloredlogs.exe",
+        "C:\\Program Files\\Python312\\Scripts\\convert-caffe2-to-onnx.exe",
+        "C:\\Program Files\\Python312\\Scripts\\convert-onnx-to-caffe2.exe",
+        "C:\\Program Files\\Python312\\Scripts\\datasets-cli.exe",
+        "C:\\Program Files\\Python312\\Scripts\\dotenv.exe",
+        "C:\\Program Files\\Python312\\Scripts\\email_validator.exe",
+        "C:\\Program Files\\Python312\\Scripts\\evaluate-cli.exe",
+        "C:\\Program Files\\Python312\\Scripts\\f2py.exe",
+        "C:\\Program Files\\Python312\\Scripts\\fastapi.exe",
+        "C:\\Program Files\\Python312\\Scripts\\fonttools.exe",
+        "C:\\Program Files\\Python312\\Scripts\\gradio.exe",
+        "C:\\Program Files\\Python312\\Scripts\\httpx.exe",
+        "C:\\Program Files\\Python312\\Scripts\\huggingface-cli.exe",
+        "C:\\Program Files\\Python312\\Scripts\\humanfriendly.exe",
+        "C:\\Program Files\\Python312\\Scripts\\imageio_download_bin.exe",
+        "C:\\Program Files\\Python312\\Scripts\\imageio_remove_bin.exe",
+        "C:\\Program Files\\Python312\\Scripts\\isympy.exe",
+        "C:\\Program Files\\Python312\\Scripts\\jsonschema.exe",
+        "C:\\Program Files\\Python312\\Scripts\\lsm2bin.exe",
+        "C:\\Program Files\\Python312\\Scripts\\markdown-it.exe",
+        "C:\\Program Files\\Python312\\Scripts\\normalizer.exe",
+        "C:\\Program Files\\Python312\\Scripts\\onnxruntime_test.exe",
+        "C:\\Program Files\\Python312\\Scripts\\optimum-cli.exe",
+        "C:\\Program Files\\Python312\\Scripts\\pip.exe",
+        "C:\\Program Files\\Python312\\Scripts\\pip3.12.exe",
+        "C:\\Program Files\\Python312\\Scripts\\pip3.exe",
+        "C:\\Program Files\\Python312\\Scripts\\py.test.exe",
+        "C:\\Program Files\\Python312\\Scripts\\pyftmerge.exe",
+        "C:\\Program Files\\Python312\\Scripts\\pyftsubset.exe",
+        "C:\\Program Files\\Python312\\Scripts\\pygmentize.exe",
+        "C:\\Program Files\\Python312\\Scripts\\pytest.exe",
+        "C:\\Program Files\\Python312\\Scripts\\rembg.exe",
+        "C:\\Program Files\\Python312\\Scripts\\spotify_to_ytmusic.exe",
+        "C:\\Program Files\\Python312\\Scripts\\tiff2fsspec.exe",
+        "C:\\Program Files\\Python312\\Scripts\\tiffcomment.exe",
+        "C:\\Program Files\\Python312\\Scripts\\tifffile.exe",
+        "C:\\Program Files\\Python312\\Scripts\\torchrun.exe",
+        "C:\\Program Files\\Python312\\Scripts\\tqdm.exe",
+        "C:\\Program Files\\Python312\\Scripts\\transformers-cli.exe",
+        "C:\\Program Files\\Python312\\Scripts\\ttx.exe",
+        "C:\\Program Files\\Python312\\Scripts\\typer.exe",
+        "C:\\Program Files\\Python312\\Scripts\\upload_theme.exe",
+        "C:\\Program Files\\Python312\\Scripts\\uvicorn.exe",
+        "C:\\Program Files\\Python312\\Scripts\\watchfiles.exe",
+        "C:\\Program Files\\Python312\\Scripts\\yapf-diff.exe",
+        "C:\\Program Files\\Python312\\Scripts\\yapf.exe",
+        "C:\\Program Files\\Python312\\Scripts\\ytmusicapi.exe"
+      ]
+    },
+    {
+      "app_name": "ActionsServer",
+      "main_exe": "C:\\Program Files\\Microsoft Office\\root\\vfs\\ProgramFilesCommonX64\\Microsoft Shared\\OFFICE16\\ActionsServer\\ActionsServer.exe",
+      "folder": "C:\\Program Files\\Microsoft Office\\root\\vfs\\ProgramFilesCommonX64\\Microsoft Shared\\OFFICE16\\ActionsServer",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "AcTools.ErrorReporter",
+      "main_exe": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\assettocorsa\\extension\\internal\\plugins\\AcTools.ErrorReporter.exe",
+      "folder": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\assettocorsa\\extension\\internal\\plugins",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files (x86)\\Steam\\steamapps\\common\\assettocorsa\\extension\\internal\\plugins\\AcTools.GamepadServer.exe",
+        "C:\\Program Files (x86)\\Steam\\steamapps\\common\\assettocorsa\\extension\\internal\\plugins\\AcTools.MumbleClient.exe",
+        "C:\\Program Files (x86)\\Steam\\steamapps\\common\\assettocorsa\\extension\\internal\\plugins\\AcTools.TextToSpeechService.exe"
+      ]
+    },
+    {
+      "app_name": "AddPSUserConfig",
+      "main_exe": "C:\\Program Files\\HuionTablet\\AddPSUserConfig.exe",
+      "folder": "C:\\Program Files\\HuionTablet",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files\\HuionTablet\\DeletePSUserConfig.exe",
+        "C:\\Program Files\\HuionTablet\\DriverUpdate.exe",
+        "C:\\Program Files\\HuionTablet\\HuionServer.exe",
+        "C:\\Program Files\\HuionTablet\\HuionTablet.exe",
+        "C:\\Program Files\\HuionTablet\\HuionTabletCore.exe",
+        "C:\\Program Files\\HuionTablet\\OSD.exe",
+        "C:\\Program Files\\HuionTablet\\OSDII.exe",
+        "C:\\Program Files\\HuionTablet\\ReleaseWintab32.exe",
+        "C:\\Program Files\\HuionTablet\\ReleaseWintab32X64.exe",
+        "C:\\Program Files\\HuionTablet\\Uninstall.exe"
+      ]
+    },
+    {
+      "app_name": "adpcmencode3",
+      "main_exe": "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\arm64\\adpcmencode3.exe",
+      "folder": "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\arm64",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\arm64\\accevent.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\arm64\\betest.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\arm64\\cameraprofiletool.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\arm64\\certmgr.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\arm64\\computerhardwareids.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\arm64\\convert-moftoprovider.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\arm64\\cppwinrt.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\arm64\\ctrpp.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\arm64\\dxc.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\arm64\\dxcapsviewer.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\arm64\\espexe.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\arm64\\filetypeverifier.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\arm64\\filtdump.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\arm64\\filtreg.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\arm64\\ftquery.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\arm64\\fxc.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\arm64\\gamesaveutil.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\arm64\\genmanifest.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\arm64\\graphedt.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\arm64\\ifilttst.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\arm64\\inspect.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\arm64\\isxps.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\arm64\\jsconstraintdebug.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\arm64\\makeappx.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\arm64\\MakeCert.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\arm64\\makepri.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\arm64\\mc.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\arm64\\mdmerge.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\arm64\\mftrace.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\arm64\\midl.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\arm64\\midlc.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\arm64\\midlrt.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\arm64\\mt.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\arm64\\muirct.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\arm64\\oleview.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\arm64\\regwinmd.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\arm64\\signtool.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\arm64\\SkTool.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\arm64\\TB3x.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\arm64\\topoedit.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\arm64\\tracefmt.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\arm64\\tracelog.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\arm64\\tracepdb.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\arm64\\traceview.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\arm64\\tracewpp.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\arm64\\vsdiagview.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\arm64\\vshadow.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\arm64\\vssagent.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\arm64\\vsstrace.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\arm64\\vstorcontrol.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\arm64\\vswriter.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\arm64\\winmdidl.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\arm64\\wsddebug_client.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\arm64\\wsddebug_host.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\arm64\\wstracedump.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\arm64\\wstraceutil.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\arm64\\wsutil.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\arm64\\xpsanalyzer.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\arm64\\xpsconverter.exe"
+      ]
+    },
+    {
+      "app_name": "adpcmencode3",
+      "main_exe": "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64\\adpcmencode3.exe",
+      "folder": "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64\\accevent.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64\\betest.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64\\cameraprofiletool.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64\\certmgr.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64\\computerhardwareids.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64\\convert-moftoprovider.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64\\cppwinrt.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64\\ctrpp.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64\\dxc.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64\\dxcapsviewer.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64\\espexe.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64\\filetypeverifier.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64\\filtdump.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64\\filtreg.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64\\ftquery.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64\\fxc.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64\\gamesaveutil.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64\\genmanifest.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64\\graphedt.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64\\ifilttst.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64\\inspect.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64\\isxps.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64\\jsconstraintdebug.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64\\makeappx.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64\\makecat.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64\\MakeCert.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64\\makepri.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64\\mc.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64\\mdmerge.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64\\mftrace.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64\\midl.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64\\midlc.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64\\midlrt.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64\\mt.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64\\muirct.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64\\oleview.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64\\pvk2pfx.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64\\rc.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64\\regwinmd.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64\\signtool.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64\\SkTool.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64\\TB3x.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64\\topoedit.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64\\tracefmt.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64\\tracelog.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64\\tracepdb.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64\\traceview.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64\\tracewpp.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64\\vsdiagview.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64\\vshadow.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64\\vssagent.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64\\vsstrace.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64\\vstorcontrol.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64\\vswriter.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64\\winmdidl.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64\\wsdcodegen.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64\\wsddebug_client.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64\\wsddebug_host.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64\\wstracedump.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64\\wstraceutil.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64\\wsutil.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64\\xpsanalyzer.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64\\xpsconverter.exe"
+      ]
+    },
+    {
+      "app_name": "adpcmencode3",
+      "main_exe": "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x86\\adpcmencode3.exe",
+      "folder": "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x86",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x86\\accevent.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x86\\betest.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x86\\cameraprofiletool.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x86\\certmgr.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x86\\computerhardwareids.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x86\\convert-moftoprovider.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x86\\cppwinrt.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x86\\ctrpp.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x86\\dxc.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x86\\dxcapsviewer.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x86\\filetypeverifier.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x86\\filtdump.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x86\\filtreg.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x86\\ftquery.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x86\\fxc.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x86\\genmanifest.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x86\\graphedt.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x86\\ifilttst.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x86\\inspect.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x86\\isxps.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x86\\makeappx.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x86\\MakeCert.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x86\\makepri.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x86\\mc.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x86\\mdmerge.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x86\\mftrace.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x86\\midl.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x86\\midlc.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x86\\midlrt.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x86\\MsiCert.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x86\\MsiDb.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x86\\MsiFiler.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x86\\MsiInfo.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x86\\Msimerg.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x86\\MsiMsp.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x86\\MsiTran.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x86\\mt.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x86\\muirct.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x86\\oleview.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x86\\regwinmd.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x86\\signtool.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x86\\TB3x.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x86\\topoedit.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x86\\tracefmt.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x86\\tracelog.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x86\\traceview.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x86\\tracewpp.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x86\\uicc.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x86\\vsdiagview.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x86\\vshadow.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x86\\vssagent.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x86\\vsstrace.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x86\\vstorcontrol.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x86\\vswriter.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x86\\WiLogUtl.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x86\\winmdidl.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x86\\wsdcodegen.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x86\\wsddebug_client.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x86\\wsddebug_host.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x86\\wstracedump.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x86\\wstraceutil.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x86\\wsutil.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x86\\xpsanalyzer.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x86\\xpsconverter.exe"
+      ]
+    },
+    {
+      "app_name": "AdpSDKUtil",
+      "main_exe": "C:\\Program Files\\Common Files\\Autodesk\\AdpDesktopSDK\\bin\\AdpSDKUtil.exe",
+      "folder": "C:\\Program Files\\Common Files\\Autodesk\\AdpDesktopSDK\\bin",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files\\Common Files\\Autodesk\\AdpDesktopSDK\\bin\\ADPClientService.exe"
+      ]
+    },
+    {
+      "app_name": "ai",
+      "main_exe": "C:\\Program Files\\Microsoft Office\\root\\vfs\\ProgramFilesCommonX64\\Microsoft Shared\\OFFICE16\\AI\\ai.exe",
+      "folder": "C:\\Program Files\\Microsoft Office\\root\\vfs\\ProgramFilesCommonX64\\Microsoft Shared\\OFFICE16\\AI",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files\\Microsoft Office\\root\\vfs\\ProgramFilesCommonX64\\Microsoft Shared\\OFFICE16\\AI\\aimgr.exe"
+      ]
+    },
+    {
+      "app_name": "ai",
+      "main_exe": "C:\\Program Files\\Microsoft Office\\root\\vfs\\ProgramFilesCommonX86\\Microsoft Shared\\OFFICE16\\AI\\ai.exe",
+      "folder": "C:\\Program Files\\Microsoft Office\\root\\vfs\\ProgramFilesCommonX86\\Microsoft Shared\\OFFICE16\\AI",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files\\Microsoft Office\\root\\vfs\\ProgramFilesCommonX86\\Microsoft Shared\\OFFICE16\\AI\\aimgr.exe"
+      ]
+    },
+    {
+      "app_name": "aitstatic",
+      "main_exe": "C:\\Program Files (x86)\\Windows Kits\\10\\App Certification Kit\\aitstatic.exe",
+      "folder": "C:\\Program Files (x86)\\Windows Kits\\10\\App Certification Kit",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files (x86)\\Windows Kits\\10\\App Certification Kit\\appcertui.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\App Certification Kit\\makeappx.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\App Certification Kit\\signtool.exe"
+      ]
+    },
+    {
+      "app_name": "antiword",
+      "main_exe": "C:\\Program Files\\Git\\mingw64\\bin\\antiword.exe",
+      "folder": "C:\\Program Files\\Git\\mingw64\\bin",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files\\Git\\mingw64\\bin\\adig.exe",
+        "C:\\Program Files\\Git\\mingw64\\bin\\ahost.exe",
+        "C:\\Program Files\\Git\\mingw64\\bin\\brotli.exe",
+        "C:\\Program Files\\Git\\mingw64\\bin\\bunzip2.exe",
+        "C:\\Program Files\\Git\\mingw64\\bin\\bzcat.exe",
+        "C:\\Program Files\\Git\\mingw64\\bin\\bzip2.exe",
+        "C:\\Program Files\\Git\\mingw64\\bin\\connect.exe",
+        "C:\\Program Files\\Git\\mingw64\\bin\\create-shortcut.exe",
+        "C:\\Program Files\\Git\\mingw64\\bin\\curl.exe",
+        "C:\\Program Files\\Git\\mingw64\\bin\\envsubst.exe",
+        "C:\\Program Files\\Git\\mingw64\\bin\\gettext.exe",
+        "C:\\Program Files\\Git\\mingw64\\bin\\git-credential-helper-selector.exe",
+        "C:\\Program Files\\Git\\mingw64\\bin\\git-credential-manager.exe",
+        "C:\\Program Files\\Git\\mingw64\\bin\\git-lfs.exe",
+        "C:\\Program Files\\Git\\mingw64\\bin\\git-receive-pack.exe",
+        "C:\\Program Files\\Git\\mingw64\\bin\\git-upload-archive.exe",
+        "C:\\Program Files\\Git\\mingw64\\bin\\git-upload-pack.exe",
+        "C:\\Program Files\\Git\\mingw64\\bin\\git.exe",
+        "C:\\Program Files\\Git\\mingw64\\bin\\lzmadec.exe",
+        "C:\\Program Files\\Git\\mingw64\\bin\\lzmainfo.exe",
+        "C:\\Program Files\\Git\\mingw64\\bin\\odt2txt.exe",
+        "C:\\Program Files\\Git\\mingw64\\bin\\openssl.exe",
+        "C:\\Program Files\\Git\\mingw64\\bin\\p11-kit.exe",
+        "C:\\Program Files\\Git\\mingw64\\bin\\pdftotext.exe",
+        "C:\\Program Files\\Git\\mingw64\\bin\\pkcs1-conv.exe",
+        "C:\\Program Files\\Git\\mingw64\\bin\\psl.exe",
+        "C:\\Program Files\\Git\\mingw64\\bin\\scalar.exe",
+        "C:\\Program Files\\Git\\mingw64\\bin\\sexp-conv.exe",
+        "C:\\Program Files\\Git\\mingw64\\bin\\tclsh.exe",
+        "C:\\Program Files\\Git\\mingw64\\bin\\tclsh86.exe",
+        "C:\\Program Files\\Git\\mingw64\\bin\\trust.exe",
+        "C:\\Program Files\\Git\\mingw64\\bin\\unxz.exe",
+        "C:\\Program Files\\Git\\mingw64\\bin\\WhoUses.exe",
+        "C:\\Program Files\\Git\\mingw64\\bin\\wintoast.exe",
+        "C:\\Program Files\\Git\\mingw64\\bin\\wish.exe",
+        "C:\\Program Files\\Git\\mingw64\\bin\\wish86.exe",
+        "C:\\Program Files\\Git\\mingw64\\bin\\xmlwf.exe",
+        "C:\\Program Files\\Git\\mingw64\\bin\\xz.exe",
+        "C:\\Program Files\\Git\\mingw64\\bin\\xzcat.exe",
+        "C:\\Program Files\\Git\\mingw64\\bin\\xzdec.exe"
+      ]
+    },
+    {
+      "app_name": "AppSharingHookController",
+      "main_exe": "C:\\Program Files\\Microsoft Office\\root\\vfs\\ProgramFilesX86\\Microsoft Office\\Office16\\AppSharingHookController.exe",
+      "folder": "C:\\Program Files\\Microsoft Office\\root\\vfs\\ProgramFilesX86\\Microsoft Office\\Office16",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files\\Microsoft Office\\root\\vfs\\ProgramFilesX86\\Microsoft Office\\Office16\\MSOHTMED.EXE"
+      ]
+    },
+    {
+      "app_name": "appvcleaner",
+      "main_exe": "C:\\Program Files\\Common Files\\microsoft shared\\ClickToRun\\appvcleaner.exe",
+      "folder": "C:\\Program Files\\Common Files\\microsoft shared\\ClickToRun",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files\\Common Files\\microsoft shared\\ClickToRun\\AppVShNotify.exe",
+        "C:\\Program Files\\Common Files\\microsoft shared\\ClickToRun\\IntegratedOffice.exe",
+        "C:\\Program Files\\Common Files\\microsoft shared\\ClickToRun\\MavInject32.exe",
+        "C:\\Program Files\\Common Files\\microsoft shared\\ClickToRun\\OfficeC2RClient.exe",
+        "C:\\Program Files\\Common Files\\microsoft shared\\ClickToRun\\OfficeClickToRun.exe",
+        "C:\\Program Files\\Common Files\\microsoft shared\\ClickToRun\\officesvcmgr.exe"
+      ]
+    },
+    {
+      "app_name": "AppVDllSurrogate",
+      "main_exe": "C:\\Program Files\\Microsoft Office\\root\\Client\\AppVDllSurrogate.exe",
+      "folder": "C:\\Program Files\\Microsoft Office\\root\\Client",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files\\Microsoft Office\\root\\Client\\AppVDllSurrogate32.exe",
+        "C:\\Program Files\\Microsoft Office\\root\\Client\\AppVDllSurrogate64.exe",
+        "C:\\Program Files\\Microsoft Office\\root\\Client\\AppVLP.exe"
+      ]
+    },
+    {
+      "app_name": "AppxDebugSysTray",
+      "main_exe": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\Remote Debugger\\Appx\\AppxDebugSysTray.exe",
+      "folder": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\Remote Debugger\\Appx",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "Assetto Corsa CEF",
+      "main_exe": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\assettocorsa\\cache\\cef\\Assetto Corsa CEF.exe",
+      "folder": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\assettocorsa\\cache\\cef",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "audiorepeater",
+      "main_exe": "C:\\Program Files\\Virtual Audio Cable\\audiorepeater.exe",
+      "folder": "C:\\Program Files\\Virtual Audio Cable",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files\\Virtual Audio Cable\\audiorepeater_ks.exe",
+        "C:\\Program Files\\Virtual Audio Cable\\setup64.exe",
+        "C:\\Program Files\\Virtual Audio Cable\\vcctlpan.exe"
+      ]
+    },
+    {
+      "app_name": "awk",
+      "main_exe": "C:\\Program Files\\Git\\usr\\bin\\awk.exe",
+      "folder": "C:\\Program Files\\Git\\usr\\bin",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files\\Git\\usr\\bin\\b2sum.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\bash.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\bunzip2.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\bzcat.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\bzip2.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\captoinfo.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\chattr.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\chcon.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\chgrp.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\chmod.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\chown.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\cp.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\csplit.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\cygcheck.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\cygpath.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\cygwin-console-helper.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\d2u.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\dash.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\date.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\dd.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\df.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\diff.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\diff3.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\dir.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\dircolors.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\dirmngr-client.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\dirmngr.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\dos2unix.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\du.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\ex.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\expr.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\factor.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\find.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\gawk-5.0.0.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\gawk.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\gencat.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\getconf.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\getfacl.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\gmondump.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\gpg-agent.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\gpg-card.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\gpg-connect-agent.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\gpg-wks-client.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\gpg-wks-server.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\gpg.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\gpgconf.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\gpgscm.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\gpgsm.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\gpgsplit.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\gpgtar.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\gpgv.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\grep.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\gzip.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\infocmp.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\infotocap.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\install.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\join.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\kbxutil.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\kill.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\ldd.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\ldh.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\less.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\ln.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\locale.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\locate.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\ls.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\lsattr.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\mac2unix.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\minidumper.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\mintty.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\mkdir.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\mkgroup.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\mkpasswd.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\mount.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\mv.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\nano.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\newgrp.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\nl.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\numfmt.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\od.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\openssl.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\p11-kit.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\passwd.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\patch.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\pinentry-w32.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\pinentry.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\pldd.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\pr.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\printf.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\profiler.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\ps.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\ptx.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\rebase.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\regtool.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\rm.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\rmdir.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\rnano.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\rview.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\rvim.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\scp.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\sdiff.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\sed.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\seq.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\setfacl.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\setmetamode.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\sftp.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\sh.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\sha224sum.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\sha256sum.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\sha384sum.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\sha512sum.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\shred.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\shuf.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\sort.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\split.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\ssh-add.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\ssh-agent.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\ssh-keygen.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\ssh-keyscan.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\ssh.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\ssp.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\stat.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\stdbuf.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\strace.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\stty.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\tac.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\tail.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\tar.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\test.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\tic.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\tig.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\touch.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\trust.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\tzset.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\u2d.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\umount.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\unix2dos.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\unix2mac.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\unzip.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\unzipsfx.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\vdir.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\view.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\vim.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\vimdiff.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\who.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\winpty-agent.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\winpty-debugserver.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\winpty.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\xargs.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\zipinfo.exe",
+        "C:\\Program Files\\Git\\usr\\bin\\[.exe"
+      ]
+    },
+    {
+      "app_name": "bandwidthTest",
+      "main_exe": "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\extras\\demo_suite\\bandwidthTest.exe",
+      "folder": "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\extras\\demo_suite",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\extras\\demo_suite\\busGrind.exe",
+        "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\extras\\demo_suite\\deviceQuery.exe",
+        "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\extras\\demo_suite\\nbody.exe",
+        "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\extras\\demo_suite\\oceanFFT.exe",
+        "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\extras\\demo_suite\\randomFog.exe",
+        "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\extras\\demo_suite\\vectorAdd.exe"
+      ]
+    },
+    {
+      "app_name": "bin2c",
+      "main_exe": "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\bin\\bin2c.exe",
+      "folder": "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\bin",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\bin\\cu++filt.exe",
+        "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\bin\\cudafe++.exe",
+        "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\bin\\cuobjdump.exe",
+        "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\bin\\fatbinary.exe",
+        "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\bin\\nvcc.exe",
+        "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\bin\\nvdisasm.exe",
+        "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\bin\\nvlink.exe",
+        "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\bin\\nvprof.exe",
+        "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\bin\\nvprune.exe",
+        "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\bin\\ptxas.exe",
+        "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\bin\\__nvcc_device_query.exe"
+      ]
+    },
+    {
+      "app_name": "browser_assistant",
+      "main_exe": "C:\\Program Files\\Opera GX\\assistant\\browser_assistant.exe",
+      "folder": "C:\\Program Files\\Opera GX\\assistant",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files\\Opera GX\\assistant\\assistant_installer.exe"
+      ]
+    },
+    {
+      "app_name": "bscmake",
+      "main_exe": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\bscmake.exe",
+      "folder": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\cl.exe",
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\ifc.exe",
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\link.exe",
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\llvm-symbolizer.exe",
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\ml64.exe",
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\mspdbcmf.exe",
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\mspdbsrv.exe",
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\nmake.exe",
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\pgocvt.exe",
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\pgomgr.exe",
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\pgosweep.exe",
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\vcperf.exe",
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\vctip.exe"
+      ]
+    },
+    {
+      "app_name": "bscmake",
+      "main_exe": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x86\\bscmake.exe",
+      "folder": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x86",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x86\\cl.exe",
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x86\\ifc.exe",
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x86\\link.exe",
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x86\\llvm-symbolizer.exe",
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x86\\ml.exe",
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x86\\mspdbcmf.exe",
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x86\\mspdbsrv.exe",
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x86\\nmake.exe",
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x86\\pgocvt.exe",
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x86\\pgomgr.exe",
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x86\\vctip.exe"
+      ]
+    },
+    {
+      "app_name": "bscmake",
+      "main_exe": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx86\\x64\\bscmake.exe",
+      "folder": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx86\\x64",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx86\\x64\\cl.exe",
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx86\\x64\\ifc.exe",
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx86\\x64\\link.exe",
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx86\\x64\\llvm-symbolizer.exe",
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx86\\x64\\ml64.exe",
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx86\\x64\\mspdbcmf.exe",
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx86\\x64\\mspdbsrv.exe",
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx86\\x64\\nmake.exe",
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx86\\x64\\pgocvt.exe",
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx86\\x64\\pgomgr.exe",
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx86\\x64\\vctip.exe"
+      ]
+    },
+    {
+      "app_name": "bscmake",
+      "main_exe": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx86\\x86\\bscmake.exe",
+      "folder": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx86\\x86",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx86\\x86\\cl.exe",
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx86\\x86\\ifc.exe",
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx86\\x86\\link.exe",
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx86\\x86\\llvm-symbolizer.exe",
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx86\\x86\\ml.exe",
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx86\\x86\\mspdbcmf.exe",
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx86\\x86\\mspdbsrv.exe",
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx86\\x86\\nmake.exe",
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx86\\x86\\pgocvt.exe",
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx86\\x86\\pgomgr.exe",
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx86\\x86\\pgosweep.exe",
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx86\\x86\\vcperf.exe",
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx86\\x86\\vctip.exe"
+      ]
+    },
+    {
+      "app_name": "Canvas",
+      "main_exe": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA Canvas\\Canvas.exe",
+      "folder": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA Canvas",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "ccapiserver",
+      "main_exe": "C:\\Program Files\\MySQL\\MySQL Workbench 8.0\\ccapiserver.exe",
+      "folder": "C:\\Program Files\\MySQL\\MySQL Workbench 8.0",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files\\MySQL\\MySQL Workbench 8.0\\mysql.exe",
+        "C:\\Program Files\\MySQL\\MySQL Workbench 8.0\\mysqldump.exe",
+        "C:\\Program Files\\MySQL\\MySQL Workbench 8.0\\MySQLWorkbench.exe",
+        "C:\\Program Files\\MySQL\\MySQL Workbench 8.0\\ogr2ogr.exe",
+        "C:\\Program Files\\MySQL\\MySQL Workbench 8.0\\ogrinfo.exe",
+        "C:\\Program Files\\MySQL\\MySQL Workbench 8.0\\python.exe",
+        "C:\\Program Files\\MySQL\\MySQL Workbench 8.0\\wbcopytables.exe"
+      ]
+    },
+    {
+      "app_name": "chardetect",
+      "main_exe": "C:\\Program Files\\Microsoft SDKs\\Azure\\CLI2\\Scripts\\chardetect.exe",
+      "folder": "C:\\Program Files\\Microsoft SDKs\\Azure\\CLI2\\Scripts",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files\\Microsoft SDKs\\Azure\\CLI2\\Scripts\\activate-global-python-argcomplete.exe",
+        "C:\\Program Files\\Microsoft SDKs\\Azure\\CLI2\\Scripts\\fab.exe",
+        "C:\\Program Files\\Microsoft SDKs\\Azure\\CLI2\\Scripts\\humanfriendly.exe",
+        "C:\\Program Files\\Microsoft SDKs\\Azure\\CLI2\\Scripts\\inv.exe",
+        "C:\\Program Files\\Microsoft SDKs\\Azure\\CLI2\\Scripts\\invoke.exe",
+        "C:\\Program Files\\Microsoft SDKs\\Azure\\CLI2\\Scripts\\jdiff.exe",
+        "C:\\Program Files\\Microsoft SDKs\\Azure\\CLI2\\Scripts\\normalizer.exe",
+        "C:\\Program Files\\Microsoft SDKs\\Azure\\CLI2\\Scripts\\pbr.exe",
+        "C:\\Program Files\\Microsoft SDKs\\Azure\\CLI2\\Scripts\\pip.exe",
+        "C:\\Program Files\\Microsoft SDKs\\Azure\\CLI2\\Scripts\\pip3.12.exe",
+        "C:\\Program Files\\Microsoft SDKs\\Azure\\CLI2\\Scripts\\pip3.exe",
+        "C:\\Program Files\\Microsoft SDKs\\Azure\\CLI2\\Scripts\\pkginfo.exe",
+        "C:\\Program Files\\Microsoft SDKs\\Azure\\CLI2\\Scripts\\pygmentize.exe",
+        "C:\\Program Files\\Microsoft SDKs\\Azure\\CLI2\\Scripts\\pygrun.exe",
+        "C:\\Program Files\\Microsoft SDKs\\Azure\\CLI2\\Scripts\\pysemver.exe",
+        "C:\\Program Files\\Microsoft SDKs\\Azure\\CLI2\\Scripts\\python-argcomplete-check-easy-install-script.exe",
+        "C:\\Program Files\\Microsoft SDKs\\Azure\\CLI2\\Scripts\\register-python-argcomplete.exe",
+        "C:\\Program Files\\Microsoft SDKs\\Azure\\CLI2\\Scripts\\sshtunnel.exe",
+        "C:\\Program Files\\Microsoft SDKs\\Azure\\CLI2\\Scripts\\tabulate.exe",
+        "C:\\Program Files\\Microsoft SDKs\\Azure\\CLI2\\Scripts\\wheel.exe",
+        "C:\\Program Files\\Microsoft SDKs\\Azure\\CLI2\\Scripts\\wsdump.exe"
+      ]
+    },
+    {
+      "app_name": "CheckHyperVHost",
+      "main_exe": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\PrivateAssemblies\\CheckHyperVHost.exe",
+      "folder": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\PrivateAssemblies",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "checktool",
+      "main_exe": "C:\\Program Files\\Intel\\HAXM\\checktool.exe",
+      "folder": "C:\\Program Files\\Intel\\HAXM",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files\\Intel\\HAXM\\uninstall.exe"
+      ]
+    },
+    {
+      "app_name": "cicc",
+      "main_exe": "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\nvvm\\bin\\cicc.exe",
+      "folder": "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\nvvm\\bin",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "clang-format",
+      "main_exe": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\Llvm\\ARM64\\bin\\clang-format.exe",
+      "folder": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\Llvm\\ARM64\\bin",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\Llvm\\ARM64\\bin\\clang-tidy.exe"
+      ]
+    },
+    {
+      "app_name": "clang-format",
+      "main_exe": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\Llvm\\bin\\clang-format.exe",
+      "folder": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\Llvm\\bin",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\Llvm\\bin\\clang-tidy.exe"
+      ]
+    },
+    {
+      "app_name": "clang-format",
+      "main_exe": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\Llvm\\x64\\bin\\clang-format.exe",
+      "folder": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\Llvm\\x64\\bin",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\Llvm\\x64\\bin\\clang-tidy.exe"
+      ]
+    },
+    {
+      "app_name": "clangd",
+      "main_exe": "C:\\Program Files\\Android\\Android Studio\\plugins\\c-clangd-plugin\\bin\\clang\\win\\x64\\bin\\clangd.exe",
+      "folder": "C:\\Program Files\\Android\\Android Studio\\plugins\\c-clangd-plugin\\bin\\clang\\win\\x64\\bin",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "Cloudflare WARP",
+      "main_exe": "C:\\Program Files\\Cloudflare\\Cloudflare WARP\\Cloudflare WARP.exe",
+      "folder": "C:\\Program Files\\Cloudflare\\Cloudflare WARP",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files\\Cloudflare\\Cloudflare WARP\\warp-cli.exe",
+        "C:\\Program Files\\Cloudflare\\Cloudflare WARP\\warp-dex.exe",
+        "C:\\Program Files\\Cloudflare\\Cloudflare WARP\\warp-diag.exe",
+        "C:\\Program Files\\Cloudflare\\Cloudflare WARP\\warp-svc.exe"
+      ]
+    },
+    {
+      "app_name": "cmake",
+      "main_exe": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmake.exe",
+      "folder": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cmcldeps.exe",
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\cpack.exe",
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\CMake\\bin\\ctest.exe"
+      ]
+    },
+    {
+      "app_name": "CodeCoverage",
+      "main_exe": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Team Tools\\Dynamic Code Coverage Tools\\CodeCoverage.exe",
+      "folder": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Team Tools\\Dynamic Code Coverage Tools",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Team Tools\\Dynamic Code Coverage Tools\\covinstrc32.exe"
+      ]
+    },
+    {
+      "app_name": "CodeCoverage",
+      "main_exe": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Team Tools\\Dynamic Code Coverage Tools\\amd64\\CodeCoverage.exe",
+      "folder": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Team Tools\\Dynamic Code Coverage Tools\\amd64",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Team Tools\\Dynamic Code Coverage Tools\\amd64\\covinstrc64.exe"
+      ]
+    },
+    {
+      "app_name": "compute-sanitizer",
+      "main_exe": "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\compute-sanitizer\\compute-sanitizer.exe",
+      "folder": "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\compute-sanitizer",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "Conduit.Broker.Host",
+      "main_exe": "C:\\Program Files (x86)\\Windows Kits\\10\\Testing\\Runtimes\\TAEF\\Conduit.Broker.Host.exe",
+      "folder": "C:\\Program Files (x86)\\Windows Kits\\10\\Testing\\Runtimes\\TAEF",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files (x86)\\Windows Kits\\10\\Testing\\Runtimes\\TAEF\\Conduit.Broker.Service.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\Testing\\Runtimes\\TAEF\\TE.exe"
+      ]
+    },
+    {
+      "app_name": "Conduit.Broker.Host",
+      "main_exe": "C:\\Program Files (x86)\\Windows Kits\\10\\Testing\\Runtimes\\TAEF\\MinTe\\Conduit.Broker.Host.exe",
+      "folder": "C:\\Program Files (x86)\\Windows Kits\\10\\Testing\\Runtimes\\TAEF\\MinTe",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files (x86)\\Windows Kits\\10\\Testing\\Runtimes\\TAEF\\MinTe\\Conduit.Broker.Service.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\Testing\\Runtimes\\TAEF\\MinTe\\TE.exe"
+      ]
+    },
+    {
+      "app_name": "Conduit.Broker.Host",
+      "main_exe": "C:\\Program Files (x86)\\Windows Kits\\10\\Testing\\Runtimes\\TAEF\\x64\\Conduit.Broker.Host.exe",
+      "folder": "C:\\Program Files (x86)\\Windows Kits\\10\\Testing\\Runtimes\\TAEF\\x64",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files (x86)\\Windows Kits\\10\\Testing\\Runtimes\\TAEF\\x64\\Conduit.Broker.Service.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\Testing\\Runtimes\\TAEF\\x64\\TE.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\Testing\\Runtimes\\TAEF\\x64\\Wex.Services.exe"
+      ]
+    },
+    {
+      "app_name": "Conduit.Broker.Host",
+      "main_exe": "C:\\Program Files (x86)\\Windows Kits\\10\\Testing\\Runtimes\\TAEF\\x64\\MinTe\\Conduit.Broker.Host.exe",
+      "folder": "C:\\Program Files (x86)\\Windows Kits\\10\\Testing\\Runtimes\\TAEF\\x64\\MinTe",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files (x86)\\Windows Kits\\10\\Testing\\Runtimes\\TAEF\\x64\\MinTe\\Conduit.Broker.Service.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\Testing\\Runtimes\\TAEF\\x64\\MinTe\\TE.exe",
+        "C:\\Program Files (x86)\\Windows Kits\\10\\Testing\\Runtimes\\TAEF\\x64\\MinTe\\Wex.Services.exe"
+      ]
+    },
+    {
+      "app_name": "ConfigSecurityPolicy",
+      "main_exe": "C:\\Program Files\\Windows Defender\\ConfigSecurityPolicy.exe",
+      "folder": "C:\\Program Files\\Windows Defender",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files\\Windows Defender\\DlpUserAgent.exe",
+        "C:\\Program Files\\Windows Defender\\MpCmdRun.exe",
+        "C:\\Program Files\\Windows Defender\\MpCopyAccelerator.exe",
+        "C:\\Program Files\\Windows Defender\\MpDefenderCoreService.exe",
+        "C:\\Program Files\\Windows Defender\\MpDlpCmd.exe",
+        "C:\\Program Files\\Windows Defender\\MpDlpService.exe",
+        "C:\\Program Files\\Windows Defender\\mpextms.exe",
+        "C:\\Program Files\\Windows Defender\\MsMpEng.exe",
+        "C:\\Program Files\\Windows Defender\\NisSrv.exe"
+      ]
+    },
+    {
+      "app_name": "ConnectionManager",
+      "main_exe": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe\\ConnectionManager.exe",
+      "folder": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\VC\\Linux\\bin\\ConnectionManagerExe",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "Content Manager",
+      "main_exe": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\assettocorsa\\Content Manager.exe",
+      "folder": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\assettocorsa",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "covinstrcarm64",
+      "main_exe": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Team Tools\\Dynamic Code Coverage Tools\\arm64\\covinstrcarm64.exe",
+      "folder": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Team Tools\\Dynamic Code Coverage Tools\\arm64",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "cppwinrt",
+      "main_exe": "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\chpe\\cppwinrt.exe",
+      "folder": "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\chpe",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "cpuz",
+      "main_exe": "C:\\Program Files\\CPUID\\CPU-Z\\cpuz.exe",
+      "folder": "C:\\Program Files\\CPUID\\CPU-Z",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files\\CPUID\\CPU-Z\\unins000.exe"
+      ]
+    },
+    {
+      "app_name": "CrashReportClient",
+      "main_exe": "C:\\Program Files (x86)\\Epic Games\\Epic Online Services\\Engine\\Binaries\\Win32\\CrashReportClient.exe",
+      "folder": "C:\\Program Files (x86)\\Epic Games\\Epic Online Services\\Engine\\Binaries\\Win32",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "CrashReportClient",
+      "main_exe": "C:\\Program Files (x86)\\Epic Games\\Launcher\\Portal\\Extras\\Overlay\\Engine\\Binaries\\Win32\\CrashReportClient.exe",
+      "folder": "C:\\Program Files (x86)\\Epic Games\\Launcher\\Portal\\Extras\\Overlay\\Engine\\Binaries\\Win32",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "CrashReporter",
+      "main_exe": "C:\\Program Files (x86)\\NVIDIA Corporation\\Nsight Visual Studio Edition 2025.1\\Host64\\Common\\CrashReporter.exe",
+      "folder": "C:\\Program Files (x86)\\NVIDIA Corporation\\Nsight Visual Studio Edition 2025.1\\Host64\\Common",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "createdump",
+      "main_exe": "C:\\Program Files (x86)\\Lenovo\\LenovoNow\\x86\\createdump.exe",
+      "folder": "C:\\Program Files (x86)\\Lenovo\\LenovoNow\\x86",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files (x86)\\Lenovo\\LenovoNow\\x86\\LenovoNow.CatTool.exe",
+        "C:\\Program Files (x86)\\Lenovo\\LenovoNow\\x86\\LenovoNow.exe",
+        "C:\\Program Files (x86)\\Lenovo\\LenovoNow\\x86\\LenovoNow.Task.exe"
+      ]
+    },
+    {
+      "app_name": "createdump",
+      "main_exe": "C:\\Program Files\\dotnet\\shared\\Microsoft.NETCore.App\\6.0.36\\createdump.exe",
+      "folder": "C:\\Program Files\\dotnet\\shared\\Microsoft.NETCore.App\\6.0.36",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "createdump",
+      "main_exe": "C:\\Program Files\\dotnet\\shared\\Microsoft.NETCore.App\\7.0.20\\createdump.exe",
+      "folder": "C:\\Program Files\\dotnet\\shared\\Microsoft.NETCore.App\\7.0.20",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "createdump",
+      "main_exe": "C:\\Program Files\\dotnet\\shared\\Microsoft.NETCore.App\\8.0.19\\createdump.exe",
+      "folder": "C:\\Program Files\\dotnet\\shared\\Microsoft.NETCore.App\\8.0.19",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "createdump",
+      "main_exe": "C:\\Program Files\\dotnet\\shared\\Microsoft.NETCore.App\\9.0.8\\createdump.exe",
+      "folder": "C:\\Program Files\\dotnet\\shared\\Microsoft.NETCore.App\\9.0.8",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "createdump",
+      "main_exe": "C:\\Program Files\\WSL\\wslsettings\\createdump.exe",
+      "folder": "C:\\Program Files\\WSL\\wslsettings",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files\\WSL\\wslsettings\\RestartAgent.exe",
+        "C:\\Program Files\\WSL\\wslsettings\\wslsettings.exe"
+      ]
+    },
+    {
+      "app_name": "csc",
+      "main_exe": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\MSBuild\\Current\\Bin\\Roslyn\\csc.exe",
+      "folder": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\MSBuild\\Current\\Bin\\Roslyn",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\MSBuild\\Current\\Bin\\Roslyn\\vbc.exe",
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\MSBuild\\Current\\Bin\\Roslyn\\VBCSCompiler.exe"
+      ]
+    },
+    {
+      "app_name": "CudaGpuInfoDumper",
+      "main_exe": "C:\\Program Files\\NVIDIA Corporation\\Nsight Compute 2025.1.1\\host\\target-windows-x64\\CudaGpuInfoDumper.exe",
+      "folder": "C:\\Program Files\\NVIDIA Corporation\\Nsight Compute 2025.1.1\\host\\target-windows-x64",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files\\NVIDIA Corporation\\Nsight Compute 2025.1.1\\host\\target-windows-x64\\nsight-sys-service.exe",
+        "C:\\Program Files\\NVIDIA Corporation\\Nsight Compute 2025.1.1\\host\\target-windows-x64\\nsys.exe",
+        "C:\\Program Files\\NVIDIA Corporation\\Nsight Compute 2025.1.1\\host\\target-windows-x64\\sqlite3.exe"
+      ]
+    },
+    {
+      "app_name": "CudaGpuInfoDumper",
+      "main_exe": "C:\\Program Files\\NVIDIA Corporation\\Nsight Systems 2022.4.2\\target-windows-x64\\CudaGpuInfoDumper.exe",
+      "folder": "C:\\Program Files\\NVIDIA Corporation\\Nsight Systems 2022.4.2\\target-windows-x64",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files\\NVIDIA Corporation\\Nsight Systems 2022.4.2\\target-windows-x64\\nsight-sys-service.exe",
+        "C:\\Program Files\\NVIDIA Corporation\\Nsight Systems 2022.4.2\\target-windows-x64\\nsys.exe",
+        "C:\\Program Files\\NVIDIA Corporation\\Nsight Systems 2022.4.2\\target-windows-x64\\sqlite3.exe"
+      ]
+    },
+    {
+      "app_name": "CudaGpuInfoDumper",
+      "main_exe": "C:\\Program Files\\NVIDIA Corporation\\Nsight Systems 2024.6.2\\target-windows-x64\\CudaGpuInfoDumper.exe",
+      "folder": "C:\\Program Files\\NVIDIA Corporation\\Nsight Systems 2024.6.2\\target-windows-x64",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files\\NVIDIA Corporation\\Nsight Systems 2024.6.2\\target-windows-x64\\nsight-sys-service.exe",
+        "C:\\Program Files\\NVIDIA Corporation\\Nsight Systems 2024.6.2\\target-windows-x64\\nsys.exe",
+        "C:\\Program Files\\NVIDIA Corporation\\Nsight Systems 2024.6.2\\target-windows-x64\\sqlite3.exe"
+      ]
+    },
+    {
+      "app_name": "DATABASECOMPARE",
+      "main_exe": "C:\\Program Files\\Microsoft Office\\root\\vfs\\ProgramFilesX86\\Microsoft Office\\Office16\\DCF\\DATABASECOMPARE.EXE",
+      "folder": "C:\\Program Files\\Microsoft Office\\root\\vfs\\ProgramFilesX86\\Microsoft Office\\Office16\\DCF",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files\\Microsoft Office\\root\\vfs\\ProgramFilesX86\\Microsoft Office\\Office16\\DCF\\filecompare.exe",
+        "C:\\Program Files\\Microsoft Office\\root\\vfs\\ProgramFilesX86\\Microsoft Office\\Office16\\DCF\\SPREADSHEETCOMPARE.EXE"
+      ]
+    },
+    {
+      "app_name": "DDConfigCA",
+      "main_exe": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\DDConfigCA.exe",
+      "folder": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\mspdbsrv.exe",
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\PerfWatson2.exe",
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\TextTransformCore.exe",
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\vb7to8.exe",
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\VcxprojReader.exe",
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\VSFinalizer.exe",
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\VSInitializer.exe",
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\VSIXInstaller.exe",
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\VsRegEdit.exe",
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\VSWebHandler.exe",
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\VSWebLauncher.exe"
+      ]
+    },
+    {
+      "app_name": "devcon",
+      "main_exe": "C:\\Program Files\\HuionTablet\\driver\\HuionHID\\amd64\\devcon.exe",
+      "folder": "C:\\Program Files\\HuionTablet\\driver\\HuionHID\\amd64",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files\\HuionTablet\\driver\\HuionHID\\amd64\\Listdlls64.exe"
+      ]
+    },
+    {
+      "app_name": "devcon",
+      "main_exe": "C:\\Program Files\\HuionTablet\\driver\\HuionHID\\i386\\devcon.exe",
+      "folder": "C:\\Program Files\\HuionTablet\\driver\\HuionHID\\i386",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files\\HuionTablet\\driver\\HuionHID\\i386\\Listdlls.exe"
+      ]
+    },
+    {
+      "app_name": "devcon",
+      "main_exe": "C:\\Program Files\\HuionTablet\\driver\\TabletDriver\\amd64\\devcon.exe",
+      "folder": "C:\\Program Files\\HuionTablet\\driver\\TabletDriver\\amd64",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files\\HuionTablet\\driver\\TabletDriver\\amd64\\dpinst.exe"
+      ]
+    },
+    {
+      "app_name": "devcon",
+      "main_exe": "C:\\Program Files\\HuionTablet\\driver\\TabletDriver\\i386\\devcon.exe",
+      "folder": "C:\\Program Files\\HuionTablet\\driver\\TabletDriver\\i386",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files\\HuionTablet\\driver\\TabletDriver\\i386\\dpinst.exe"
+      ]
+    },
+    {
+      "app_name": "dotnet",
+      "main_exe": "C:\\Program Files\\dotnet\\dotnet.exe",
+      "folder": "C:\\Program Files\\dotnet",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "DPInst_x64",
+      "main_exe": "C:\\Program Files\\DIFX\\D29FE547208FE130\\DPInst_x64.exe",
+      "folder": "C:\\Program Files\\DIFX\\D29FE547208FE130",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "drivers",
+      "main_exe": "C:\\Program Files (x86)\\Common Files\\Steam\\drivers.exe",
+      "folder": "C:\\Program Files (x86)\\Common Files\\Steam",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files (x86)\\Common Files\\Steam\\secure_desktop_capture.exe",
+        "C:\\Program Files (x86)\\Common Files\\Steam\\SteamService.exe",
+        "C:\\Program Files (x86)\\Common Files\\Steam\\steamxboxutil64.exe"
+      ]
+    },
+    {
+      "app_name": "drivers",
+      "main_exe": "C:\\Program Files (x86)\\Steam\\bin\\drivers.exe",
+      "folder": "C:\\Program Files (x86)\\Steam\\bin",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files (x86)\\Steam\\bin\\fossilize-replay.exe",
+        "C:\\Program Files (x86)\\Steam\\bin\\fossilize-replay64.exe",
+        "C:\\Program Files (x86)\\Steam\\bin\\gldriverquery64.exe",
+        "C:\\Program Files (x86)\\Steam\\bin\\secure_desktop_capture.exe",
+        "C:\\Program Files (x86)\\Steam\\bin\\steamservice.exe",
+        "C:\\Program Files (x86)\\Steam\\bin\\steamxboxutil.exe",
+        "C:\\Program Files (x86)\\Steam\\bin\\steamxboxutil64.exe",
+        "C:\\Program Files (x86)\\Steam\\bin\\steam_monitor.exe",
+        "C:\\Program Files (x86)\\Steam\\bin\\vulkandriverquery.exe",
+        "C:\\Program Files (x86)\\Steam\\bin\\vulkandriverquery64.exe",
+        "C:\\Program Files (x86)\\Steam\\bin\\x64launcher.exe",
+        "C:\\Program Files (x86)\\Steam\\bin\\x86launcher.exe"
+      ]
+    },
+    {
+      "app_name": "DumpTimeline",
+      "main_exe": "C:\\Program Files\\NVIDIA Corporation\\Nsight Systems 2024.6.2\\host-windows-x64\\DumpTimeline.exe",
+      "folder": "C:\\Program Files\\NVIDIA Corporation\\Nsight Systems 2024.6.2\\host-windows-x64",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files\\NVIDIA Corporation\\Nsight Systems 2024.6.2\\host-windows-x64\\CrashReporter.exe",
+        "C:\\Program Files\\NVIDIA Corporation\\Nsight Systems 2024.6.2\\host-windows-x64\\ImportNvtxt.exe",
+        "C:\\Program Files\\NVIDIA Corporation\\Nsight Systems 2024.6.2\\host-windows-x64\\nsys-ui.exe",
+        "C:\\Program Files\\NVIDIA Corporation\\Nsight Systems 2024.6.2\\host-windows-x64\\QdstrmImporter.exe",
+        "C:\\Program Files\\NVIDIA Corporation\\Nsight Systems 2024.6.2\\host-windows-x64\\QtWebEngineProcess.exe",
+        "C:\\Program Files\\NVIDIA Corporation\\Nsight Systems 2024.6.2\\host-windows-x64\\ResolveSymbols.exe",
+        "C:\\Program Files\\NVIDIA Corporation\\Nsight Systems 2024.6.2\\host-windows-x64\\sqlite3.exe"
+      ]
+    },
+    {
+      "app_name": "DW20",
+      "main_exe": "C:\\Program Files\\Microsoft Office\\root\\vfs\\ProgramFilesCommonX64\\Microsoft Shared\\DW\\DW20.EXE",
+      "folder": "C:\\Program Files\\Microsoft Office\\root\\vfs\\ProgramFilesCommonX64\\Microsoft Shared\\DW",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "dxc",
+      "main_exe": "C:\\Program Files (x86)\\Windows Kits\\10\\Redist\\D3D\\arm64\\dxc.exe",
+      "folder": "C:\\Program Files (x86)\\Windows Kits\\10\\Redist\\D3D\\arm64",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "dxc",
+      "main_exe": "C:\\Program Files (x86)\\Windows Kits\\10\\Redist\\D3D\\x64\\dxc.exe",
+      "folder": "C:\\Program Files (x86)\\Windows Kits\\10\\Redist\\D3D\\x64",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "dxc",
+      "main_exe": "C:\\Program Files (x86)\\Windows Kits\\10\\Redist\\D3D\\x86\\dxc.exe",
+      "folder": "C:\\Program Files (x86)\\Windows Kits\\10\\Redist\\D3D\\x86",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "DXSETUP",
+      "main_exe": "C:\\Program Files (x86)\\Epic Games\\DirectXRedist\\DXSETUP.exe",
+      "folder": "C:\\Program Files (x86)\\Epic Games\\DirectXRedist",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "EasyAntiCheat",
+      "main_exe": "C:\\Program Files (x86)\\EasyAntiCheat\\EasyAntiCheat.exe",
+      "folder": "C:\\Program Files (x86)\\EasyAntiCheat",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "EasyAntiCheat_EOS",
+      "main_exe": "C:\\Program Files (x86)\\EasyAntiCheat_EOS\\EasyAntiCheat_EOS.exe",
+      "folder": "C:\\Program Files (x86)\\EasyAntiCheat_EOS",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "edgewallpaper32",
+      "main_exe": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\wallpaper_engine\\bin\\edgewallpaper32.exe",
+      "folder": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\wallpaper_engine\\bin",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files (x86)\\Steam\\steamapps\\common\\wallpaper_engine\\bin\\applicationwallpaperinject32.exe",
+        "C:\\Program Files (x86)\\Steam\\steamapps\\common\\wallpaper_engine\\bin\\applicationwallpaperinject64.exe",
+        "C:\\Program Files (x86)\\Steam\\steamapps\\common\\wallpaper_engine\\bin\\apputil32.exe",
+        "C:\\Program Files (x86)\\Steam\\steamapps\\common\\wallpaper_engine\\bin\\diagnostics32.exe",
+        "C:\\Program Files (x86)\\Steam\\steamapps\\common\\wallpaper_engine\\bin\\diagnostics64.exe",
+        "C:\\Program Files (x86)\\Steam\\steamapps\\common\\wallpaper_engine\\bin\\resourcecompiler.exe",
+        "C:\\Program Files (x86)\\Steam\\steamapps\\common\\wallpaper_engine\\bin\\resourcecompiler32.exe",
+        "C:\\Program Files (x86)\\Steam\\steamapps\\common\\wallpaper_engine\\bin\\resourcecompiler64.exe",
+        "C:\\Program Files (x86)\\Steam\\steamapps\\common\\wallpaper_engine\\bin\\steamredownloadfixer32.exe",
+        "C:\\Program Files (x86)\\Steam\\steamapps\\common\\wallpaper_engine\\bin\\ui32.exe",
+        "C:\\Program Files (x86)\\Steam\\steamapps\\common\\wallpaper_engine\\bin\\wallpaperservice32.exe",
+        "C:\\Program Files (x86)\\Steam\\steamapps\\common\\wallpaper_engine\\bin\\webwallpaper32.exe",
+        "C:\\Program Files (x86)\\Steam\\steamapps\\common\\wallpaper_engine\\bin\\winrtutil32.exe",
+        "C:\\Program Files (x86)\\Steam\\steamapps\\common\\wallpaper_engine\\bin\\winrtutil64.exe"
+      ]
+    },
+    {
+      "app_name": "edgewallpaper32",
+      "main_exe": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\wallpaper_engine\\distribution\\bin\\edgewallpaper32.exe",
+      "folder": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\wallpaper_engine\\distribution\\bin",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files (x86)\\Steam\\steamapps\\common\\wallpaper_engine\\distribution\\bin\\applicationwallpaperinject32.exe",
+        "C:\\Program Files (x86)\\Steam\\steamapps\\common\\wallpaper_engine\\distribution\\bin\\applicationwallpaperinject64.exe",
+        "C:\\Program Files (x86)\\Steam\\steamapps\\common\\wallpaper_engine\\distribution\\bin\\apputil32.exe",
+        "C:\\Program Files (x86)\\Steam\\steamapps\\common\\wallpaper_engine\\distribution\\bin\\diagnostics32.exe",
+        "C:\\Program Files (x86)\\Steam\\steamapps\\common\\wallpaper_engine\\distribution\\bin\\diagnostics64.exe",
+        "C:\\Program Files (x86)\\Steam\\steamapps\\common\\wallpaper_engine\\distribution\\bin\\resourcecompiler32.exe",
+        "C:\\Program Files (x86)\\Steam\\steamapps\\common\\wallpaper_engine\\distribution\\bin\\resourcecompiler64.exe",
+        "C:\\Program Files (x86)\\Steam\\steamapps\\common\\wallpaper_engine\\distribution\\bin\\steamredownloadfixer32.exe",
+        "C:\\Program Files (x86)\\Steam\\steamapps\\common\\wallpaper_engine\\distribution\\bin\\ui32.exe",
+        "C:\\Program Files (x86)\\Steam\\steamapps\\common\\wallpaper_engine\\distribution\\bin\\wallpaperservice32.exe",
+        "C:\\Program Files (x86)\\Steam\\steamapps\\common\\wallpaper_engine\\distribution\\bin\\webwallpaper32.exe",
+        "C:\\Program Files (x86)\\Steam\\steamapps\\common\\wallpaper_engine\\distribution\\bin\\winrtutil32.exe",
+        "C:\\Program Files (x86)\\Steam\\steamapps\\common\\wallpaper_engine\\distribution\\bin\\winrtutil64.exe"
+      ]
+    },
+    {
+      "app_name": "edit-git-bash",
+      "main_exe": "C:\\Program Files\\Git\\mingw64\\share\\git\\edit-git-bash.exe",
+      "folder": "C:\\Program Files\\Git\\mingw64\\share\\git",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "elevator",
+      "main_exe": "C:\\Program Files\\Android\\Android Studio\\bin\\elevator.exe",
+      "folder": "C:\\Program Files\\Android\\Android Studio\\bin",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files\\Android\\Android Studio\\bin\\fsnotifier.exe",
+        "C:\\Program Files\\Android\\Android Studio\\bin\\launcher.exe",
+        "C:\\Program Files\\Android\\Android Studio\\bin\\profiler.exe",
+        "C:\\Program Files\\Android\\Android Studio\\bin\\restarter.exe",
+        "C:\\Program Files\\Android\\Android Studio\\bin\\runnerw.exe",
+        "C:\\Program Files\\Android\\Android Studio\\bin\\studio64.exe",
+        "C:\\Program Files\\Android\\Android Studio\\bin\\WinProcessListHelper.exe"
+      ]
+    },
+    {
+      "app_name": "EOSBootStrapper",
+      "main_exe": "C:\\Program Files (x86)\\Epic Games\\Launcher\\Portal\\Extras\\EOSBootStrapper\\EOSBootStrapper.exe",
+      "folder": "C:\\Program Files (x86)\\Epic Games\\Launcher\\Portal\\Extras\\EOSBootStrapper",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "EOSOverlayRenderer-Win32-Shipping",
+      "main_exe": "C:\\Program Files (x86)\\Epic Games\\Launcher\\Portal\\Extras\\Overlay\\EOSOverlayRenderer-Win32-Shipping.exe",
+      "folder": "C:\\Program Files (x86)\\Epic Games\\Launcher\\Portal\\Extras\\Overlay",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files (x86)\\Epic Games\\Launcher\\Portal\\Extras\\Overlay\\EOSOverlayRenderer-Win64-Shipping.exe"
+      ]
+    },
+    {
+      "app_name": "EpicGamesLauncher",
+      "main_exe": "C:\\Program Files (x86)\\Epic Games\\Launcher\\Engine\\Binaries\\Win32\\EpicGamesLauncher.exe",
+      "folder": "C:\\Program Files (x86)\\Epic Games\\Launcher\\Engine\\Binaries\\Win32",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files (x86)\\Epic Games\\Launcher\\Engine\\Binaries\\Win32\\CrashReportClient.exe"
+      ]
+    },
+    {
+      "app_name": "EpicGamesLauncher",
+      "main_exe": "C:\\Program Files (x86)\\Epic Games\\Launcher\\Engine\\Binaries\\Win64\\EpicGamesLauncher.exe",
+      "folder": "C:\\Program Files (x86)\\Epic Games\\Launcher\\Engine\\Binaries\\Win64",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files (x86)\\Epic Games\\Launcher\\Engine\\Binaries\\Win64\\CrashReportClient.exe",
+        "C:\\Program Files (x86)\\Epic Games\\Launcher\\Engine\\Binaries\\Win64\\EpicWebHelper.exe",
+        "C:\\Program Files (x86)\\Epic Games\\Launcher\\Engine\\Binaries\\Win64\\UnrealEngineLauncher.exe",
+        "C:\\Program Files (x86)\\Epic Games\\Launcher\\Engine\\Binaries\\Win64\\UnrealVersionSelector.exe"
+      ]
+    },
+    {
+      "app_name": "EpicGamesLauncher",
+      "main_exe": "C:\\Program Files (x86)\\Epic Games\\Launcher\\Portal\\Binaries\\Win32\\EpicGamesLauncher.exe",
+      "folder": "C:\\Program Files (x86)\\Epic Games\\Launcher\\Portal\\Binaries\\Win32",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files (x86)\\Epic Games\\Launcher\\Portal\\Binaries\\Win32\\EpicGamesUpdater.exe"
+      ]
+    },
+    {
+      "app_name": "EpicGamesLauncher",
+      "main_exe": "C:\\Program Files (x86)\\Epic Games\\Launcher\\Portal\\Binaries\\Win64\\EpicGamesLauncher.exe",
+      "folder": "C:\\Program Files (x86)\\Epic Games\\Launcher\\Portal\\Binaries\\Win64",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files (x86)\\Epic Games\\Launcher\\Portal\\Binaries\\Win64\\EpicGamesUpdater.exe"
+      ]
+    },
+    {
+      "app_name": "EpicOnlineServices",
+      "main_exe": "C:\\Program Files (x86)\\Epic Games\\Epic Online Services\\EpicOnlineServices.exe",
+      "folder": "C:\\Program Files (x86)\\Epic Games\\Epic Online Services",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files (x86)\\Epic Games\\Epic Online Services\\EpicOnlineServicesInstallHelper.exe",
+        "C:\\Program Files (x86)\\Epic Games\\Epic Online Services\\EpicOnlineServicesUIHelper.exe",
+        "C:\\Program Files (x86)\\Epic Games\\Epic Online Services\\EpicOnlineServicesUserHelper.exe"
+      ]
+    },
+    {
+      "app_name": "EpicOnlineServicesHost",
+      "main_exe": "C:\\Program Files (x86)\\Epic Games\\Epic Online Services\\service\\EpicOnlineServicesHost.exe",
+      "folder": "C:\\Program Files (x86)\\Epic Games\\Epic Online Services\\service",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "EpicOnlineServicesInstaller",
+      "main_exe": "C:\\Program Files (x86)\\Epic Games\\Launcher\\Portal\\Extras\\EOS\\EpicOnlineServicesInstaller.exe",
+      "folder": "C:\\Program Files (x86)\\Epic Games\\Launcher\\Portal\\Extras\\EOS",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "errlook",
+      "main_exe": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\Tools\\errlook.exe",
+      "folder": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\Tools",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\Tools\\spyxx.exe",
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\Tools\\spyxx_amd64.exe"
+      ]
+    },
+    {
+      "app_name": "esrv",
+      "main_exe": "C:\\Program Files\\Intel\\SUR\\QUEENCREEK\\x64\\esrv.exe",
+      "folder": "C:\\Program Files\\Intel\\SUR\\QUEENCREEK\\x64",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files\\Intel\\SUR\\QUEENCREEK\\x64\\crashlog_extractor.exe",
+        "C:\\Program Files\\Intel\\SUR\\QUEENCREEK\\x64\\esrv_svc.exe",
+        "C:\\Program Files\\Intel\\SUR\\QUEENCREEK\\x64\\task.exe"
+      ]
+    },
+    {
+      "app_name": "EXCEL",
+      "main_exe": "C:\\Program Files\\Microsoft Office\\root\\Office16\\EXCEL.EXE",
+      "folder": "C:\\Program Files\\Microsoft Office\\root\\Office16",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files\\Microsoft Office\\root\\Office16\\ACCICONS.EXE",
+        "C:\\Program Files\\Microsoft Office\\root\\Office16\\AppSharingHookController64.exe",
+        "C:\\Program Files\\Microsoft Office\\root\\Office16\\CLVIEW.EXE",
+        "C:\\Program Files\\Microsoft Office\\root\\Office16\\CNFNOT32.EXE",
+        "C:\\Program Files\\Microsoft Office\\root\\Office16\\excelcnv.exe",
+        "C:\\Program Files\\Microsoft Office\\root\\Office16\\GRAPH.EXE",
+        "C:\\Program Files\\Microsoft Office\\root\\Office16\\lync.exe",
+        "C:\\Program Files\\Microsoft Office\\root\\Office16\\lync99.exe",
+        "C:\\Program Files\\Microsoft Office\\root\\Office16\\lynchtmlconv.exe",
+        "C:\\Program Files\\Microsoft Office\\root\\Office16\\misc.exe",
+        "C:\\Program Files\\Microsoft Office\\root\\Office16\\MSACCESS.EXE",
+        "C:\\Program Files\\Microsoft Office\\root\\Office16\\msoadfsb.exe",
+        "C:\\Program Files\\Microsoft Office\\root\\Office16\\msoasb.exe",
+        "C:\\Program Files\\Microsoft Office\\root\\Office16\\msoev.exe",
+        "C:\\Program Files\\Microsoft Office\\root\\Office16\\MSOHTMED.EXE",
+        "C:\\Program Files\\Microsoft Office\\root\\Office16\\MSOSREC.EXE",
+        "C:\\Program Files\\Microsoft Office\\root\\Office16\\MSPUB.EXE",
+        "C:\\Program Files\\Microsoft Office\\root\\Office16\\MSQRY32.EXE",
+        "C:\\Program Files\\Microsoft Office\\root\\Office16\\NAMECONTROLSERVER.EXE",
+        "C:\\Program Files\\Microsoft Office\\root\\Office16\\OcPubMgr.exe",
+        "C:\\Program Files\\Microsoft Office\\root\\Office16\\officeappguardwin32.exe",
+        "C:\\Program Files\\Microsoft Office\\root\\Office16\\OfficeScrBroker.exe",
+        "C:\\Program Files\\Microsoft Office\\root\\Office16\\OfficeScrSanBroker.exe",
+        "C:\\Program Files\\Microsoft Office\\root\\Office16\\OLCFG.EXE",
+        "C:\\Program Files\\Microsoft Office\\root\\Office16\\ONENOTE.EXE",
+        "C:\\Program Files\\Microsoft Office\\root\\Office16\\ONENOTEM.EXE",
+        "C:\\Program Files\\Microsoft Office\\root\\Office16\\ORGCHART.EXE",
+        "C:\\Program Files\\Microsoft Office\\root\\Office16\\OSPPREARM.EXE",
+        "C:\\Program Files\\Microsoft Office\\root\\Office16\\OUTLOOK.EXE",
+        "C:\\Program Files\\Microsoft Office\\root\\Office16\\PDFREFLOW.EXE",
+        "C:\\Program Files\\Microsoft Office\\root\\Office16\\PerfBoost.exe",
+        "C:\\Program Files\\Microsoft Office\\root\\Office16\\POWERPNT.EXE",
+        "C:\\Program Files\\Microsoft Office\\root\\Office16\\PPTICO.EXE",
+        "C:\\Program Files\\Microsoft Office\\root\\Office16\\protocolhandler.exe",
+        "C:\\Program Files\\Microsoft Office\\root\\Office16\\SCANPST.EXE",
+        "C:\\Program Files\\Microsoft Office\\root\\Office16\\SDXHelper.exe",
+        "C:\\Program Files\\Microsoft Office\\root\\Office16\\SELFCERT.EXE",
+        "C:\\Program Files\\Microsoft Office\\root\\Office16\\SETLANG.EXE",
+        "C:\\Program Files\\Microsoft Office\\root\\Office16\\UcMapi.exe",
+        "C:\\Program Files\\Microsoft Office\\root\\Office16\\VPREVIEW.EXE",
+        "C:\\Program Files\\Microsoft Office\\root\\Office16\\WINWORD.EXE",
+        "C:\\Program Files\\Microsoft Office\\root\\Office16\\WORDICON.EXE",
+        "C:\\Program Files\\Microsoft Office\\root\\Office16\\XLICONS.EXE"
+      ]
+    },
+    {
+      "app_name": "ExtExport",
+      "main_exe": "C:\\Program Files\\Internet Explorer\\ExtExport.exe",
+      "folder": "C:\\Program Files\\Internet Explorer",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files\\Internet Explorer\\iediagcmd.exe",
+        "C:\\Program Files\\Internet Explorer\\ieinstal.exe",
+        "C:\\Program Files\\Internet Explorer\\ielowutil.exe",
+        "C:\\Program Files\\Internet Explorer\\iexplore.exe"
+      ]
+    },
+    {
+      "app_name": "FileCoAuth",
+      "main_exe": "C:\\Program Files\\Microsoft OneDrive\\25.137.0715.0001\\FileCoAuth.exe",
+      "folder": "C:\\Program Files\\Microsoft OneDrive\\25.137.0715.0001",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files\\Microsoft OneDrive\\25.137.0715.0001\\FileSyncConfig.exe",
+        "C:\\Program Files\\Microsoft OneDrive\\25.137.0715.0001\\FileSyncHelper.exe",
+        "C:\\Program Files\\Microsoft OneDrive\\25.137.0715.0001\\Microsoft.SharePoint.exe",
+        "C:\\Program Files\\Microsoft OneDrive\\25.137.0715.0001\\OneDriveFileLauncher.exe",
+        "C:\\Program Files\\Microsoft OneDrive\\25.137.0715.0001\\OneDriveLauncher.exe",
+        "C:\\Program Files\\Microsoft OneDrive\\25.137.0715.0001\\OneDrivePatcher.exe",
+        "C:\\Program Files\\Microsoft OneDrive\\25.137.0715.0001\\OneDriveSetup.exe",
+        "C:\\Program Files\\Microsoft OneDrive\\25.137.0715.0001\\OneDriveUpdaterService.exe"
+      ]
+    },
+    {
+      "app_name": "firefox",
+      "main_exe": "C:\\Program Files\\Mozilla Firefox\\firefox.exe",
+      "folder": "C:\\Program Files\\Mozilla Firefox",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files\\Mozilla Firefox\\crashhelper.exe",
+        "C:\\Program Files\\Mozilla Firefox\\crashreporter.exe",
+        "C:\\Program Files\\Mozilla Firefox\\maintenanceservice.exe",
+        "C:\\Program Files\\Mozilla Firefox\\maintenanceservice_installer.exe",
+        "C:\\Program Files\\Mozilla Firefox\\nmhproxy.exe",
+        "C:\\Program Files\\Mozilla Firefox\\pingsender.exe",
+        "C:\\Program Files\\Mozilla Firefox\\plugin-container.exe",
+        "C:\\Program Files\\Mozilla Firefox\\private_browsing.exe",
+        "C:\\Program Files\\Mozilla Firefox\\updater.exe"
+      ]
+    },
+    {
+      "app_name": "FvContainer",
+      "main_exe": "C:\\Program Files\\NVIDIA Corporation\\FrameViewSDK\\FvContainer\\FvContainer.exe",
+      "folder": "C:\\Program Files\\NVIDIA Corporation\\FrameViewSDK\\FvContainer",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files\\NVIDIA Corporation\\FrameViewSDK\\FvContainer\\FvContainer.System.exe"
+      ]
+    },
+    {
+      "app_name": "FvSDKTestClient",
+      "main_exe": "C:\\Program Files\\NVIDIA Corporation\\FrameViewSDK\\SDK\\FvSDKTestClient.exe",
+      "folder": "C:\\Program Files\\NVIDIA Corporation\\FrameViewSDK\\SDK",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files\\NVIDIA Corporation\\FrameViewSDK\\SDK\\FvSDKTestClient_Public.exe"
+      ]
+    },
+    {
+      "app_name": "FxCopCmd",
+      "main_exe": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Team Tools\\Static Analysis Tools\\FxCop\\FxCopCmd.exe",
+      "folder": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Team Tools\\Static Analysis Tools\\FxCop",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "gameoverlayui",
+      "main_exe": "C:\\Program Files (x86)\\Steam\\gameoverlayui.exe",
+      "folder": "C:\\Program Files (x86)\\Steam",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files (x86)\\Steam\\gameoverlayui64.exe",
+        "C:\\Program Files (x86)\\Steam\\steam.exe",
+        "C:\\Program Files (x86)\\Steam\\steamerrorreporter.exe",
+        "C:\\Program Files (x86)\\Steam\\steamerrorreporter64.exe",
+        "C:\\Program Files (x86)\\Steam\\steamsysinfo.exe",
+        "C:\\Program Files (x86)\\Steam\\streaming_client.exe",
+        "C:\\Program Files (x86)\\Steam\\uninstall.exe",
+        "C:\\Program Files (x86)\\Steam\\WriteMiniDump.exe"
+      ]
+    },
+    {
+      "app_name": "get-graphics-offsets32",
+      "main_exe": "C:\\Program Files\\obs-studio\\data\\obs-plugins\\win-capture\\get-graphics-offsets32.exe",
+      "folder": "C:\\Program Files\\obs-studio\\data\\obs-plugins\\win-capture",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files\\obs-studio\\data\\obs-plugins\\win-capture\\get-graphics-offsets64.exe",
+        "C:\\Program Files\\obs-studio\\data\\obs-plugins\\win-capture\\inject-helper32.exe",
+        "C:\\Program Files\\obs-studio\\data\\obs-plugins\\win-capture\\inject-helper64.exe"
+      ]
+    },
+    {
+      "app_name": "getprocaddr32",
+      "main_exe": "C:\\Program Files\\Git\\usr\\libexec\\getprocaddr32.exe",
+      "folder": "C:\\Program Files\\Git\\usr\\libexec",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files\\Git\\usr\\libexec\\getprocaddr64.exe"
+      ]
+    },
+    {
+      "app_name": "git-bash",
+      "main_exe": "C:\\Program Files\\Git\\git-bash.exe",
+      "folder": "C:\\Program Files\\Git",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files\\Git\\git-cmd.exe",
+        "C:\\Program Files\\Git\\unins000.exe"
+      ]
+    },
+    {
+      "app_name": "git-credential-wincred",
+      "main_exe": "C:\\Program Files\\Git\\mingw64\\libexec\\git-core\\git-credential-wincred.exe",
+      "folder": "C:\\Program Files\\Git\\mingw64\\libexec\\git-core",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files\\Git\\mingw64\\libexec\\git-core\\git-daemon.exe",
+        "C:\\Program Files\\Git\\mingw64\\libexec\\git-core\\git-http-backend.exe",
+        "C:\\Program Files\\Git\\mingw64\\libexec\\git-core\\git-http-fetch.exe",
+        "C:\\Program Files\\Git\\mingw64\\libexec\\git-core\\git-http-push.exe",
+        "C:\\Program Files\\Git\\mingw64\\libexec\\git-core\\git-imap-send.exe",
+        "C:\\Program Files\\Git\\mingw64\\libexec\\git-core\\git-remote-ftp.exe",
+        "C:\\Program Files\\Git\\mingw64\\libexec\\git-core\\git-remote-ftps.exe",
+        "C:\\Program Files\\Git\\mingw64\\libexec\\git-core\\git-remote-http.exe",
+        "C:\\Program Files\\Git\\mingw64\\libexec\\git-core\\git-remote-https.exe",
+        "C:\\Program Files\\Git\\mingw64\\libexec\\git-core\\git-sh-i18n--envsubst.exe",
+        "C:\\Program Files\\Git\\mingw64\\libexec\\git-core\\git.exe",
+        "C:\\Program Files\\Git\\mingw64\\libexec\\git-core\\scalar.exe"
+      ]
+    },
+    {
+      "app_name": "git-gui",
+      "main_exe": "C:\\Program Files\\Git\\cmd\\git-gui.exe",
+      "folder": "C:\\Program Files\\Git\\cmd",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files\\Git\\cmd\\gitk.exe"
+      ]
+    },
+    {
+      "app_name": "gpg-auth",
+      "main_exe": "C:\\Program Files\\Git\\usr\\lib\\gnupg\\gpg-auth.exe",
+      "folder": "C:\\Program Files\\Git\\usr\\lib\\gnupg",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files\\Git\\usr\\lib\\gnupg\\gpg-check-pattern.exe",
+        "C:\\Program Files\\Git\\usr\\lib\\gnupg\\gpg-pair-tool.exe",
+        "C:\\Program Files\\Git\\usr\\lib\\gnupg\\gpg-preset-passphrase.exe",
+        "C:\\Program Files\\Git\\usr\\lib\\gnupg\\gpg-protect-tool.exe",
+        "C:\\Program Files\\Git\\usr\\lib\\gnupg\\keyboxd.exe",
+        "C:\\Program Files\\Git\\usr\\lib\\gnupg\\scdaemon.exe"
+      ]
+    },
+    {
+      "app_name": "HWiNFO64",
+      "main_exe": "C:\\Program Files\\HWiNFO64\\HWiNFO64.EXE",
+      "folder": "C:\\Program Files\\HWiNFO64",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files\\HWiNFO64\\unins000.exe",
+        "C:\\Program Files\\HWiNFO64\\unins001.exe"
+      ]
+    },
+    {
+      "app_name": "ibd2sdi",
+      "main_exe": "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin\\ibd2sdi.exe",
+      "folder": "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin\\innochecksum.exe",
+        "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin\\lz4_decompress.exe",
+        "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin\\myisamchk.exe",
+        "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin\\myisamlog.exe",
+        "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin\\myisampack.exe",
+        "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin\\myisam_ftdump.exe",
+        "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin\\mysql.exe",
+        "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin\\mysqladmin.exe",
+        "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin\\mysqlbinlog.exe",
+        "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin\\mysqlcheck.exe",
+        "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin\\mysqld.exe",
+        "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin\\mysqldump.exe",
+        "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin\\mysqlimport.exe",
+        "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin\\mysqlpump.exe",
+        "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin\\mysqlrouter.exe",
+        "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin\\mysqlrouter_keyring.exe",
+        "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin\\mysqlrouter_passwd.exe",
+        "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin\\mysqlrouter_plugin_info.exe",
+        "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin\\mysqlshow.exe",
+        "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin\\mysqlslap.exe",
+        "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin\\mysql_config_editor.exe",
+        "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin\\mysql_migrate_keyring.exe",
+        "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin\\mysql_secure_installation.exe",
+        "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin\\mysql_ssl_rsa_setup.exe",
+        "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin\\mysql_tzinfo_to_sql.exe",
+        "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin\\mysql_upgrade.exe",
+        "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin\\my_print_defaults.exe",
+        "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin\\perror.exe",
+        "C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin\\zlib_decompress.exe"
+      ]
+    },
+    {
+      "app_name": "ie_to_edge_stub",
+      "main_exe": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\139.0.3405.86\\BHO\\ie_to_edge_stub.exe",
+      "folder": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\139.0.3405.86\\BHO",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "ie_to_edge_stub",
+      "main_exe": "C:\\Program Files (x86)\\Microsoft\\EdgeCore\\138.0.3351.109\\BHO\\ie_to_edge_stub.exe",
+      "folder": "C:\\Program Files (x86)\\Microsoft\\EdgeCore\\138.0.3351.109\\BHO",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "ie_to_edge_stub",
+      "main_exe": "C:\\Program Files (x86)\\Microsoft\\EdgeCore\\138.0.3351.121\\BHO\\ie_to_edge_stub.exe",
+      "folder": "C:\\Program Files (x86)\\Microsoft\\EdgeCore\\138.0.3351.121\\BHO",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "ie_to_edge_stub",
+      "main_exe": "C:\\Program Files (x86)\\Microsoft\\EdgeCore\\139.0.3405.86\\BHO\\ie_to_edge_stub.exe",
+      "folder": "C:\\Program Files (x86)\\Microsoft\\EdgeCore\\139.0.3405.86\\BHO",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "ie_to_edge_stub",
+      "main_exe": "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\138.0.3351.109\\BHO\\ie_to_edge_stub.exe",
+      "folder": "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\138.0.3351.109\\BHO",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "ie_to_edge_stub",
+      "main_exe": "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\138.0.3351.121\\BHO\\ie_to_edge_stub.exe",
+      "folder": "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\138.0.3351.121\\BHO",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "ieinstal",
+      "main_exe": "C:\\Program Files (x86)\\Internet Explorer\\ieinstal.exe",
+      "folder": "C:\\Program Files (x86)\\Internet Explorer",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files (x86)\\Internet Explorer\\ielowutil.exe",
+        "C:\\Program Files (x86)\\Internet Explorer\\iexplore.exe"
+      ]
+    },
+    {
+      "app_name": "ImagingDevices",
+      "main_exe": "C:\\Program Files (x86)\\Windows Photo Viewer\\ImagingDevices.exe",
+      "folder": "C:\\Program Files (x86)\\Windows Photo Viewer",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "ImagingDevices",
+      "main_exe": "C:\\Program Files\\Windows Photo Viewer\\ImagingDevices.exe",
+      "folder": "C:\\Program Files\\Windows Photo Viewer",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "ImportNvtxt",
+      "main_exe": "C:\\Program Files\\NVIDIA Corporation\\Nsight Systems 2022.4.2\\host-windows-x64\\ImportNvtxt.exe",
+      "folder": "C:\\Program Files\\NVIDIA Corporation\\Nsight Systems 2022.4.2\\host-windows-x64",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files\\NVIDIA Corporation\\Nsight Systems 2022.4.2\\host-windows-x64\\CrashReporter.exe",
+        "C:\\Program Files\\NVIDIA Corporation\\Nsight Systems 2022.4.2\\host-windows-x64\\nsys-ui.exe",
+        "C:\\Program Files\\NVIDIA Corporation\\Nsight Systems 2022.4.2\\host-windows-x64\\QdstrmImporter.exe",
+        "C:\\Program Files\\NVIDIA Corporation\\Nsight Systems 2022.4.2\\host-windows-x64\\QtWebEngineProcess.exe",
+        "C:\\Program Files\\NVIDIA Corporation\\Nsight Systems 2022.4.2\\host-windows-x64\\ResolveSymbols.exe",
+        "C:\\Program Files\\NVIDIA Corporation\\Nsight Systems 2022.4.2\\host-windows-x64\\sqlite3.exe"
+      ]
+    },
+    {
+      "app_name": "IntegratedOffice",
+      "main_exe": "C:\\Program Files\\Microsoft Office 15\\ClientX64\\IntegratedOffice.exe",
+      "folder": "C:\\Program Files\\Microsoft Office 15\\ClientX64",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files\\Microsoft Office 15\\ClientX64\\OfficeClickToRun.exe"
+      ]
+    },
+    {
+      "app_name": "Integrator",
+      "main_exe": "C:\\Program Files\\Microsoft Office\\root\\Integration\\Integrator.exe",
+      "folder": "C:\\Program Files\\Microsoft Office\\root\\Integration",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "InteractiveHost64",
+      "main_exe": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\VBCSharp\\LanguageServices\\InteractiveHost\\Core\\InteractiveHost64.exe",
+      "folder": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\VBCSharp\\LanguageServices\\InteractiveHost\\Core",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "isense_model_extractor",
+      "main_exe": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\VC\\vcpackages\\isense_model_extractor.exe",
+      "folder": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\VC\\vcpackages",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\VC\\vcpackages\\vcpkgsrv.exe"
+      ]
+    },
+    {
+      "app_name": "jaccessinspector",
+      "main_exe": "C:\\Program Files\\Android\\Android Studio\\jbr\\bin\\jaccessinspector.exe",
+      "folder": "C:\\Program Files\\Android\\Android Studio\\jbr\\bin",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files\\Android\\Android Studio\\jbr\\bin\\jaccesswalker.exe"
+      ]
+    },
+    {
+      "app_name": "java",
+      "main_exe": "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath\\java.exe",
+      "folder": "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath\\javaw.exe",
+        "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath\\javaws.exe"
+      ]
+    },
+    {
+      "app_name": "java",
+      "main_exe": "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath_target_11131328\\java.exe",
+      "folder": "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath_target_11131328",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath_target_11131328\\javaw.exe",
+        "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath_target_11131328\\javaws.exe"
+      ]
+    },
+    {
+      "app_name": "java",
+      "main_exe": "C:\\Program Files\\Java\\jre-1.8\\bin\\java.exe",
+      "folder": "C:\\Program Files\\Java\\jre-1.8\\bin",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files\\Java\\jre-1.8\\bin\\javacpl.exe",
+        "C:\\Program Files\\Java\\jre-1.8\\bin\\javaw.exe",
+        "C:\\Program Files\\Java\\jre-1.8\\bin\\javaws.exe",
+        "C:\\Program Files\\Java\\jre-1.8\\bin\\jp2launcher.exe",
+        "C:\\Program Files\\Java\\jre-1.8\\bin\\ssvagent.exe",
+        "C:\\Program Files\\Java\\jre-1.8\\bin\\unpack200.exe"
+      ]
+    },
+    {
+      "app_name": "java",
+      "main_exe": "C:\\Program Files\\MATLAB\\R2023a\\sys\\java\\jre\\win64\\jre\\bin\\java.exe",
+      "folder": "C:\\Program Files\\MATLAB\\R2023a\\sys\\java\\jre\\win64\\jre\\bin",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files\\MATLAB\\R2023a\\sys\\java\\jre\\win64\\jre\\bin\\javacpl.exe",
+        "C:\\Program Files\\MATLAB\\R2023a\\sys\\java\\jre\\win64\\jre\\bin\\javaw.exe",
+        "C:\\Program Files\\MATLAB\\R2023a\\sys\\java\\jre\\win64\\jre\\bin\\javaws.exe",
+        "C:\\Program Files\\MATLAB\\R2023a\\sys\\java\\jre\\win64\\jre\\bin\\jp2launcher.exe",
+        "C:\\Program Files\\MATLAB\\R2023a\\sys\\java\\jre\\win64\\jre\\bin\\ssvagent.exe",
+        "C:\\Program Files\\MATLAB\\R2023a\\sys\\java\\jre\\win64\\jre\\bin\\unpack200.exe"
+      ]
+    },
+    {
+      "app_name": "launcher",
+      "main_exe": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\wallpaper_engine\\launcher.exe",
+      "folder": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\wallpaper_engine",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files (x86)\\Steam\\steamapps\\common\\wallpaper_engine\\installer.exe",
+        "C:\\Program Files (x86)\\Steam\\steamapps\\common\\wallpaper_engine\\wallpaper32.exe",
+        "C:\\Program Files (x86)\\Steam\\steamapps\\common\\wallpaper_engine\\wallpaper64.exe"
+      ]
+    },
+    {
+      "app_name": "Launcher",
+      "main_exe": "C:\\Program Files\\Rockstar Games\\Launcher\\Launcher.exe",
+      "folder": "C:\\Program Files\\Rockstar Games\\Launcher",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files\\Rockstar Games\\Launcher\\LauncherPatcher.exe",
+        "C:\\Program Files\\Rockstar Games\\Launcher\\RockstarService.exe",
+        "C:\\Program Files\\Rockstar Games\\Launcher\\RockstarSteamHelper.exe",
+        "C:\\Program Files\\Rockstar Games\\Launcher\\uninstall.exe"
+      ]
+    },
+    {
+      "app_name": "LauncherPrereqSetup_x64",
+      "main_exe": "C:\\Program Files (x86)\\Epic Games\\Launcher\\Portal\\Extras\\Redist\\LauncherPrereqSetup_x64.exe",
+      "folder": "C:\\Program Files (x86)\\Epic Games\\Launcher\\Portal\\Extras\\Redist",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "Legion Arena",
+      "main_exe": "C:\\Program Files (x86)\\Lenovo\\Legion Arena\\Legion Arena.exe",
+      "folder": "C:\\Program Files (x86)\\Lenovo\\Legion Arena",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files (x86)\\Lenovo\\Legion Arena\\CatTool.exe",
+        "C:\\Program Files (x86)\\Lenovo\\Legion Arena\\unins000.exe",
+        "C:\\Program Files (x86)\\Lenovo\\Legion Arena\\Uninstall.exe"
+      ]
+    },
+    {
+      "app_name": "LenovoDiagnosticsCLI",
+      "main_exe": "C:\\Program Files (x86)\\Lenovo\\ldiagx64\\LenovoDiagnosticsCLI.exe",
+      "folder": "C:\\Program Files (x86)\\Lenovo\\ldiagx64",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "lghub",
+      "main_exe": "C:\\Program Files\\LGHUB\\lghub.exe",
+      "folder": "C:\\Program Files\\LGHUB",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files\\LGHUB\\lghub_agent.exe",
+        "C:\\Program Files\\LGHUB\\lghub_software_manager.exe",
+        "C:\\Program Files\\LGHUB\\lghub_updater.exe",
+        "C:\\Program Files\\LGHUB\\logi_crashpad_handler.exe"
+      ]
+    },
+    {
+      "app_name": "lghub_system_tray",
+      "main_exe": "C:\\Program Files\\LGHUB\\system_tray\\lghub_system_tray.exe",
+      "folder": "C:\\Program Files\\LGHUB\\system_tray",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files\\LGHUB\\system_tray\\logi_crashpad_handler.exe"
+      ]
+    },
+    {
+      "app_name": "LICLUA",
+      "main_exe": "C:\\Program Files\\Common Files\\microsoft shared\\OFFICE16\\LICLUA.EXE",
+      "folder": "C:\\Program Files\\Common Files\\microsoft shared\\OFFICE16",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "LLDBFrontend",
+      "main_exe": "C:\\Program Files\\Android\\Android Studio\\plugins\\android-ndk\\resources\\lldb\\bin\\LLDBFrontend.exe",
+      "folder": "C:\\Program Files\\Android\\Android Studio\\plugins\\android-ndk\\resources\\lldb\\bin",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files\\Android\\Android Studio\\plugins\\android-ndk\\resources\\lldb\\bin\\llvm-symbolizer.exe",
+        "C:\\Program Files\\Android\\Android Studio\\plugins\\android-ndk\\resources\\lldb\\bin\\minidump_stackwalk.exe",
+        "C:\\Program Files\\Android\\Android Studio\\plugins\\android-ndk\\resources\\lldb\\bin\\x86_64-linux-android-c++filt.exe"
+      ]
+    },
+    {
+      "app_name": "maintenanceservice",
+      "main_exe": "C:\\Program Files (x86)\\Mozilla Maintenance Service\\maintenanceservice.exe",
+      "folder": "C:\\Program Files (x86)\\Mozilla Maintenance Service",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files (x86)\\Mozilla Maintenance Service\\maintenanceservice_tmp.exe",
+        "C:\\Program Files (x86)\\Mozilla Maintenance Service\\Uninstall.exe"
+      ]
+    },
+    {
+      "app_name": "Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost",
+      "main_exe": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\VBCSharp\\LanguageServices\\BuildHost-net472\\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.exe",
+      "folder": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\VBCSharp\\LanguageServices\\BuildHost-net472",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "Microsoft.Mashup.Container.Loader",
+      "main_exe": "C:\\Program Files\\Microsoft Office\\root\\Office16\\ADDINS\\Microsoft Power Query for Excel Integrated\\bin\\Microsoft.Mashup.Container.Loader.exe",
+      "folder": "C:\\Program Files\\Microsoft Office\\root\\Office16\\ADDINS\\Microsoft Power Query for Excel Integrated\\bin",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "Microsoft.VisualStudio.VsWebProtocolSelector",
+      "main_exe": "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\VsWebProtocolSelector\\Microsoft.VisualStudio.VsWebProtocolSelector.exe",
+      "folder": "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\VsWebProtocolSelector",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "MicrosoftEdgeWebview2Setup",
+      "main_exe": "C:\\Program Files (x86)\\Lenovo\\Legion Arena\\Resource\\MicrosoftEdgeWebview2Setup.exe",
+      "folder": "C:\\Program Files (x86)\\Lenovo\\Legion Arena\\Resource",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "MicrosoftEdgeWebview2Setup",
+      "main_exe": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\wallpaper_engine\\thirdparty\\MicrosoftEdgeWebview2Setup.exe",
+      "folder": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\wallpaper_engine\\thirdparty",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "model3dtranscoderwin32",
+      "main_exe": "C:\\Program Files\\Microsoft Office\\root\\vfs\\ProgramFilesCommonX64\\Microsoft Shared\\OFFICE16\\model3dtranscoderwin32.exe",
+      "folder": "C:\\Program Files\\Microsoft Office\\root\\vfs\\ProgramFilesCommonX64\\Microsoft Shared\\OFFICE16",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files\\Microsoft Office\\root\\vfs\\ProgramFilesCommonX64\\Microsoft Shared\\OFFICE16\\FLTLDR.EXE",
+        "C:\\Program Files\\Microsoft Office\\root\\vfs\\ProgramFilesCommonX64\\Microsoft Shared\\OFFICE16\\MSOICONS.EXE",
+        "C:\\Program Files\\Microsoft Office\\root\\vfs\\ProgramFilesCommonX64\\Microsoft Shared\\OFFICE16\\MSOXMLED.EXE",
+        "C:\\Program Files\\Microsoft Office\\root\\vfs\\ProgramFilesCommonX64\\Microsoft Shared\\OFFICE16\\OLicenseHeartbeat.exe",
+        "C:\\Program Files\\Microsoft Office\\root\\vfs\\ProgramFilesCommonX64\\Microsoft Shared\\OFFICE16\\operfmon.exe",
+        "C:\\Program Files\\Microsoft Office\\root\\vfs\\ProgramFilesCommonX64\\Microsoft Shared\\OFFICE16\\opushutil.exe"
+      ]
+    },
+    {
+      "app_name": "MpCmdRun",
+      "main_exe": "C:\\Program Files (x86)\\Windows Defender\\MpCmdRun.exe",
+      "folder": "C:\\Program Files (x86)\\Windows Defender",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "msal.wsl.proxy",
+      "main_exe": "C:\\Program Files\\WSL\\msal.wsl.proxy.exe",
+      "folder": "C:\\Program Files\\WSL",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files\\WSL\\msrdc.exe",
+        "C:\\Program Files\\WSL\\wsl.exe",
+        "C:\\Program Files\\WSL\\wslg.exe",
+        "C:\\Program Files\\WSL\\wslhost.exe",
+        "C:\\Program Files\\WSL\\wslrelay.exe",
+        "C:\\Program Files\\WSL\\wslservice.exe"
+      ]
+    },
+    {
+      "app_name": "MSBuild",
+      "main_exe": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\MSBuild\\Current\\Bin\\MSBuild.exe",
+      "folder": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\MSBuild\\Current\\Bin",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\MSBuild\\Current\\Bin\\MSBuildTaskHost.exe",
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\MSBuild\\Current\\Bin\\Tracker.exe"
+      ]
+    },
+    {
+      "app_name": "MSBuild",
+      "main_exe": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\MSBuild\\Current\\Bin\\amd64\\MSBuild.exe",
+      "folder": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\MSBuild\\Current\\Bin\\amd64",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\MSBuild\\Current\\Bin\\amd64\\MSBuildTaskHost.exe",
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\MSBuild\\Current\\Bin\\amd64\\Tracker.exe"
+      ]
+    },
+    {
+      "app_name": "msdeploy",
+      "main_exe": "C:\\Program Files (x86)\\IIS\\Microsoft Web Deploy V3\\msdeploy.exe",
+      "folder": "C:\\Program Files (x86)\\IIS\\Microsoft Web Deploy V3",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "msdeploy",
+      "main_exe": "C:\\Program Files\\IIS\\Microsoft Web Deploy V3\\msdeploy.exe",
+      "folder": "C:\\Program Files\\IIS\\Microsoft Web Deploy V3",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "msedge",
+      "main_exe": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe",
+      "folder": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge_proxy.exe",
+        "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\pwahelper.exe"
+      ]
+    },
+    {
+      "app_name": "msedge",
+      "main_exe": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\139.0.3405.86\\msedge.exe",
+      "folder": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\139.0.3405.86",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\139.0.3405.86\\cookie_exporter.exe",
+        "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\139.0.3405.86\\elevated_tracing_service.exe",
+        "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\139.0.3405.86\\elevation_service.exe",
+        "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\139.0.3405.86\\identity_helper.exe",
+        "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\139.0.3405.86\\msedgewebview2.exe",
+        "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\139.0.3405.86\\msedge_proxy.exe",
+        "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\139.0.3405.86\\msedge_pwa_launcher.exe",
+        "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\139.0.3405.86\\notification_click_helper.exe",
+        "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\139.0.3405.86\\notification_helper.exe",
+        "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\139.0.3405.86\\pwahelper.exe"
+      ]
+    },
+    {
+      "app_name": "msedge",
+      "main_exe": "C:\\Program Files (x86)\\Microsoft\\EdgeCore\\138.0.3351.109\\msedge.exe",
+      "folder": "C:\\Program Files (x86)\\Microsoft\\EdgeCore\\138.0.3351.109",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files (x86)\\Microsoft\\EdgeCore\\138.0.3351.109\\cookie_exporter.exe",
+        "C:\\Program Files (x86)\\Microsoft\\EdgeCore\\138.0.3351.109\\elevated_tracing_service.exe",
+        "C:\\Program Files (x86)\\Microsoft\\EdgeCore\\138.0.3351.109\\elevation_service.exe",
+        "C:\\Program Files (x86)\\Microsoft\\EdgeCore\\138.0.3351.109\\identity_helper.exe",
+        "C:\\Program Files (x86)\\Microsoft\\EdgeCore\\138.0.3351.109\\msedgewebview2.exe",
+        "C:\\Program Files (x86)\\Microsoft\\EdgeCore\\138.0.3351.109\\msedge_proxy.exe",
+        "C:\\Program Files (x86)\\Microsoft\\EdgeCore\\138.0.3351.109\\msedge_pwa_launcher.exe",
+        "C:\\Program Files (x86)\\Microsoft\\EdgeCore\\138.0.3351.109\\notification_helper.exe",
+        "C:\\Program Files (x86)\\Microsoft\\EdgeCore\\138.0.3351.109\\pwahelper.exe"
+      ]
+    },
+    {
+      "app_name": "msedge",
+      "main_exe": "C:\\Program Files (x86)\\Microsoft\\EdgeCore\\138.0.3351.121\\msedge.exe",
+      "folder": "C:\\Program Files (x86)\\Microsoft\\EdgeCore\\138.0.3351.121",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files (x86)\\Microsoft\\EdgeCore\\138.0.3351.121\\cookie_exporter.exe",
+        "C:\\Program Files (x86)\\Microsoft\\EdgeCore\\138.0.3351.121\\elevated_tracing_service.exe",
+        "C:\\Program Files (x86)\\Microsoft\\EdgeCore\\138.0.3351.121\\elevation_service.exe",
+        "C:\\Program Files (x86)\\Microsoft\\EdgeCore\\138.0.3351.121\\identity_helper.exe",
+        "C:\\Program Files (x86)\\Microsoft\\EdgeCore\\138.0.3351.121\\msedgewebview2.exe",
+        "C:\\Program Files (x86)\\Microsoft\\EdgeCore\\138.0.3351.121\\msedge_proxy.exe",
+        "C:\\Program Files (x86)\\Microsoft\\EdgeCore\\138.0.3351.121\\msedge_pwa_launcher.exe",
+        "C:\\Program Files (x86)\\Microsoft\\EdgeCore\\138.0.3351.121\\notification_helper.exe",
+        "C:\\Program Files (x86)\\Microsoft\\EdgeCore\\138.0.3351.121\\pwahelper.exe"
+      ]
+    },
+    {
+      "app_name": "msedge",
+      "main_exe": "C:\\Program Files (x86)\\Microsoft\\EdgeCore\\139.0.3405.86\\msedge.exe",
+      "folder": "C:\\Program Files (x86)\\Microsoft\\EdgeCore\\139.0.3405.86",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files (x86)\\Microsoft\\EdgeCore\\139.0.3405.86\\cookie_exporter.exe",
+        "C:\\Program Files (x86)\\Microsoft\\EdgeCore\\139.0.3405.86\\elevated_tracing_service.exe",
+        "C:\\Program Files (x86)\\Microsoft\\EdgeCore\\139.0.3405.86\\elevation_service.exe",
+        "C:\\Program Files (x86)\\Microsoft\\EdgeCore\\139.0.3405.86\\identity_helper.exe",
+        "C:\\Program Files (x86)\\Microsoft\\EdgeCore\\139.0.3405.86\\msedgewebview2.exe",
+        "C:\\Program Files (x86)\\Microsoft\\EdgeCore\\139.0.3405.86\\msedge_proxy.exe",
+        "C:\\Program Files (x86)\\Microsoft\\EdgeCore\\139.0.3405.86\\msedge_pwa_launcher.exe",
+        "C:\\Program Files (x86)\\Microsoft\\EdgeCore\\139.0.3405.86\\notification_helper.exe",
+        "C:\\Program Files (x86)\\Microsoft\\EdgeCore\\139.0.3405.86\\pwahelper.exe"
+      ]
+    },
+    {
+      "app_name": "msedge",
+      "main_exe": "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\138.0.3351.109\\msedge.exe",
+      "folder": "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\138.0.3351.109",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\138.0.3351.109\\cookie_exporter.exe",
+        "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\138.0.3351.109\\elevated_tracing_service.exe",
+        "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\138.0.3351.109\\elevation_service.exe",
+        "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\138.0.3351.109\\identity_helper.exe",
+        "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\138.0.3351.109\\msedgewebview2.exe",
+        "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\138.0.3351.109\\msedge_proxy.exe",
+        "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\138.0.3351.109\\msedge_pwa_launcher.exe",
+        "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\138.0.3351.109\\notification_helper.exe",
+        "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\138.0.3351.109\\pwahelper.exe"
+      ]
+    },
+    {
+      "app_name": "msedge",
+      "main_exe": "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\138.0.3351.121\\msedge.exe",
+      "folder": "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\138.0.3351.121",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\138.0.3351.121\\cookie_exporter.exe",
+        "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\138.0.3351.121\\elevated_tracing_service.exe",
+        "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\138.0.3351.121\\elevation_service.exe",
+        "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\138.0.3351.121\\identity_helper.exe",
+        "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\138.0.3351.121\\msedgewebview2.exe",
+        "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\138.0.3351.121\\msedge_proxy.exe",
+        "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\138.0.3351.121\\msedge_pwa_launcher.exe",
+        "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\138.0.3351.121\\notification_helper.exe",
+        "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\138.0.3351.121\\pwahelper.exe"
+      ]
+    },
+    {
+      "app_name": "msinfo32",
+      "main_exe": "C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\MSInfo\\msinfo32.exe",
+      "folder": "C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\MSInfo",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "msinfo32",
+      "main_exe": "C:\\Program Files\\Common Files\\microsoft shared\\MSInfo\\msinfo32.exe",
+      "folder": "C:\\Program Files\\Common Files\\microsoft shared\\MSInfo",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "msvsmon",
+      "main_exe": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\Remote Debugger\\x64\\msvsmon.exe",
+      "folder": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\Remote Debugger\\x64",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "msvsmon",
+      "main_exe": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\Remote Debugger\\x86\\msvsmon.exe",
+      "folder": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\Remote Debugger\\x86",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "mysql-secret-store-windows-credential",
+      "main_exe": "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\mysql-secret-store-windows-credential.exe",
+      "folder": "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\bin\\mysqlsh.exe"
+      ]
+    },
+    {
+      "app_name": "mysqlrouter",
+      "main_exe": "C:\\Program Files\\MySQL\\MySQL Router 8.0\\bin\\mysqlrouter.exe",
+      "folder": "C:\\Program Files\\MySQL\\MySQL Router 8.0\\bin",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files\\MySQL\\MySQL Router 8.0\\bin\\mysqlrouter_keyring.exe",
+        "C:\\Program Files\\MySQL\\MySQL Router 8.0\\bin\\mysqlrouter_passwd.exe",
+        "C:\\Program Files\\MySQL\\MySQL Router 8.0\\bin\\mysqlrouter_plugin_info.exe"
+      ]
+    },
+    {
+      "app_name": "ncu",
+      "main_exe": "C:\\Program Files\\NVIDIA Corporation\\Nsight Compute 2025.1.1\\target\\windows-desktop-win7-x64\\ncu.exe",
+      "folder": "C:\\Program Files\\NVIDIA Corporation\\Nsight Compute 2025.1.1\\target\\windows-desktop-win7-x64",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "ncu-ui",
+      "main_exe": "C:\\Program Files\\NVIDIA Corporation\\Nsight Compute 2025.1.1\\host\\windows-desktop-win7-x64\\ncu-ui.exe",
+      "folder": "C:\\Program Files\\NVIDIA Corporation\\Nsight Compute 2025.1.1\\host\\windows-desktop-win7-x64",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files\\NVIDIA Corporation\\Nsight Compute 2025.1.1\\host\\windows-desktop-win7-x64\\CrashReporter.exe",
+        "C:\\Program Files\\NVIDIA Corporation\\Nsight Compute 2025.1.1\\host\\windows-desktop-win7-x64\\QdstrmImporter.exe",
+        "C:\\Program Files\\NVIDIA Corporation\\Nsight Compute 2025.1.1\\host\\windows-desktop-win7-x64\\QtWebEngineProcess.exe"
+      ]
+    },
+    {
+      "app_name": "ninja",
+      "main_exe": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja\\ninja.exe",
+      "folder": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\CMake\\Ninja",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "node",
+      "main_exe": "C:\\Program Files\\nodejs\\node.exe",
+      "folder": "C:\\Program Files\\nodejs",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "notepad++",
+      "main_exe": "C:\\Program Files\\Notepad++\\notepad++.exe",
+      "folder": "C:\\Program Files\\Notepad++",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files\\Notepad++\\uninstall.exe"
+      ]
+    },
+    {
+      "app_name": "Nsight.CoreDumpLoader",
+      "main_exe": "C:\\Program Files (x86)\\NVIDIA Corporation\\Nsight Visual Studio Edition 2025.1\\Host\\Common\\Nsight.CoreDumpLoader.exe",
+      "folder": "C:\\Program Files (x86)\\NVIDIA Corporation\\Nsight Visual Studio Edition 2025.1\\Host\\Common",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files (x86)\\NVIDIA Corporation\\Nsight Visual Studio Edition 2025.1\\Host\\Common\\CrashReporter.exe"
+      ]
+    },
+    {
+      "app_name": "Nsight.CoreDumpLoader",
+      "main_exe": "C:\\Program Files (x86)\\NVIDIA Corporation\\Nsight Visual Studio Edition 2025.1\\Monitor\\Common\\Nsight.CoreDumpLoader.exe",
+      "folder": "C:\\Program Files (x86)\\NVIDIA Corporation\\Nsight Visual Studio Edition 2025.1\\Monitor\\Common",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files (x86)\\NVIDIA Corporation\\Nsight Visual Studio Edition 2025.1\\Monitor\\Common\\Nsight.Monitor.exe",
+        "C:\\Program Files (x86)\\NVIDIA Corporation\\Nsight Visual Studio Edition 2025.1\\Monitor\\Common\\Nvda.Gpu.DebugTool.exe"
+      ]
+    },
+    {
+      "app_name": "NuGet.Build.Tasks.Console",
+      "main_exe": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\NuGet\\NuGet.Build.Tasks.Console.exe",
+      "folder": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\NuGet",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "nvcontainer",
+      "main_exe": "C:\\Program Files\\NVIDIA Corporation\\NvContainer\\nvcontainer.exe",
+      "folder": "C:\\Program Files\\NVIDIA Corporation\\NvContainer",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "Nvda.Gpu.Configuration.Dump",
+      "main_exe": "C:\\Program Files (x86)\\NVIDIA Corporation\\Nsight Visual Studio Edition 2025.1\\Monitor\\Common\\Injection64\\Nvda.Gpu.Configuration.Dump.exe",
+      "folder": "C:\\Program Files (x86)\\NVIDIA Corporation\\Nsight Visual Studio Edition 2025.1\\Monitor\\Common\\Injection64",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files (x86)\\NVIDIA Corporation\\Nsight Visual Studio Edition 2025.1\\Monitor\\Common\\Injection64\\Nvda.ProcessInfo.exe"
+      ]
+    },
+    {
+      "app_name": "NvDebugAgent",
+      "main_exe": "C:\\Program Files (x86)\\NVIDIA Corporation\\Nsight Visual Studio Edition 2025.1\\Host\\target\\windows\\NvDebugAgent.exe",
+      "folder": "C:\\Program Files (x86)\\NVIDIA Corporation\\Nsight Visual Studio Edition 2025.1\\Host\\target\\windows",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "NvDebugAgent",
+      "main_exe": "C:\\Program Files (x86)\\NVIDIA Corporation\\Nsight Visual Studio Edition 2025.1\\Host64\\target\\windows\\NvDebugAgent.exe",
+      "folder": "C:\\Program Files (x86)\\NVIDIA Corporation\\Nsight Visual Studio Edition 2025.1\\Host64\\target\\windows",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "nvdlisrwrapper",
+      "main_exe": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA app\\NvDLISR\\nvdlisrwrapper.exe",
+      "folder": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA app\\NvDLISR",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "nvfvsdksvc_x64",
+      "main_exe": "C:\\Program Files\\NVIDIA Corporation\\FrameViewSDK\\nvfvsdksvc_x64.exe",
+      "folder": "C:\\Program Files\\NVIDIA Corporation\\FrameViewSDK",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "NVIDIA App",
+      "main_exe": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA app\\CEF\\NVIDIA App.exe",
+      "folder": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA app\\CEF",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files\\NVIDIA Corporation\\NVIDIA app\\CEF\\NVIDIA Overlay.exe"
+      ]
+    },
+    {
+      "app_name": "NVIDIA App Permission",
+      "main_exe": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA app\\CEF\\NvidiaAppPermissionOc\\NVIDIA App Permission.exe",
+      "folder": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA app\\CEF\\NvidiaAppPermissionOc",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "NVIDIA Broadcast",
+      "main_exe": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA Broadcast\\NVIDIA Broadcast.exe",
+      "folder": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA Broadcast",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files\\NVIDIA Corporation\\NVIDIA Broadcast\\NvBroadcastInstallerOTAUtility.exe"
+      ]
+    },
+    {
+      "app_name": "NvOAWrapperCache",
+      "main_exe": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA app\\NvBackend\\ApplicationOntology\\NvOAWrapperCache.exe",
+      "folder": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA app\\NvBackend\\ApplicationOntology",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files\\NVIDIA Corporation\\NVIDIA app\\NvBackend\\ApplicationOntology\\OAWrapper.exe"
+      ]
+    },
+    {
+      "app_name": "nvrla",
+      "main_exe": "C:\\Program Files\\NVIDIA Corporation\\FrameViewSDK\\bin\\nvrla.exe",
+      "folder": "C:\\Program Files\\NVIDIA Corporation\\FrameViewSDK\\bin",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files\\NVIDIA Corporation\\FrameViewSDK\\bin\\PresentMon_x64.exe"
+      ]
+    },
+    {
+      "app_name": "nvsphelper64",
+      "main_exe": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA app\\ShadowPlay\\nvsphelper64.exe",
+      "folder": "C:\\Program Files\\NVIDIA Corporation\\NVIDIA app\\ShadowPlay",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "nvvp",
+      "main_exe": "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\libnvvp\\nvvp.exe",
+      "folder": "C:\\Program Files\\NVIDIA GPU Computing Toolkit\\CUDA\\v12.8\\libnvvp",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "obs-browser-page",
+      "main_exe": "C:\\Program Files\\obs-studio\\obs-plugins\\64bit\\obs-browser-page.exe",
+      "folder": "C:\\Program Files\\obs-studio\\obs-plugins\\64bit",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "obs-nvenc-test",
+      "main_exe": "C:\\Program Files\\obs-studio\\bin\\64bit\\obs-nvenc-test.exe",
+      "folder": "C:\\Program Files\\obs-studio\\bin\\64bit",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files\\obs-studio\\bin\\64bit\\obs-qsv-test.exe",
+        "C:\\Program Files\\obs-studio\\bin\\64bit\\obs64.exe"
+      ]
+    },
+    {
+      "app_name": "OfficeC2RClient",
+      "main_exe": "C:\\Program Files\\Common Files\\microsoft shared\\ClickToRun\\backup\\972F9796-1972-4DB6-94F2-8E08A2A61C97\\OfficeC2RClient.exe",
+      "folder": "C:\\Program Files\\Common Files\\microsoft shared\\ClickToRun\\backup\\972F9796-1972-4DB6-94F2-8E08A2A61C97",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "OfficeC2RClient",
+      "main_exe": "C:\\Program Files\\Common Files\\microsoft shared\\ClickToRun\\backup\\A1F27788-C339-4C1B-9FEA-031777A7EDCB\\OfficeC2RClient.exe",
+      "folder": "C:\\Program Files\\Common Files\\microsoft shared\\ClickToRun\\backup\\A1F27788-C339-4C1B-9FEA-031777A7EDCB",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "OfficeClickToRun",
+      "main_exe": "C:\\Program Files\\Common Files\\microsoft shared\\ClickToRun\\backup\\A7A49256-6299-4DBD-A4D3-0AE68AE4BDD5\\OfficeClickToRun.exe",
+      "folder": "C:\\Program Files\\Common Files\\microsoft shared\\ClickToRun\\backup\\A7A49256-6299-4DBD-A4D3-0AE68AE4BDD5",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "OfflineScannerShell",
+      "main_exe": "C:\\Program Files\\Windows Defender\\Offline\\OfflineScannerShell.exe",
+      "folder": "C:\\Program Files\\Windows Defender\\Offline",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "OneDrive.App",
+      "main_exe": "C:\\Program Files\\Microsoft OneDrive\\OneDrive.App.exe",
+      "folder": "C:\\Program Files\\Microsoft OneDrive",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files\\Microsoft OneDrive\\OneDrive.exe",
+        "C:\\Program Files\\Microsoft OneDrive\\OneDriveStandaloneUpdater.exe"
+      ]
+    },
+    {
+      "app_name": "OpenConsole",
+      "main_exe": "C:\\Program Files\\Android\\Android Studio\\lib\\pty4j\\win\\x86-64\\OpenConsole.exe",
+      "folder": "C:\\Program Files\\Android\\Android Studio\\lib\\pty4j\\win\\x86-64",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files\\Android\\Android Studio\\lib\\pty4j\\win\\x86-64\\winpty-agent.exe"
+      ]
+    },
+    {
+      "app_name": "opera",
+      "main_exe": "C:\\Program Files\\Opera GX\\opera.exe",
+      "folder": "C:\\Program Files\\Opera GX",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "opera",
+      "main_exe": "C:\\Program Files\\Opera GX\\120.0.5543.127\\opera.exe",
+      "folder": "C:\\Program Files\\Opera GX\\120.0.5543.127",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files\\Opera GX\\120.0.5543.127\\installer.exe",
+        "C:\\Program Files\\Opera GX\\120.0.5543.127\\installer_helper_64.exe",
+        "C:\\Program Files\\Opera GX\\120.0.5543.127\\notification_helper.exe",
+        "C:\\Program Files\\Opera GX\\120.0.5543.127\\opera_crashreporter.exe",
+        "C:\\Program Files\\Opera GX\\120.0.5543.127\\opera_gx_splash.exe"
+      ]
+    },
+    {
+      "app_name": "opera",
+      "main_exe": "C:\\Program Files\\Opera GX\\120.0.5543.160\\opera.exe",
+      "folder": "C:\\Program Files\\Opera GX\\120.0.5543.160",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files\\Opera GX\\120.0.5543.160\\installer.exe",
+        "C:\\Program Files\\Opera GX\\120.0.5543.160\\installer_helper_64.exe",
+        "C:\\Program Files\\Opera GX\\120.0.5543.160\\notification_helper.exe",
+        "C:\\Program Files\\Opera GX\\120.0.5543.160\\opera_crashreporter.exe",
+        "C:\\Program Files\\Opera GX\\120.0.5543.160\\opera_gx_splash.exe"
+      ]
+    },
+    {
+      "app_name": "OSE",
+      "main_exe": "C:\\Program Files\\Microsoft Office\\root\\vfs\\ProgramFilesCommonX64\\Microsoft Shared\\Source Engine\\OSE.EXE",
+      "folder": "C:\\Program Files\\Microsoft Office\\root\\vfs\\ProgramFilesCommonX64\\Microsoft Shared\\Source Engine",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "OSPPREARM",
+      "main_exe": "C:\\Program Files\\Microsoft Office\\Office16\\OSPPREARM.EXE",
+      "folder": "C:\\Program Files\\Microsoft Office\\Office16",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "p11-kit-remote",
+      "main_exe": "C:\\Program Files\\Git\\mingw64\\libexec\\p11-kit\\p11-kit-remote.exe",
+      "folder": "C:\\Program Files\\Git\\mingw64\\libexec\\p11-kit",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files\\Git\\mingw64\\libexec\\p11-kit\\p11-kit-server.exe"
+      ]
+    },
+    {
+      "app_name": "pgosweep",
+      "main_exe": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\onecore\\pgosweep.exe",
+      "folder": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Tools\\MSVC\\14.44.35207\\bin\\Hostx64\\x64\\onecore",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "pip",
+      "main_exe": "C:\\Program Files\\Python311\\Scripts\\pip.exe",
+      "folder": "C:\\Program Files\\Python311\\Scripts",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files\\Python311\\Scripts\\pip3.11.exe",
+        "C:\\Program Files\\Python311\\Scripts\\pip3.exe",
+        "C:\\Program Files\\Python311\\Scripts\\wheel.exe"
+      ]
+    },
+    {
+      "app_name": "protoc",
+      "main_exe": "C:\\Program Files\\Python312\\Lib\\site-packages\\torch\\bin\\protoc.exe",
+      "folder": "C:\\Program Files\\Python312\\Lib\\site-packages\\torch\\bin",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "py",
+      "main_exe": "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\lib\\Python3.13\\Lib\\venv\\scripts\\nt\\py.exe",
+      "folder": "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\lib\\Python3.13\\Lib\\venv\\scripts\\nt",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\lib\\Python3.13\\Lib\\venv\\scripts\\nt\\python.exe",
+        "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\lib\\Python3.13\\Lib\\venv\\scripts\\nt\\pythonw.exe",
+        "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\lib\\Python3.13\\Lib\\venv\\scripts\\nt\\pyw.exe",
+        "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\lib\\Python3.13\\Lib\\venv\\scripts\\nt\\venvlauncher.exe",
+        "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\lib\\Python3.13\\Lib\\venv\\scripts\\nt\\venvwlauncher.exe",
+        "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\lib\\Python3.13\\Lib\\venv\\scripts\\nt\\_testembed.exe"
+      ]
+    },
+    {
+      "app_name": "python",
+      "main_exe": "C:\\Program Files\\Microsoft SDKs\\Azure\\CLI2\\python.exe",
+      "folder": "C:\\Program Files\\Microsoft SDKs\\Azure\\CLI2",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files\\Microsoft SDKs\\Azure\\CLI2\\pythonw.exe"
+      ]
+    },
+    {
+      "app_name": "python",
+      "main_exe": "C:\\Program Files\\NVIDIA Corporation\\Nsight Compute 2025.1.1\\host\\target-windows-x64\\python\\bin\\python.exe",
+      "folder": "C:\\Program Files\\NVIDIA Corporation\\Nsight Compute 2025.1.1\\host\\target-windows-x64\\python\\bin",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "python",
+      "main_exe": "C:\\Program Files\\NVIDIA Corporation\\Nsight Systems 2022.4.2\\host-windows-x64\\python\\bin\\python.exe",
+      "folder": "C:\\Program Files\\NVIDIA Corporation\\Nsight Systems 2022.4.2\\host-windows-x64\\python\\bin",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "python",
+      "main_exe": "C:\\Program Files\\NVIDIA Corporation\\Nsight Systems 2022.4.2\\target-windows-x64\\python\\bin\\python.exe",
+      "folder": "C:\\Program Files\\NVIDIA Corporation\\Nsight Systems 2022.4.2\\target-windows-x64\\python\\bin",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "python",
+      "main_exe": "C:\\Program Files\\NVIDIA Corporation\\Nsight Systems 2024.6.2\\host-windows-x64\\python\\bin\\python.exe",
+      "folder": "C:\\Program Files\\NVIDIA Corporation\\Nsight Systems 2024.6.2\\host-windows-x64\\python\\bin",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "python",
+      "main_exe": "C:\\Program Files\\NVIDIA Corporation\\Nsight Systems 2024.6.2\\target-windows-x64\\python\\bin\\python.exe",
+      "folder": "C:\\Program Files\\NVIDIA Corporation\\Nsight Systems 2024.6.2\\target-windows-x64\\python\\bin",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "Pythonwin",
+      "main_exe": "C:\\Program Files\\Microsoft SDKs\\Azure\\CLI2\\Lib\\site-packages\\pythonwin\\Pythonwin.exe",
+      "folder": "C:\\Program Files\\Microsoft SDKs\\Azure\\CLI2\\Lib\\site-packages\\pythonwin",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "Pythonwin",
+      "main_exe": "C:\\Program Files\\Python311\\Lib\\site-packages\\pythonwin\\Pythonwin.exe",
+      "folder": "C:\\Program Files\\Python311\\Lib\\site-packages\\pythonwin",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "qbittorrent",
+      "main_exe": "C:\\Program Files\\qBittorrent\\qbittorrent.exe",
+      "folder": "C:\\Program Files\\qBittorrent",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files\\qBittorrent\\uninst.exe"
+      ]
+    },
+    {
+      "app_name": "QuickCPU",
+      "main_exe": "C:\\Program Files\\QuickCPU\\QuickCPU.exe",
+      "folder": "C:\\Program Files\\QuickCPU",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "RestartAgent",
+      "main_exe": "C:\\Program Files\\Microsoft Office\\root\\vfs\\ProgramFilesCommonX64\\Microsoft Shared\\OFFICE16\\AI\\SDK\\RestartAgent.exe",
+      "folder": "C:\\Program Files\\Microsoft Office\\root\\vfs\\ProgramFilesCommonX64\\Microsoft Shared\\OFFICE16\\AI\\SDK",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "rmt",
+      "main_exe": "C:\\Program Files\\Git\\usr\\lib\\tar\\rmt.exe",
+      "folder": "C:\\Program Files\\Git\\usr\\lib\\tar",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "RockstarErrorHandler",
+      "main_exe": "C:\\Program Files\\Rockstar Games\\Launcher\\ThirdParty\\Crashpad\\RockstarErrorHandler.exe",
+      "folder": "C:\\Program Files\\Rockstar Games\\Launcher\\ThirdParty\\Crashpad",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "ScheduleEventAction",
+      "main_exe": "C:\\Program Files (x86)\\Lenovo\\VantageService\\4.3.50.0\\ScheduleEventAction.exe",
+      "folder": "C:\\Program Files (x86)\\Lenovo\\VantageService\\4.3.50.0",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files (x86)\\Lenovo\\VantageService\\4.3.50.0\\ConfigServiceAgent.exe",
+        "C:\\Program Files (x86)\\Lenovo\\VantageService\\4.3.50.0\\Lenovo.VantageService.InstallerHelper.exe",
+        "C:\\Program Files (x86)\\Lenovo\\VantageService\\4.3.50.0\\ServiceController.exe",
+        "C:\\Program Files (x86)\\Lenovo\\VantageService\\4.3.50.0\\Uninstall.exe",
+        "C:\\Program Files (x86)\\Lenovo\\VantageService\\4.3.50.0\\VantageServiceSetup.exe",
+        "C:\\Program Files (x86)\\Lenovo\\VantageService\\4.3.50.0\\VantageServiceUninst.exe"
+      ]
+    },
+    {
+      "app_name": "ServiceHub.DataWarehouseHost",
+      "main_exe": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\ServiceHub\\Hosts\\ServiceHub.Host.netfx.x86\\ServiceHub.DataWarehouseHost.exe",
+      "folder": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\ServiceHub\\Hosts\\ServiceHub.Host.netfx.x86",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\ServiceHub\\Hosts\\ServiceHub.Host.netfx.x86\\ServiceHub.Host.netfx.x86.exe",
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\ServiceHub\\Hosts\\ServiceHub.Host.netfx.x86\\ServiceHub.IdentityHost.exe"
+      ]
+    },
+    {
+      "app_name": "ServiceHub.IntellicodeModelService",
+      "main_exe": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\ServiceHub\\Hosts\\ServiceHub.Host.netfx.x64\\ServiceHub.IntellicodeModelService.exe",
+      "folder": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\ServiceHub\\Hosts\\ServiceHub.Host.netfx.x64",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\ServiceHub\\Hosts\\ServiceHub.Host.netfx.x64\\ServiceHub.DataWarehouseHost.exe",
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\ServiceHub\\Hosts\\ServiceHub.Host.netfx.x64\\ServiceHub.Host.netfx.x64.exe"
+      ]
+    },
+    {
+      "app_name": "sftp-server",
+      "main_exe": "C:\\Program Files\\Git\\usr\\lib\\ssh\\sftp-server.exe",
+      "folder": "C:\\Program Files\\Git\\usr\\lib\\ssh",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files\\Git\\usr\\lib\\ssh\\ssh-keysign.exe",
+        "C:\\Program Files\\Git\\usr\\lib\\ssh\\ssh-pkcs11-helper.exe",
+        "C:\\Program Files\\Git\\usr\\lib\\ssh\\ssh-sk-helper.exe"
+      ]
+    },
+    {
+      "app_name": "sheep",
+      "main_exe": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\wallpaper_engine\\projects\\defaultprojects\\sheep\\sheep.exe",
+      "folder": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\wallpaper_engine\\projects\\defaultprojects\\sheep",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "simpleperf",
+      "main_exe": "C:\\Program Files\\Android\\Android Studio\\plugins\\android\\resources\\simpleperf\\windows-x86_64\\simpleperf.exe",
+      "folder": "C:\\Program Files\\Android\\Android Studio\\plugins\\android\\resources\\simpleperf\\windows-x86_64",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "SKYPESERVER",
+      "main_exe": "C:\\Program Files\\Microsoft Office\\root\\Office16\\SkypeSrv\\SKYPESERVER.EXE",
+      "folder": "C:\\Program Files\\Microsoft Office\\root\\Office16\\SkypeSrv",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "Social-Club-Setup",
+      "main_exe": "C:\\Program Files\\Rockstar Games\\Launcher\\Redistributables\\SocialClub\\Social-Club-Setup.exe",
+      "folder": "C:\\Program Files\\Rockstar Games\\Launcher\\Redistributables\\SocialClub",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "SocialClubHelper",
+      "main_exe": "C:\\Program Files\\Rockstar Games\\Social Club\\SocialClubHelper.exe",
+      "folder": "C:\\Program Files\\Rockstar Games\\Social Club",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files\\Rockstar Games\\Social Club\\uninstallRGSCRedistributable.exe"
+      ]
+    },
+    {
+      "app_name": "SQLDumper",
+      "main_exe": "C:\\Program Files\\Microsoft Office\\root\\vfs\\ProgramFilesX64\\Microsoft Analysis Services\\AS OLEDB\\140\\SQLDumper.exe",
+      "folder": "C:\\Program Files\\Microsoft Office\\root\\vfs\\ProgramFilesX64\\Microsoft Analysis Services\\AS OLEDB\\140",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "SQLDumper",
+      "main_exe": "C:\\Program Files\\Microsoft Office\\root\\vfs\\ProgramFilesX86\\Microsoft Analysis Services\\AS OLEDB\\140\\SQLDumper.exe",
+      "folder": "C:\\Program Files\\Microsoft Office\\root\\vfs\\ProgramFilesX86\\Microsoft Analysis Services\\AS OLEDB\\140",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "StandardCollector.Service",
+      "main_exe": "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\Common\\DiagnosticsHub.Collection.Service\\StandardCollector.Service.exe",
+      "folder": "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\Common\\DiagnosticsHub.Collection.Service",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "steamwebhelper",
+      "main_exe": "C:\\Program Files (x86)\\Steam\\bin\\cef\\cef.win7x64\\steamwebhelper.exe",
+      "folder": "C:\\Program Files (x86)\\Steam\\bin\\cef\\cef.win7x64",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "SurConsent",
+      "main_exe": "C:\\Program Files\\Intel\\SUR\\ICIP\\SurConsent.exe",
+      "folder": "C:\\Program Files\\Intel\\SUR\\ICIP",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "SurSvc",
+      "main_exe": "C:\\Program Files\\Intel\\SUR\\QUEENCREEK\\SurSvc.exe",
+      "folder": "C:\\Program Files\\Intel\\SUR\\QUEENCREEK",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "t32",
+      "main_exe": "C:\\Program Files\\Microsoft SDKs\\Azure\\CLI2\\Lib\\site-packages\\pip\\_vendor\\distlib\\t32.exe",
+      "folder": "C:\\Program Files\\Microsoft SDKs\\Azure\\CLI2\\Lib\\site-packages\\pip\\_vendor\\distlib",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files\\Microsoft SDKs\\Azure\\CLI2\\Lib\\site-packages\\pip\\_vendor\\distlib\\t64-arm.exe",
+        "C:\\Program Files\\Microsoft SDKs\\Azure\\CLI2\\Lib\\site-packages\\pip\\_vendor\\distlib\\t64.exe",
+        "C:\\Program Files\\Microsoft SDKs\\Azure\\CLI2\\Lib\\site-packages\\pip\\_vendor\\distlib\\w32.exe",
+        "C:\\Program Files\\Microsoft SDKs\\Azure\\CLI2\\Lib\\site-packages\\pip\\_vendor\\distlib\\w64-arm.exe",
+        "C:\\Program Files\\Microsoft SDKs\\Azure\\CLI2\\Lib\\site-packages\\pip\\_vendor\\distlib\\w64.exe"
+      ]
+    },
+    {
+      "app_name": "t32",
+      "main_exe": "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\lib\\Python3.13\\Lib\\site-packages\\pip\\_vendor\\distlib\\t32.exe",
+      "folder": "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\lib\\Python3.13\\Lib\\site-packages\\pip\\_vendor\\distlib",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\lib\\Python3.13\\Lib\\site-packages\\pip\\_vendor\\distlib\\t64-arm.exe",
+        "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\lib\\Python3.13\\Lib\\site-packages\\pip\\_vendor\\distlib\\t64.exe",
+        "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\lib\\Python3.13\\Lib\\site-packages\\pip\\_vendor\\distlib\\w32.exe",
+        "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\lib\\Python3.13\\Lib\\site-packages\\pip\\_vendor\\distlib\\w64-arm.exe",
+        "C:\\Program Files\\MySQL\\MySQL Shell 8.0\\lib\\Python3.13\\Lib\\site-packages\\pip\\_vendor\\distlib\\w64.exe"
+      ]
+    },
+    {
+      "app_name": "t32",
+      "main_exe": "C:\\Program Files\\Python311\\Lib\\site-packages\\pip\\_vendor\\distlib\\t32.exe",
+      "folder": "C:\\Program Files\\Python311\\Lib\\site-packages\\pip\\_vendor\\distlib",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files\\Python311\\Lib\\site-packages\\pip\\_vendor\\distlib\\t64-arm.exe",
+        "C:\\Program Files\\Python311\\Lib\\site-packages\\pip\\_vendor\\distlib\\t64.exe",
+        "C:\\Program Files\\Python311\\Lib\\site-packages\\pip\\_vendor\\distlib\\w32.exe",
+        "C:\\Program Files\\Python311\\Lib\\site-packages\\pip\\_vendor\\distlib\\w64-arm.exe",
+        "C:\\Program Files\\Python311\\Lib\\site-packages\\pip\\_vendor\\distlib\\w64.exe"
+      ]
+    },
+    {
+      "app_name": "t32",
+      "main_exe": "C:\\Program Files\\Python312\\Lib\\site-packages\\pip\\_vendor\\distlib\\t32.exe",
+      "folder": "C:\\Program Files\\Python312\\Lib\\site-packages\\pip\\_vendor\\distlib",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files\\Python312\\Lib\\site-packages\\pip\\_vendor\\distlib\\t64-arm.exe",
+        "C:\\Program Files\\Python312\\Lib\\site-packages\\pip\\_vendor\\distlib\\t64.exe",
+        "C:\\Program Files\\Python312\\Lib\\site-packages\\pip\\_vendor\\distlib\\w32.exe",
+        "C:\\Program Files\\Python312\\Lib\\site-packages\\pip\\_vendor\\distlib\\w64-arm.exe",
+        "C:\\Program Files\\Python312\\Lib\\site-packages\\pip\\_vendor\\distlib\\w64.exe"
+      ]
+    },
+    {
+      "app_name": "TabTip",
+      "main_exe": "C:\\Program Files\\Common Files\\microsoft shared\\ink\\TabTip.exe",
+      "folder": "C:\\Program Files\\Common Files\\microsoft shared\\ink",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "TestWindowRemoteAgent",
+      "main_exe": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\TestWindow\\RemoteAgent\\TestWindowRemoteAgent.exe",
+      "folder": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\CommonExtensions\\Microsoft\\TestWindow\\RemoteAgent",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "trace_processor_daemon",
+      "main_exe": "C:\\Program Files\\Android\\Android Studio\\plugins\\android\\resources\\trace_processor_daemon\\trace_processor_daemon.exe",
+      "folder": "C:\\Program Files\\Android\\Android Studio\\plugins\\android\\resources\\trace_processor_daemon",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "Tracker",
+      "main_exe": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\MSBuild\\Current\\Bin\\arm64\\Tracker.exe",
+      "folder": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\MSBuild\\Current\\Bin\\arm64",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "ucldr_PSO2_NA",
+      "main_exe": "C:\\Program Files\\Common Files\\Wellbia.com\\ucldr_PSO2_NA.exe",
+      "folder": "C:\\Program Files\\Common Files\\Wellbia.com",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "unins000",
+      "main_exe": "C:\\Program Files (x86)\\Lenovo\\LenovoNow\\unins000.exe",
+      "folder": "C:\\Program Files (x86)\\Lenovo\\LenovoNow",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "uninstall",
+      "main_exe": "C:\\Program Files\\Android\\Android Studio\\uninstall.exe",
+      "folder": "C:\\Program Files\\Android\\Android Studio",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "uninstall",
+      "main_exe": "C:\\Program Files\\obs-studio\\uninstall.exe",
+      "folder": "C:\\Program Files\\obs-studio",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "uninstallRGSCRedistributable",
+      "main_exe": "C:\\Program Files (x86)\\Rockstar Games\\Social Club\\uninstallRGSCRedistributable.exe",
+      "folder": "C:\\Program Files (x86)\\Rockstar Games\\Social Club",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "vbox-img",
+      "main_exe": "C:\\Program Files\\Oracle\\VirtualBox\\vbox-img.exe",
+      "folder": "C:\\Program Files\\Oracle\\VirtualBox",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files\\Oracle\\VirtualBox\\VBoxAudioTest.exe",
+        "C:\\Program Files\\Oracle\\VirtualBox\\VBoxAutostartSvc.exe",
+        "C:\\Program Files\\Oracle\\VirtualBox\\VBoxBalloonCtrl.exe",
+        "C:\\Program Files\\Oracle\\VirtualBox\\VBoxBugReport.exe",
+        "C:\\Program Files\\Oracle\\VirtualBox\\VBoxDrvInst.exe",
+        "C:\\Program Files\\Oracle\\VirtualBox\\VBoxExtPackHelperApp.exe",
+        "C:\\Program Files\\Oracle\\VirtualBox\\VBoxHeadless.exe",
+        "C:\\Program Files\\Oracle\\VirtualBox\\VBoxManage.exe",
+        "C:\\Program Files\\Oracle\\VirtualBox\\VBoxNetDHCP.exe",
+        "C:\\Program Files\\Oracle\\VirtualBox\\VBoxNetNAT.exe",
+        "C:\\Program Files\\Oracle\\VirtualBox\\VBoxSDS.exe",
+        "C:\\Program Files\\Oracle\\VirtualBox\\VBoxSVC.exe",
+        "C:\\Program Files\\Oracle\\VirtualBox\\VBoxWebSrv.exe",
+        "C:\\Program Files\\Oracle\\VirtualBox\\VirtualBox.exe",
+        "C:\\Program Files\\Oracle\\VirtualBox\\VirtualBoxVM.exe"
+      ]
+    },
+    {
+      "app_name": "vc_redist.x64",
+      "main_exe": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Redist\\MSVC\\14.44.35112\\vc_redist.x64.exe",
+      "folder": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Redist\\MSVC\\14.44.35112",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Redist\\MSVC\\14.44.35112\\vc_redist.x86.exe"
+      ]
+    },
+    {
+      "app_name": "vc_redist.x64",
+      "main_exe": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Redist\\MSVC\\v143\\vc_redist.x64.exe",
+      "folder": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Redist\\MSVC\\v143",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Redist\\MSVC\\v143\\vc_redist.x86.exe"
+      ]
+    },
+    {
+      "app_name": "vc_redist.x64",
+      "main_exe": "C:\\Program Files\\Rockstar Games\\Launcher\\Redistributables\\VCRed\\vc_redist.x64.exe",
+      "folder": "C:\\Program Files\\Rockstar Games\\Launcher\\Redistributables\\VCRed",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files\\Rockstar Games\\Launcher\\Redistributables\\VCRed\\vc_redist.x86.exe"
+      ]
+    },
+    {
+      "app_name": "vcpkg",
+      "main_exe": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\vcpkg\\vcpkg.exe",
+      "folder": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\vcpkg",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "VisualUIAVerifyNative",
+      "main_exe": "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\arm64\\UIAVerify\\VisualUIAVerifyNative.exe",
+      "folder": "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\arm64\\UIAVerify",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "VisualUIAVerifyNative",
+      "main_exe": "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64\\UIAVerify\\VisualUIAVerifyNative.exe",
+      "folder": "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x64\\UIAVerify",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "VisualUIAVerifyNative",
+      "main_exe": "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x86\\UIAVerify\\VisualUIAVerifyNative.exe",
+      "folder": "C:\\Program Files (x86)\\Windows Kits\\10\\bin\\10.0.26100.0\\x86\\UIAVerify",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "VsDebugConsole",
+      "main_exe": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\CommonExtensions\\Platform\\Debugger\\VsDebugConsole.exe",
+      "folder": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\CommonExtensions\\Platform\\Debugger",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "VSDiagnostics",
+      "main_exe": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Team Tools\\DiagnosticsHub\\Collector\\VSDiagnostics.exe",
+      "folder": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Team Tools\\DiagnosticsHub\\Collector",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "VSLauncher",
+      "main_exe": "C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\MSEnv\\VSLauncher.exe",
+      "folder": "C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\MSEnv",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "vstest.console.arm64",
+      "main_exe": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\Extensions\\TestPlatform\\vstest.console.arm64.exe",
+      "folder": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\Extensions\\TestPlatform",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\IDE\\Extensions\\TestPlatform\\vstest.console.exe"
+      ]
+    },
+    {
+      "app_name": "VSTOInstaller",
+      "main_exe": "C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\VSTO\\10.0\\VSTOInstaller.exe",
+      "folder": "C:\\Program Files (x86)\\Common Files\\Microsoft Shared\\VSTO\\10.0",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "VSTOInstaller",
+      "main_exe": "C:\\Program Files\\Common Files\\microsoft shared\\VSTO\\10.0\\VSTOInstaller.exe",
+      "folder": "C:\\Program Files\\Common Files\\microsoft shared\\VSTO\\10.0",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "wab",
+      "main_exe": "C:\\Program Files (x86)\\Windows Mail\\wab.exe",
+      "folder": "C:\\Program Files (x86)\\Windows Mail",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files (x86)\\Windows Mail\\wabmig.exe"
+      ]
+    },
+    {
+      "app_name": "wab",
+      "main_exe": "C:\\Program Files\\Windows Mail\\wab.exe",
+      "folder": "C:\\Program Files\\Windows Mail",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files\\Windows Mail\\wabmig.exe"
+      ]
+    },
+    {
+      "app_name": "wallpaper32",
+      "main_exe": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\wallpaper_engine\\distribution\\wallpaper32.exe",
+      "folder": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\wallpaper_engine\\distribution",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files (x86)\\Steam\\steamapps\\common\\wallpaper_engine\\distribution\\wallpaper64.exe"
+      ]
+    },
+    {
+      "app_name": "wmlaunch",
+      "main_exe": "C:\\Program Files (x86)\\Windows Media Player\\wmlaunch.exe",
+      "folder": "C:\\Program Files (x86)\\Windows Media Player",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files (x86)\\Windows Media Player\\setup_wm.exe",
+        "C:\\Program Files (x86)\\Windows Media Player\\wmpconfig.exe",
+        "C:\\Program Files (x86)\\Windows Media Player\\wmplayer.exe",
+        "C:\\Program Files (x86)\\Windows Media Player\\wmprph.exe",
+        "C:\\Program Files (x86)\\Windows Media Player\\wmpshare.exe"
+      ]
+    },
+    {
+      "app_name": "wmlaunch",
+      "main_exe": "C:\\Program Files\\Windows Media Player\\wmlaunch.exe",
+      "folder": "C:\\Program Files\\Windows Media Player",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files\\Windows Media Player\\setup_wm.exe",
+        "C:\\Program Files\\Windows Media Player\\wmpconfig.exe",
+        "C:\\Program Files\\Windows Media Player\\wmplayer.exe",
+        "C:\\Program Files\\Windows Media Player\\wmpnetwk.exe",
+        "C:\\Program Files\\Windows Media Player\\wmpnscfg.exe",
+        "C:\\Program Files\\Windows Media Player\\wmprph.exe",
+        "C:\\Program Files\\Windows Media Player\\wmpshare.exe"
+      ]
+    }
+  ]
+}

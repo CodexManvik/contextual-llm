@@ -7,6 +7,17 @@ pyautogui
 pywinauto
 psutil
 send2trash
+pywin32
+python-dotenv
+sounddevice
+numpy
+
+# Local GPU-accelerated ASR (Whisper via CTranslate2)
+faster-whisper>=1.0.0
+
+# High-quality local TTS
+piper-tts>=1.2.0
+onnxruntime>=1.17.0
 
 # For testing
 pytest

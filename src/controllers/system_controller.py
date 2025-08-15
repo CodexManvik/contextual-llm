@@ -12,6 +12,7 @@ import time
 import psutil
 import logging
 from typing import Dict, List, Optional
+from .app_discovery import discover_installed_apps, resolve_app
 
 class SystemController:
     def __init__(self):
@@ -21,6 +22,7 @@ class SystemController:
         
         # Set up logging
         self.logger = logging.getLogger(__name__)
+        self._app_registry: List[Dict] = discover_installed_apps(rescan=False)
         
         # Common application paths
         self.app_paths = {
@@ -41,6 +43,10 @@ class SystemController:
     def open_application(self, app_name: str) -> bool:
         """Open an application by name"""
         try:
+            # First try discovered apps
+            if self.open_discovered_app(app_name):
+                return True
+                
             app_name_lower = app_name.lower()
             
             # Check if it's a known application
@@ -222,6 +228,28 @@ class SystemController:
             return True
         except Exception as e:
             print(f"❌ Failed to press keys {keys}: {e}")
+            return False
+
+    def refresh_app_registry(self) -> int:
+        """Rescan Program Files and refresh internal app registry."""
+        self._app_registry = discover_installed_apps(rescan=True)
+        return len(self._app_registry)
+
+    def list_discovered_apps(self, limit: int = 50) -> List[str]:
+        names = [a['app_name'] for a in self._app_registry]
+        return names[:limit]
+
+    def open_discovered_app(self, name: str) -> bool:
+        app = resolve_app(name, self._app_registry)
+        if not app:
+            print(f"⚠️ Could not resolve application: {name}")
+            return False
+        try:
+            os.startfile(app['main_exe'])
+            print(f"✅ Opened {app['app_name']}")
+            return True
+        except Exception as e:
+            print(f"❌ Failed to open {app['app_name']}: {e}")
             return False
 
 # Test function
