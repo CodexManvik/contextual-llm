@@ -11,6 +11,7 @@ pywin32
 python-dotenv
 sounddevice
 numpy
+pyaudio
 
 # Local GPU-accelerated ASR (Whisper via CTranslate2)
 faster-whisper>=1.0.0
@@ -26,3 +27,10 @@ pytest
 colorama
 
 # If you use LLM APIs, add their SDKs here (e.g., openai, azure-
+torch>=2.0.0
+transformers>=4.35.0
+accelerate>=0.20.0
+sentencepiece>=0.1.99
+bitsandbytes>=0.41.0
+protobuf>=3.20.0
+hf_xet

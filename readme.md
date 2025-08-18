@@ -4,7 +4,16 @@ A voice-enabled AI assistant for Windows automation, WhatsApp Web control, and n
 
 ## Features
 
-- Voice commands with GPU-accelerated ASR (Whisper via faster-whisper) and wake word/voice detection fallback (Vosk)
+- **Whisper ASR as Default**: OpenAI Whisper speech recognition with GPU acceleration (faster-whisper)
+- **Vosk as Fallback**: Automatic fallback to Vosk ASR if Whisper fails
+- **Configurable ASR**: Easy configuration via `config/settings.json` and environment variables
+- **Advanced Voice Detection**: 
+  - Adaptive threshold system that learns from background noise
+  - Improved sensitivity and responsiveness
+  - Better state management for voice commands
+  - Configurable voice duration limits
+  - Real-time audio level monitoring
+- **Voice Calibration**: Automatic and manual calibration tools
 - WhatsApp Web automation (Selenium)
 - System/application control (pywinauto)
 - File operations
@@ -113,9 +122,16 @@ python src/main.py
 contextual-llm/
 ├── src/
 │   ├── main.py
+|   |───llm_manager.py
+|   |───piper_manager.py
 │   ├── controllers/
+|         |───app_discovery.py
+|         |───system_controller.py
+|         |───whatsapp_controller.py
 │   ├── interfaces/
+|         |───voice_interface.py
 │   └── parsers/
+|        |───command_parser.py
 ├── tests/
 ├── models/
 ├── logs/
@@ -123,7 +139,28 @@ contextual-llm/
 └── README.md
 ```
 
-## Environment Variables
+## ASR Configuration
+
+The system now uses **Whisper ASR as the default** with Vosk as fallback. Configuration is available through:
+
+### Settings File (`config/settings.json`)
+
+```json
+{
+  "asr": {
+    "default_system": "whisper",
+    "fallback_system": "vosk",
+    "whisper": {
+      "model": "small",
+      "device": "cuda",
+      "compute_type": "int8_float16",
+      "language": "en"
+    }
+  }
+}
+```
+
+### Environment Variables
 
 The following environment variables can be configured in your `.env` file:
 
@@ -134,6 +171,63 @@ The following environment variables can be configured in your `.env` file:
 | `WHISPER_DEVICE_INDEX` | GPU device index | `0` |
 | `WHISPER_COMPUTE_TYPE` | Compute precision | `int8_float16` |
 | `WHISPER_LANGUAGE` | Language for ASR | `en` |
+| `WHISPER_BEAM_SIZE` | Beam search size | `1` |
+| `WHISPER_VAD_FILTER` | Voice activity detection | `1` |
+
+### Model Options
+
+| Model | Size | Speed | Accuracy | GPU Memory |
+|-------|------|-------|----------|------------|
+| tiny  | 39MB | Fastest | Good | ~1GB |
+| base  | 74MB | Fast | Better | ~1GB |
+| small | 244MB | Medium | Best | ~2GB |
+| medium| 769MB | Slow | Excellent | ~5GB |
+| large | 1550MB| Slowest | Outstanding | ~10GB |
+
+**Recommendation**: Use `small` for best balance of speed and accuracy.
+
+### Testing Voice Detection
+
+Test the improved voice detection system:
+
+```bash
+python test_voice_detection.py
+```
+
+This will verify:
+- Voice detection sensitivity
+- Adaptive threshold system
+- Audio level monitoring
+- ASR integration
+
+### Voice Detection Calibration
+
+Calibrate voice detection for your environment:
+
+```bash
+# Automatic calibration
+python calibrate_voice.py
+
+# Show current settings
+python calibrate_voice.py show
+
+# Manual adjustment
+python calibrate_voice.py manual
+```
+
+### Testing ASR Integration
+
+Test the Whisper ASR integration:
+
+```bash
+python test_whisper_asr.py
+```
+
+This will verify that:
+- Whisper ASR is properly configured
+- Fallback to Vosk works if needed
+- Voice interface starts correctly
+- TTS is working
 
 ## Notes
 

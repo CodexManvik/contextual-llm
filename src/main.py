@@ -1,294 +1,219 @@
-"""
-AI Assistant - Phase 2 Main Application
-Integrates all components for complete system control
-"""
-
-import sys
-import os
+# Fully Autonomous AI Assistant - Main Application
+import asyncio
 import logging
 import threading
 import time
+from typing import Dict, Any, Optional
+import llm_manager
+import piper_manager
+import controllers.system_controller
+import controllers.whatsapp_controller
+import interfaces.voice_interface
 
-# Load environment variables from .env file if it exists
-try:
-    from dotenv import load_dotenv
-    load_dotenv()
-except ImportError:
-    pass  # python-dotenv not installed, continue without .env support
-
-# Add project root to path
-sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-
-from src.parsers.command_parser import CommandParser
-from src.controllers.whatsapp_controller import WhatsAppController
-from src.controllers.system_controller import SystemController
-from src.interfaces.voice_interface import VoiceInterface
-from typing import List, Dict, Optional, Tuple
-
-class AIAssistant:
+class AutonomousAIAssistant:
     def __init__(self):
-        print("🤖 Initializing AI Assistant - Phase 2...")
+        print("🤖 Initializing Autonomous AI Assistant...")
         
-        # Ensure logs folder exists before logging setup
-        os.makedirs('logs', exist_ok=True)
-        
-        # Set up logging
+        # Setup logging
         logging.basicConfig(
             level=logging.INFO,
             format='%(asctime)s - %(levelname)s - %(message)s',
             handlers=[
-                logging.FileHandler(os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'logs', 'assistant.log')),
+                logging.FileHandler('logs/autonomous_assistant.log'),
                 logging.StreamHandler()
             ]
         )
         self.logger = logging.getLogger(__name__)
         
         # Initialize components
-        self.command_parser = CommandParser()
-        self.whatsapp_controller = WhatsAppController()
-        self.system_controller = SystemController()
-        self.voice_interface = VoiceInterface()
+
+        self.llm_manager = llm_manager.ConversationalLLMManager()
+        self.tts_manager = piper_manager.PiperTTSManager()
+        self.system_controller = controllers.system_controller.AdvancedSystemController()
+        self.whatsapp_controller = controllers.whatsapp_controller.WhatsAppController()
+        self.voice_interface = interfaces.voice_interface.VoiceInterface()
         
-        # Preload a sample list to confirm discovery is working
-        sample = self.system_controller.list_discovered_apps(limit=10)
-        self.logger.info(f"Discovered apps sample: {sample}")
-        
-        # Set up voice command callback
-        def command_callback(command: str) -> None:
-            self.process_command(command)
-        self.voice_interface.set_command_callback(command_callback)
-        
-        # State tracking
-        self.whatsapp_ready = False
+        # State
         self.is_running = False
+        self.is_processing = False
+        self.whatsapp_ready = False
         
-        print("✅ AI Assistant initialized successfully!")
+        # Setup voice callback
+        self.voice_interface.set_command_callback(self.process_voice_input)
+        
+        print("✅ Autonomous AI Assistant initialized!")
     
-    def start(self):
-        """Start the AI Assistant"""
-        print("\n" + "="*50)
-        print("🚀 STARTING AI ASSISTANT - PHASE 2")
-        print("="*50)
+    async def start(self):
+        """Start the autonomous assistant"""
+        print("\n" + "="*60)
+        print("🚀 STARTING AUTONOMOUS AI ASSISTANT")
+        print("="*60)
+        
+        # Load LLM
+        print("🤖 Loading LLM model...")
+        if not self.llm_manager.load_model():
+            print("❌ Failed to load LLM. Please check Ollama setup.")
+            print("💡 Make sure Ollama is running: ollama serve")
+            print("💡 And you have a model installed: ollama pull qwen2.5:7b")
+            return
+        
+        print("✅ LLM model loaded successfully!")
+        
+        # Initial greeting
+        greeting = "Hello! I'm your autonomous AI assistant. I can chat with you naturally, control your computer, send messages, and help with various tasks. How can I assist you today?"
+        print(f"🤖 {greeting}")
+        self.tts_manager.speak_async(greeting)
         
         self.is_running = True
         
-        # Show startup menu
-        self._show_startup_menu()
+        # Start continuous voice listening
+        self.voice_interface.start_listening()
         
-        # Start voice interface
-        print("\n🎤 Starting voice interface...")
-        self.voice_interface.speak("AI Assistant is ready! Voice detection mode active.")
+        print("\n🎤 Voice interface is active. Speak to interact with me!")
+        print("💡 I'll continue listening for your commands and respond naturally.")
+        print("🛑 Press Ctrl+C to stop the assistant.\n")
         
+        # Keep running and handle any manual text input
         try:
-            self.voice_interface.start_listening()
-            
-            # Keep the main thread alive
-            print("\n🔄 AI Assistant is running...")
-            print("💡 Try speaking to trigger voice detection!")
-            print("📝 You can also type commands directly in the terminal.")
-            
-            # Main loop to keep the application running
             while self.is_running:
-                try:
-                    # Check for direct input commands
-                    user_input = input("\n🎯 Enter command (or press Enter to continue): ").strip()
-                    if user_input:
-                        self.process_command(user_input)
-                except (EOFError, KeyboardInterrupt):
-                    break
-                except Exception as e:
-                    self.logger.error(f"Input error: {e}")
-                    break
+                await asyncio.sleep(0.1)  # Small delay to prevent CPU overuse
+                
+                # Check if voice interface is still running
+                if not self.voice_interface.is_listening:
+                    print("⚠️ Voice interface stopped unexpectedly. Restarting...")
+                    self.voice_interface.start_listening()
                     
         except KeyboardInterrupt:
-            self.shutdown()
-        except Exception as e:
-            self.logger.error(f"Voice interface error: {e}")
-            print(f"❌ Voice interface error: {e}")
-            self.shutdown()
+            await self.shutdown()
     
-    def _show_startup_menu(self):
-        """Show available features and setup options"""
-        print("\n📋 Available Features:")
-        print("   • Voice Commands (always active)")
-        print("   • WhatsApp Web Control")
-        print("   • System Automation")
-        print("   • Application Management")
-        print("   • File Operations")
+    def process_voice_input(self, user_input: str):
+        """Process voice input through conversational AI"""
+        if self.is_processing:
+            return  # Avoid overlapping processing
         
-        # Initialize WhatsApp if user wants (skip prompt in non-interactive environments)
+        self.is_processing = True
+        
         try:
-            is_interactive = sys.stdin is not None and sys.stdin.isatty()
-        except Exception:
-            is_interactive = False
-
-        if is_interactive:
-            setup_whatsapp = input("\n❓ Setup WhatsApp Web now? (y/n): ").lower() == 'y'
-        else:
-            print("\nℹ️ Non-interactive environment detected. Skipping WhatsApp setup prompt.")
-            setup_whatsapp = False
-        if setup_whatsapp:
-            if self._initialize_whatsapp():
-                self.whatsapp_ready = True
-                print("✅ WhatsApp Web ready!")
-            else:
-                print("⚠️ WhatsApp Web setup skipped. You can set it up later.")
-    
-    def _initialize_whatsapp(self) -> bool:
-        """Initialize WhatsApp Web controller"""
-        try:
-            print("\n🔧 Setting up WhatsApp Web...")
-            return self.whatsapp_controller.login_to_whatsapp()
-        except Exception as e:
-            self.logger.error(f"WhatsApp initialization failed: {e}")
-            return False
-    
-    def process_command(self, command: str) -> str:
-        """Process voice/text commands and execute actions"""
-        try:
-            print(f"\n🎯 Processing command: {command}")
+            print(f"\n👤 User: {user_input}")
             
-            # Check for quick utility commands before normal parsing
-            cmd_lower = (command or "").strip().lower()
-            if cmd_lower in ("list applications","list apps","show applications","show apps"):
-                names = self.system_controller.list_discovered_apps(limit=25)
-                msg = "Top discovered apps: " + ", ".join(names) if names else "No applications discovered."
-                self.voice_interface.speak(msg)
-                return msg
-
-            if cmd_lower in ("refresh applications","rescan applications","rescan apps","refresh apps"):
-                count = self.system_controller.refresh_app_registry()
-                msg = f"Rescanned applications. Found {count} entries."
-                self.voice_interface.speak(msg)
-                return msg
+            # Get available apps for context
+            available_apps = self.system_controller.get_all_available_apps()
             
-            # Parse the command
-            parsed_command = self.command_parser.parse_command(command)
+            # Generate conversational response with intent
+            response = self.llm_manager.generate_conversational_response(
+                user_input, available_apps
+            )
             
-            print(f"📝 Parsed: {parsed_command}")
+            response_text = response.get("response_text", "I'm not sure how to respond to that.")
+            intent = response.get("intent", "conversation")
             
-            # Route to appropriate controller
-            result = self._execute_command(parsed_command)
+            print(f"🤖 Assistant: {response_text}")
             
-            # Generate response
-            response = self._generate_response(parsed_command, result)
+            # Execute any system actions
+            if intent != "conversation":
+                # _execute_system_action is async, but process_voice_input is not
+                asyncio.create_task(self._execute_system_action(response))
             
-            # Speak response
-            self.voice_interface.speak(response)
-            
-            return response
+            # Speak response using the dedicated TTS manager
+            self.tts_manager.speak_async(response_text)
             
         except Exception as e:
-            error_msg = f"Error processing command: {e}"
-            self.logger.error(error_msg)
-            self.voice_interface.speak("I'm sorry, I encountered an error processing that command.")
-            return error_msg
+            error_response = "I encountered an error processing that. Please try again."
+            print(f"❌ Error: {e}")
+            self.tts_manager.speak_async(error_response)
+        finally:
+            self.is_processing = False
     
-    def _execute_command(self, parsed_command: Dict) -> bool:
-        """Execute the parsed command using appropriate controller"""
-        intent = parsed_command.get("intent")
-        action = parsed_command.get("action")
-        params = parsed_command.get("parameters", {})
+    async def _execute_system_action(self, response: Dict[str, Any]):
+        """Execute system actions based on LLM response"""
+        intent = response.get("intent")
+        action = response.get("action")
+        parameters = response.get("parameters", {})
+        
         try:
-            if intent == "whatsapp_send":
+            if intent == "system_control":
+                if action in ["open", "launch", "start"]:
+                    app_name = parameters.get("application", "")
+                    result = self.system_controller.open_any_application(app_name)
+                    if result["success"]:
+                        print(f"✅ {result['message']}")
+                
+                elif action == "close":
+                    # Implementation for closing apps
+                    pass
+            
+            elif intent == "whatsapp_send":
                 if not self.whatsapp_ready:
-                    if not self._initialize_whatsapp():
-                        return False
-                    self.whatsapp_ready = True
-                contact = params.get("contact")
-                message = params.get("message")
-                return self.whatsapp_controller.send_message(contact, message)
-            elif intent == "system_control":
-                app_action = params.get("action") or parsed_command.get("action")
-                application = params.get("application")
-
-                if app_action in ("list_apps",):
-                    names = self.system_controller.list_discovered_apps(limit=25)
-                    self.voice_interface.speak("Top applications: " + ", ".join(names) if names else "No applications found.")
-                    return True
-
-                if app_action in ("refresh_apps",):
-                    count = self.system_controller.refresh_app_registry()
-                    self.voice_interface.speak(f"Rescanned and found {count} applications.")
-                    return True
-
-                if app_action in ("open","launch","start"):
-                    if self.system_controller.open_discovered_app(application):
-                        return True
-                    return self.system_controller.open_application(application)
-                elif app_action == "close":
-                    return self.system_controller.close_application(application)
-                elif app_action == "minimize":
-                    return self.system_controller.minimize_application(application)
-                elif app_action == "maximize":
-                    return self.system_controller.maximize_application(application)
-            elif intent == "calendar":
-                # Calendar functionality to be implemented in Phase 3
-                self.voice_interface.speak("Calendar integration coming in Phase 3!")
-                return True
-            elif intent == "browser":
-                # Browser automation to be implemented
-                website = params.get("website", params.get("query"))
-                if website:
-                    return self.system_controller.open_application("chrome")
-                return False
-            elif intent == "unknown":
-                self.voice_interface.speak("I'm sorry, I didn't understand that command. Can you try rephrasing it?")
-                return False
-            else:
-                return False
+                    # Initialize WhatsApp if needed
+                    self.whatsapp_ready = self.whatsapp_controller.login_to_whatsapp()
+                
+                if self.whatsapp_ready:
+                    contact = parameters.get("contact", "")
+                    message = parameters.get("message", "")
+                    if contact and message:
+                        success = self.whatsapp_controller.send_message(contact, message)
+                        if success:
+                            print(f"✅ WhatsApp message sent to {contact}")
+            
+            elif intent == "web_search":
+                query = parameters.get("query", "")
+                if query:
+                    self.system_controller.web_search(query)
+                    print(f"✅ Web search performed: {query}")
+            
+            elif intent == "keyboard_mouse":
+                action_type = parameters.get("action_type", "")
+                if action_type == "type":
+                    text = parameters.get("text", "")
+                    self.system_controller.keyboard_action("type", text=text)
+                elif action_type == "click":
+                    self.system_controller.mouse_action("click")
+            
+            elif intent == "file_operation":
+                operation = parameters.get("operation", "")
+                result = self.system_controller.file_operation(operation, **parameters)
+                print(f"📁 File operation: {result['message']}")
+                
         except Exception as e:
-            self.logger.error(f"Command execution error: {e}")
-            return False
-        # Ensure a bool is always returned
-        return False
+            self.logger.error(f"Action execution error: {e}")
     
-    def _generate_response(self, parsed_command: Dict, success: bool) -> str:
-        """Generate appropriate response based on command result"""
-        intent = parsed_command.get("intent")
-        params = parsed_command.get("parameters", {})
-        
-        if success:
-            if intent == "whatsapp_send":
-                contact = params.get("contact", "contact")
-                return f"Message sent to {contact} successfully!"
-            
-            elif intent == "system_control":
-                action = params.get("action", "action")
-                app = params.get("application", "application")
-                return f"Successfully {action}ed {app}!"
-            
-            else:
-                return "Command executed successfully!"
-        
-        else:
-            return "I'm sorry, I couldn't complete that task. Please try again or check if everything is set up correctly."
-    
-    def shutdown(self):
-        """Shutdown the AI Assistant"""
-        print("\n🛑 Shutting down AI Assistant...")
+    async def shutdown(self):
+        """Shutdown the assistant"""
+        print("\n🛑 Shutting down Autonomous AI Assistant...")
         
         self.is_running = False
         
-        # Close controllers
-        if self.whatsapp_controller:
-            self.whatsapp_controller.close()
-        
+        # Cleanup
         if self.voice_interface:
             self.voice_interface.stop_listening()
         
-        print("👋 AI Assistant shutdown complete!")
+        if self.whatsapp_controller:
+            self.whatsapp_controller.close()
+        
+        # Final goodbye
+        goodbye = "Goodbye! I'm shutting down now."
+        print(f"🤖 {goodbye}")
+        self.tts_manager.speak_async(goodbye)
+        
+        # Wait a moment for TTS to finish
+        time.sleep(2)
+        
+        # Cleanup TTS resources
+        if self.tts_manager:
+            self.tts_manager.cleanup()
+        
+        print("👋 Shutdown complete!")
 
-def main():
-    """Main entry point"""
-    assistant = AIAssistant()
+# Main entry point
+async def main():
+    assistant = AutonomousAIAssistant()
     try:
-        assistant.start()
+        await assistant.start()
     except KeyboardInterrupt:
-        assistant.shutdown()
+        await assistant.shutdown()
     except Exception as e:
         print(f"❌ Critical error: {e}")
-        assistant.shutdown()
+        await assistant.shutdown()
 
 if __name__ == "__main__":
-    main()
+    asyncio.run(main())

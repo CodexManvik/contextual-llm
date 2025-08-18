@@ -63,7 +63,7 @@ def setup_env_file():
 def check_model_file():
     """Check if ASR model files exist"""
     whisper_models = ["small", "base"]
-    vosk_model = "models/vosk-model-small-en-us-0.15"
+    vosk_model = "models/vosk-model-small-en-in-0.5"
     
     models_found = []
     if os.path.exists(vosk_model):

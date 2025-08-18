@@ -1,0 +1,23 @@
+{
+  "asr": {
+    "default_system": "whisper",
+    "fallback_system": "vosk",
+    "whisper": {
+      "model": "small",
+      "device": "cpu",
+      "compute_type": "int8",
+      "language": "en",
+      "beam_size": 1,
+      "vad_filter": true
+    },
+    "vosk": {
+      "model_paths": [
+        "models/vosk/vosk-model-en-in-0.5"
+      ]
+    }
+  },
+  "voice_interface": {
+    "sample_rate": 16000,
+    "voice_threshold": 0.03
+  }
+}

@@ -27,7 +27,7 @@ CACHE_FILE = os.path.join(CACHE_DIR, "app_inventory.json")
 def _read_file_version_info(file_path: str) -> Dict[str, str]:
     info: Dict[str, str] = {}
     try:
-        size = win32api.GetFileVersionInfoSize(file_path)
+        size = win32api.GetFileVersionInfoSize(file_path) # type: ignore
         if not size:
             return info
         ver_info = win32api.GetFileVersionInfo(file_path, "\\")
@@ -44,7 +44,7 @@ def _read_file_version_info(file_path: str) -> Dict[str, str]:
                 if key not in info:
                     try:
                         # type: ignore[reportAttributeAccessIssue]
-                        val = win32api.VerQueryValue(ver_info, base + key)
+                        val = win32api.VerQueryValue(ver_info, base + key) # type: ignore
                         if isinstance(val, bytes):
                             val = val.decode(errors='ignore')
                         info[key] = val

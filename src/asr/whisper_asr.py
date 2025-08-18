@@ -46,8 +46,18 @@ class WhisperASR:
         self.model = None
         last_error: Optional[Exception] = None
 
-        # If CUDA is requested but we want to be safe, try CPU first
-        if device == "cuda":
+        # Check if CUDA is actually available in PyTorch
+        import torch
+        cuda_available = torch.cuda.is_available()
+        
+        # If CUDA is requested but not available, fallback to CPU
+        if device == "cuda" and not cuda_available:
+            print("⚠️ CUDA requested but not available in PyTorch, using CPU")
+            device = "cpu"
+            compute_type = "int8"
+        
+        # If CUDA is requested and available, try it
+        if device == "cuda" and cuda_available:
             try:
                 # Try CUDA first
                 self.model = WhisperModel(
