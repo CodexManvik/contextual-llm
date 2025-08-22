@@ -34,3 +34,7 @@ sentencepiece>=0.1.99
 bitsandbytes>=0.41.0
 protobuf>=3.20.0
 hf_xet
+chromadb>=0.4.0  # For local vector stores
+sentence-transformers>=2.2.0  # For embeddings
+watchdog>=2.1.0  # For filesystem watching
+psutil>=5.9.0  # For app telemetry

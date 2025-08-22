@@ -1,4 +1,4 @@
-# Enhanced System Controller with Full Dynamic Discovery
+# Enhanced System Controller with Tool Execution
 import pyautogui
 import pywinauto
 import subprocess
@@ -17,7 +17,7 @@ class AdvancedSystemController:
         
         # Dynamic app registry - updated in real-time
         self.refresh_app_registry()
-        
+    
     def refresh_app_registry(self) -> int:
         """Refresh the dynamic app registry"""
         self._app_registry = discover_installed_apps(rescan=True)
@@ -30,7 +30,6 @@ class AdvancedSystemController:
     
     def open_any_application(self, app_name: str) -> Dict[str, Any]:
         """Open any application dynamically"""
-        # First try exact match from registry
         app = resolve_app(app_name, self._app_registry)
         
         if app:
@@ -121,8 +120,43 @@ class AdvancedSystemController:
             
             # Add more file operations as needed
 
-            # If operation is not recognized, return a failure message
-            return {"success": False, "message": f"Unknown operation: {operation}"}
+            # If no operation matched, return a failure message
+            return {"success": False, "message": f"Unknown file operation: {operation}"}
             
         except Exception as e:
             return {"success": False, "message": str(e)}
+    
+    def execute_with_confirmation(self, action: str, **kwargs) -> Dict[str, Any]:
+        """Execute actions with confirmation for safety"""
+        # Show preview
+        preview = self.dry_run_action(action, **kwargs)
+        
+        # Get user confirmation (implement voice/text confirmation as needed)
+        confirmed = True  # Placeholder - add real confirmation logic
+        
+        if confirmed:
+            result = self.execute_action(action, **kwargs)
+            self.logger.info(f"Action executed: {action}")
+            return result
+        else:
+            return {"success": False, "message": "Action cancelled by user"}
+    
+    def dry_run_action(self, action: str, **kwargs) -> Dict[str, Any]:
+        """Simulate action without executing"""
+        # Implement dry-run logic for each action type
+        return {"preview": f"Would perform {action} with params {kwargs}"}
+    
+    def execute_action(self, action: str, **kwargs) -> Dict[str, Any]:
+        """Core action executor"""
+        # Route to appropriate method
+        if action == "open_app":
+            return self.open_any_application(kwargs.get("app_name", ""))
+        elif action == "web_search":
+            return {"success": self.web_search(kwargs.get("query", ""))}
+        elif action == "keyboard":
+            return {"success": self.keyboard_action(kwargs.get("action_type", ""), **kwargs)}
+        elif action == "mouse":
+            return {"success": self.mouse_action(kwargs.get("action_type", ""), **kwargs)}
+        elif action == "file_op":
+            return self.file_operation(kwargs.get("operation", ""), **kwargs)
+        return {"success": False, "message": "Unknown action"}
