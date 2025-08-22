@@ -1,5 +1,5 @@
 {
-  "_generated_at": 1755453352,
+  "_generated_at": 1755887871,
   "_dir_hash": "26bf04163d527baae1634df80b566ce09addb869",
   "apps": [
     {
@@ -685,6 +685,22 @@
         "C:\\Program Files\\Git\\usr\\bin\\zipinfo.exe",
         "C:\\Program Files\\Git\\usr\\bin\\[.exe"
       ]
+    },
+    {
+      "app_name": "Azure",
+      "main_exe": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\LifeMakeover\\Azure.exe",
+      "folder": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\LifeMakeover",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "Azure-Win64-Shipping",
+      "main_exe": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\LifeMakeover\\Azure\\Binaries\\Win64\\Azure-Win64-Shipping.exe",
+      "folder": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\LifeMakeover\\Azure\\Binaries\\Win64",
+      "vendor": "",
+      "version": "",
+      "alternates": []
     },
     {
       "app_name": "bandwidthTest",
@@ -1395,6 +1411,14 @@
       "alternates": []
     },
     {
+      "app_name": "DXSETUP",
+      "main_exe": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Steamworks Shared\\_CommonRedist\\DirectX\\Jun2010\\DXSETUP.exe",
+      "folder": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Steamworks Shared\\_CommonRedist\\DirectX\\Jun2010",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
       "app_name": "EasyAntiCheat",
       "main_exe": "C:\\Program Files (x86)\\EasyAntiCheat\\EasyAntiCheat.exe",
       "folder": "C:\\Program Files (x86)\\EasyAntiCheat",
@@ -1569,6 +1593,14 @@
       "alternates": []
     },
     {
+      "app_name": "EpicWebHelper",
+      "main_exe": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\LifeMakeover\\Engine\\Binaries\\Win64\\EpicWebHelper.exe",
+      "folder": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\LifeMakeover\\Engine\\Binaries\\Win64",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
       "app_name": "errlook",
       "main_exe": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\Tools\\errlook.exe",
       "folder": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\Tools",
@@ -1658,19 +1690,19 @@
     },
     {
       "app_name": "FileCoAuth",
-      "main_exe": "C:\\Program Files\\Microsoft OneDrive\\25.137.0715.0001\\FileCoAuth.exe",
-      "folder": "C:\\Program Files\\Microsoft OneDrive\\25.137.0715.0001",
+      "main_exe": "C:\\Program Files\\Microsoft OneDrive\\25.140.0720.0001\\FileCoAuth.exe",
+      "folder": "C:\\Program Files\\Microsoft OneDrive\\25.140.0720.0001",
       "vendor": "",
       "version": "",
       "alternates": [
-        "C:\\Program Files\\Microsoft OneDrive\\25.137.0715.0001\\FileSyncConfig.exe",
-        "C:\\Program Files\\Microsoft OneDrive\\25.137.0715.0001\\FileSyncHelper.exe",
-        "C:\\Program Files\\Microsoft OneDrive\\25.137.0715.0001\\Microsoft.SharePoint.exe",
-        "C:\\Program Files\\Microsoft OneDrive\\25.137.0715.0001\\OneDriveFileLauncher.exe",
-        "C:\\Program Files\\Microsoft OneDrive\\25.137.0715.0001\\OneDriveLauncher.exe",
-        "C:\\Program Files\\Microsoft OneDrive\\25.137.0715.0001\\OneDrivePatcher.exe",
-        "C:\\Program Files\\Microsoft OneDrive\\25.137.0715.0001\\OneDriveSetup.exe",
-        "C:\\Program Files\\Microsoft OneDrive\\25.137.0715.0001\\OneDriveUpdaterService.exe"
+        "C:\\Program Files\\Microsoft OneDrive\\25.140.0720.0001\\FileSyncConfig.exe",
+        "C:\\Program Files\\Microsoft OneDrive\\25.140.0720.0001\\FileSyncHelper.exe",
+        "C:\\Program Files\\Microsoft OneDrive\\25.140.0720.0001\\Microsoft.SharePoint.exe",
+        "C:\\Program Files\\Microsoft OneDrive\\25.140.0720.0001\\OneDriveFileLauncher.exe",
+        "C:\\Program Files\\Microsoft OneDrive\\25.140.0720.0001\\OneDriveLauncher.exe",
+        "C:\\Program Files\\Microsoft OneDrive\\25.140.0720.0001\\OneDrivePatcher.exe",
+        "C:\\Program Files\\Microsoft OneDrive\\25.140.0720.0001\\OneDriveSetup.exe",
+        "C:\\Program Files\\Microsoft OneDrive\\25.140.0720.0001\\OneDriveUpdaterService.exe"
       ]
     },
     {
@@ -1882,24 +1914,8 @@
     },
     {
       "app_name": "ie_to_edge_stub",
-      "main_exe": "C:\\Program Files (x86)\\Microsoft\\EdgeCore\\139.0.3405.86\\BHO\\ie_to_edge_stub.exe",
-      "folder": "C:\\Program Files (x86)\\Microsoft\\EdgeCore\\139.0.3405.86\\BHO",
-      "vendor": "",
-      "version": "",
-      "alternates": []
-    },
-    {
-      "app_name": "ie_to_edge_stub",
       "main_exe": "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\139.0.3405.102\\BHO\\ie_to_edge_stub.exe",
       "folder": "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\139.0.3405.102\\BHO",
-      "vendor": "",
-      "version": "",
-      "alternates": []
-    },
-    {
-      "app_name": "ie_to_edge_stub",
-      "main_exe": "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\139.0.3405.86\\BHO\\ie_to_edge_stub.exe",
-      "folder": "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\139.0.3405.86\\BHO",
       "vendor": "",
       "version": "",
       "alternates": []
@@ -2316,24 +2332,6 @@
     },
     {
       "app_name": "msedge",
-      "main_exe": "C:\\Program Files (x86)\\Microsoft\\EdgeCore\\139.0.3405.86\\msedge.exe",
-      "folder": "C:\\Program Files (x86)\\Microsoft\\EdgeCore\\139.0.3405.86",
-      "vendor": "",
-      "version": "",
-      "alternates": [
-        "C:\\Program Files (x86)\\Microsoft\\EdgeCore\\139.0.3405.86\\cookie_exporter.exe",
-        "C:\\Program Files (x86)\\Microsoft\\EdgeCore\\139.0.3405.86\\elevated_tracing_service.exe",
-        "C:\\Program Files (x86)\\Microsoft\\EdgeCore\\139.0.3405.86\\elevation_service.exe",
-        "C:\\Program Files (x86)\\Microsoft\\EdgeCore\\139.0.3405.86\\identity_helper.exe",
-        "C:\\Program Files (x86)\\Microsoft\\EdgeCore\\139.0.3405.86\\msedgewebview2.exe",
-        "C:\\Program Files (x86)\\Microsoft\\EdgeCore\\139.0.3405.86\\msedge_proxy.exe",
-        "C:\\Program Files (x86)\\Microsoft\\EdgeCore\\139.0.3405.86\\msedge_pwa_launcher.exe",
-        "C:\\Program Files (x86)\\Microsoft\\EdgeCore\\139.0.3405.86\\notification_helper.exe",
-        "C:\\Program Files (x86)\\Microsoft\\EdgeCore\\139.0.3405.86\\pwahelper.exe"
-      ]
-    },
-    {
-      "app_name": "msedge",
       "main_exe": "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\139.0.3405.102\\msedge.exe",
       "folder": "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\139.0.3405.102",
       "vendor": "",
@@ -2348,24 +2346,6 @@
         "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\139.0.3405.102\\msedge_pwa_launcher.exe",
         "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\139.0.3405.102\\notification_helper.exe",
         "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\139.0.3405.102\\pwahelper.exe"
-      ]
-    },
-    {
-      "app_name": "msedge",
-      "main_exe": "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\139.0.3405.86\\msedge.exe",
-      "folder": "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\139.0.3405.86",
-      "vendor": "",
-      "version": "",
-      "alternates": [
-        "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\139.0.3405.86\\cookie_exporter.exe",
-        "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\139.0.3405.86\\elevated_tracing_service.exe",
-        "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\139.0.3405.86\\elevation_service.exe",
-        "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\139.0.3405.86\\identity_helper.exe",
-        "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\139.0.3405.86\\msedgewebview2.exe",
-        "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\139.0.3405.86\\msedge_proxy.exe",
-        "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\139.0.3405.86\\msedge_pwa_launcher.exe",
-        "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\139.0.3405.86\\notification_helper.exe",
-        "C:\\Program Files (x86)\\Microsoft\\EdgeWebView\\Application\\139.0.3405.86\\pwahelper.exe"
       ]
     },
     {
@@ -2693,20 +2673,6 @@
     },
     {
       "app_name": "opera",
-      "main_exe": "C:\\Program Files\\Opera GX\\120.0.5543.127\\opera.exe",
-      "folder": "C:\\Program Files\\Opera GX\\120.0.5543.127",
-      "vendor": "",
-      "version": "",
-      "alternates": [
-        "C:\\Program Files\\Opera GX\\120.0.5543.127\\installer.exe",
-        "C:\\Program Files\\Opera GX\\120.0.5543.127\\installer_helper_64.exe",
-        "C:\\Program Files\\Opera GX\\120.0.5543.127\\notification_helper.exe",
-        "C:\\Program Files\\Opera GX\\120.0.5543.127\\opera_crashreporter.exe",
-        "C:\\Program Files\\Opera GX\\120.0.5543.127\\opera_gx_splash.exe"
-      ]
-    },
-    {
-      "app_name": "opera",
       "main_exe": "C:\\Program Files\\Opera GX\\120.0.5543.160\\opera.exe",
       "folder": "C:\\Program Files\\Opera GX\\120.0.5543.160",
       "vendor": "",
@@ -2717,6 +2683,20 @@
         "C:\\Program Files\\Opera GX\\120.0.5543.160\\notification_helper.exe",
         "C:\\Program Files\\Opera GX\\120.0.5543.160\\opera_crashreporter.exe",
         "C:\\Program Files\\Opera GX\\120.0.5543.160\\opera_gx_splash.exe"
+      ]
+    },
+    {
+      "app_name": "opera",
+      "main_exe": "C:\\Program Files\\Opera GX\\120.0.5543.204\\opera.exe",
+      "folder": "C:\\Program Files\\Opera GX\\120.0.5543.204",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files\\Opera GX\\120.0.5543.204\\installer.exe",
+        "C:\\Program Files\\Opera GX\\120.0.5543.204\\installer_helper_64.exe",
+        "C:\\Program Files\\Opera GX\\120.0.5543.204\\notification_helper.exe",
+        "C:\\Program Files\\Opera GX\\120.0.5543.204\\opera_crashreporter.exe",
+        "C:\\Program Files\\Opera GX\\120.0.5543.204\\opera_gx_splash.exe"
       ]
     },
     {
@@ -3108,6 +3088,14 @@
       "alternates": []
     },
     {
+      "app_name": "TQMCenter_64",
+      "main_exe": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\LifeMakeover\\Azure\\Binaries\\Win64\\TQM64\\TQMCenter_64.exe",
+      "folder": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\LifeMakeover\\Azure\\Binaries\\Win64\\TQM64",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
       "app_name": "trace_processor_daemon",
       "main_exe": "C:\\Program Files\\Android\\Android Studio\\plugins\\android\\resources\\trace_processor_daemon\\trace_processor_daemon.exe",
       "folder": "C:\\Program Files\\Android\\Android Studio\\plugins\\android\\resources\\trace_processor_daemon",
@@ -3205,6 +3193,16 @@
       "version": "",
       "alternates": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\VC\\Redist\\MSVC\\v143\\vc_redist.x86.exe"
+      ]
+    },
+    {
+      "app_name": "VC_redist.x64",
+      "main_exe": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Steamworks Shared\\_CommonRedist\\vcredist\\2022\\VC_redist.x64.exe",
+      "folder": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Steamworks Shared\\_CommonRedist\\vcredist\\2022",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Steamworks Shared\\_CommonRedist\\vcredist\\2022\\VC_redist.x86.exe"
       ]
     },
     {

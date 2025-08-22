@@ -1,14 +1,38 @@
 # Fully Autonomous AI Assistant - Main Application
+from dotenv import load_dotenv
+load_dotenv()
+import os,sys
+
+os.environ['PYTHONIOENCODING'] = 'utf-8'
+os.environ['LANG'] = 'en_US.UTF-8'
+os.environ['LC_ALL'] = 'en_US.UTF-8'
+
+if sys.platform == 'win32':
+    try:
+        # Set console code page to UTF-8
+        os.system('chcp 65001 >nul 2>&1')
+    except:
+        pass
+
 import asyncio
 import logging
-import threading
 import time
 from typing import Dict, Any, Optional
-import llm_manager
-import piper_manager
-import controllers.system_controller
-import controllers.whatsapp_controller
-import interfaces.voice_interface
+from datetime import datetime
+
+# Your existing imports (assuming these exist in your structure)
+from parsers.command_parser import CommandParser
+from controllers.whatsapp_controller import WhatsAppController
+from controllers.system_controller import AdvancedSystemController  # Use enhanced version
+from interfaces.voice_interface import VoiceInterface
+
+# New imports for enhanced features
+from llm_manager import ConversationalLLMManager
+from piper_manager import PiperTTSManager
+from memory.memory_manager import ContextualMemoryManager
+from memory.context_manager import AdvancedContextManager
+from retrieval.rag_manager import RetrievalAugmentedGeneration
+from planning.task_planner import ProactivePlanner
 
 class AutonomousAIAssistant:
     def __init__(self):
@@ -25,13 +49,18 @@ class AutonomousAIAssistant:
         )
         self.logger = logging.getLogger(__name__)
         
-        # Initialize components
-
-        self.llm_manager = llm_manager.ConversationalLLMManager()
-        self.tts_manager = piper_manager.PiperTTSManager()
-        self.system_controller = controllers.system_controller.AdvancedSystemController()
-        self.whatsapp_controller = controllers.whatsapp_controller.WhatsAppController()
-        self.voice_interface = interfaces.voice_interface.VoiceInterface()
+        # Initialize core components
+        self.llm_manager = ConversationalLLMManager()
+        self.tts_manager = PiperTTSManager()
+        self.system_controller = AdvancedSystemController()
+        self.whatsapp_controller = WhatsAppController()
+        self.voice_interface = VoiceInterface()
+        
+        # New: Enhanced managers
+        self.memory_manager = ContextualMemoryManager()
+        self.context_manager = AdvancedContextManager()
+        self.rag_manager = RetrievalAugmentedGeneration()
+        self.task_planner = ProactivePlanner(self.llm_manager)
         
         # State
         self.is_running = False
@@ -50,14 +79,9 @@ class AutonomousAIAssistant:
         print("="*60)
         
         # Load LLM
-        print("🤖 Loading LLM model...")
         if not self.llm_manager.load_model():
             print("❌ Failed to load LLM. Please check Ollama setup.")
-            print("💡 Make sure Ollama is running: ollama serve")
-            print("💡 And you have a model installed: ollama pull qwen2.5:7b")
             return
-        
-        print("✅ LLM model loaded successfully!")
         
         # Initial greeting
         greeting = "Hello! I'm your autonomous AI assistant. I can chat with you naturally, control your computer, send messages, and help with various tasks. How can I assist you today?"
@@ -69,27 +93,18 @@ class AutonomousAIAssistant:
         # Start continuous voice listening
         self.voice_interface.start_listening()
         
-        print("\n🎤 Voice interface is active. Speak to interact with me!")
-        print("💡 I'll continue listening for your commands and respond naturally.")
-        print("🛑 Press Ctrl+C to stop the assistant.\n")
-        
         # Keep running and handle any manual text input
         try:
             while self.is_running:
                 await asyncio.sleep(0.1)  # Small delay to prevent CPU overuse
-                
-                # Check if voice interface is still running
-                if not self.voice_interface.is_listening:
-                    print("⚠️ Voice interface stopped unexpectedly. Restarting...")
-                    self.voice_interface.start_listening()
-                    
         except KeyboardInterrupt:
             await self.shutdown()
     
+    # Update your process_voice_input method:
     def process_voice_input(self, user_input: str):
-        """Process voice input through conversational AI"""
+        """Process voice input through enhanced AI"""
         if self.is_processing:
-            return  # Avoid overlapping processing
+            return
         
         self.is_processing = True
         
@@ -99,32 +114,42 @@ class AutonomousAIAssistant:
             # Get available apps for context
             available_apps = self.system_controller.get_all_available_apps()
             
-            # Generate conversational response with intent
-            response = self.llm_manager.generate_conversational_response(
-                user_input, available_apps
+            # Process with enhanced AI (THIS IS THE MAIN CHANGE)
+            response = self.llm_manager.process_voice_command(
+                audio_data=b"",  # You'd get this from your voice interface
+                recognized_text=user_input,
+                confidence=0.8,  # You'd get this from Whisper
+                available_apps=available_apps
             )
             
-            response_text = response.get("response_text", "I'm not sure how to respond to that.")
-            intent = response.get("intent", "conversation")
+            response_text = response.get("response_text", "I'm not sure how to respond.")
+            intent_analysis = response.get("intent_analysis", {})
             
             print(f"🤖 Assistant: {response_text}")
             
-            # Execute any system actions
-            if intent != "conversation":
-                # _execute_system_action is async, but process_voice_input is not
-                asyncio.create_task(self._execute_system_action(response))
+            # Execute system actions using AI analysis
+            if intent_analysis.get("intent") != "conversation":
+                self._execute_system_action(response)
             
-            # Speak response using the dedicated TTS manager
+            # Speak response
             self.tts_manager.speak_async(response_text)
             
+            # Show AI stats occasionally
+            if len(self.llm_manager.conversation_history) % 10 == 0:
+                stats = self.llm_manager.get_ai_stats()
+                print(f"🧠 AI Stats: {stats}")
+            
         except Exception as e:
-            error_response = "I encountered an error processing that. Please try again."
+            # Learn from errors
+            self.llm_manager.learn_from_correction(user_input, "system error")
+            error_response = "I encountered an error. Let me learn from this."
             print(f"❌ Error: {e}")
             self.tts_manager.speak_async(error_response)
         finally:
             self.is_processing = False
+
     
-    async def _execute_system_action(self, response: Dict[str, Any]):
+    def _execute_system_action(self, response: Dict[str, Any]):
         """Execute system actions based on LLM response"""
         intent = response.get("intent")
         action = response.get("action")
@@ -144,7 +169,6 @@ class AutonomousAIAssistant:
             
             elif intent == "whatsapp_send":
                 if not self.whatsapp_ready:
-                    # Initialize WhatsApp if needed
                     self.whatsapp_ready = self.whatsapp_controller.login_to_whatsapp()
                 
                 if self.whatsapp_ready:
@@ -197,10 +221,6 @@ class AutonomousAIAssistant:
         
         # Wait a moment for TTS to finish
         time.sleep(2)
-        
-        # Cleanup TTS resources
-        if self.tts_manager:
-            self.tts_manager.cleanup()
         
         print("👋 Shutdown complete!")
 
