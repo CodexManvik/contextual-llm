@@ -1,0 +1,9 @@
+{
+    "0": "conversation",
+    "1": "system_control",
+    "2": "whatsapp_send",
+    "3": "web_search",
+    "4": "file_operation",
+    "5": "keyboard_mouse",
+    "6": "multi_step"
+}

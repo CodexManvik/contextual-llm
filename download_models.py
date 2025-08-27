@@ -26,6 +26,14 @@ PIPER_VOICES = {
     "en-us-amy-low": "https://huggingface.co/rhasspy/piper-voices/resolve/v1.0.0/en/en_US/amy/low/en_US-amy-low.onnx",
 }
 
+# NVIDIA Task Classifier Model
+NVIDIA_MODELS = {
+    "prompt-task-and-complexity-classifier_vtask-llm-router": {
+        "url": "https://huggingface.co/nvidia/prompt-task-and-complexity-classifier_vtask-llm-router/resolve/main/model.onnx",
+        "description": "NVIDIA Task and Complexity Classifier"
+    }
+}
+
 DEST_DIR = Path("models")
 VOSK_DIR = DEST_DIR / "vosk"
 PIPER_DIR = DEST_DIR / "piper"
@@ -84,9 +92,17 @@ def download_whisper_models():
     
     try:
         from faster_whisper import WhisperModel
+        import torch
     except ImportError:
         print("❌ faster-whisper not installed. Install with: pip install faster-whisper")
         return
+    
+    # Check if CUDA is available
+    cuda_available = torch.cuda.is_available()
+    device = "cuda" if cuda_available else "cpu"
+    compute_type = "int8_float16" if cuda_available else "int8"
+    
+    print(f"📊 Using device: {device}, compute type: {compute_type}")
     
     # Download small and base models (good balance for RTX 3050)
     models_to_download = ["small", "base"]
@@ -95,8 +111,8 @@ def download_whisper_models():
         try:
             print(f"📥 Downloading Whisper {model_size} model...")
             # This will trigger automatic download
-            model = WhisperModel(model_size, device="cpu", compute_type="int8")
-            print(f"✅ Whisper {model_size} model ready")
+            model = WhisperModel(model_size, device=device, compute_type=compute_type)
+            print(f"✅ Whisper {model_size} model ready on {device}")
         except Exception as e:
             print(f"❌ Failed to download Whisper {model_size}: {e}")
 
@@ -122,6 +138,23 @@ def download_piper_voices():
         if download_file(url, voice_path, f"Piper voice {voice_name}"):
             print(f"✅ Downloaded {voice_name}")
 
+def download_nvidia_models():
+    """Download NVIDIA task classifier models"""
+    print("\n🖥️ Downloading NVIDIA Task Classifier Models...")
+    NVIDIA_DIR = DEST_DIR / "nvidia"
+    NVIDIA_DIR.mkdir(exist_ok=True)
+    
+    for model_name, model_info in NVIDIA_MODELS.items():
+        model_path = NVIDIA_DIR / f"{model_name}.onnx"
+        if model_path.exists():
+            print(f"✅ {model_name} already exists, skipping...")
+            continue
+            
+        url = model_info["url"]
+        description = model_info["description"]
+        if download_file(url, model_path, description):
+            print(f"✅ Downloaded {description}")
+
 
 def main():
     """Main download function"""
@@ -141,6 +174,14 @@ def main():
             download_piper_voices()
     except Exception:
         print("⚠️ Non-interactive mode, skipping Piper TTS")
+    
+    # Ask about NVIDIA models
+    try:
+        use_nvidia = input("\n❓ Download NVIDIA Task Classifier for advanced intent parsing? (y/n): ").lower() == 'y'
+        if use_nvidia:
+            download_nvidia_models()
+    except Exception:
+        print("⚠️ Non-interactive mode, skipping NVIDIA models")
     
     print("\n🎉 Model download completed!")
     print("\nNext steps:")

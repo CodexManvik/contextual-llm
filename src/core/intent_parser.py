@@ -4,44 +4,48 @@ import logging
 from typing import Dict, Any, List, Optional
 from datetime import datetime
 
+# Try to import NVIDIA task classifier (optional dependency)
+NVIDIA_CLASSIFIER_AVAILABLE = False
+task_classifier = None
+
+try:
+    from models.nvidia_task_classifier import task_classifier as nvidia_task_classifier
+    task_classifier = nvidia_task_classifier
+    NVIDIA_CLASSIFIER_AVAILABLE = True
+except ImportError:
+    logging.getLogger(__name__).warning("NVIDIA task classifier not available, falling back to regex patterns")
+except Exception as e:
+    logging.getLogger(__name__).warning(f"Failed to initialize NVIDIA classifier: {e}, falling back to regex patterns")
+
 class AdvancedIntentParser:
     def __init__(self):
         self.logger = logging.getLogger(__name__)
         
-        # Enhanced intent patterns
-        self.intent_patterns = {
-            "system_control": [
-                r"(open|launch|start|run)\s+(\w+)",
-                r"(close|exit|quit)\s+(\w+)",
-                r"(minimize|maximize)\s+(\w+)"
-            ],
-            "multi_step": [
-                r"(open|launch)\s+(\w+)\s+(and|then)\s+(.+)",
-                r"(create|make|write)\s+(.+)\s+(in|with|using)\s+(\w+)",
-                r"(start|open)\s+(\w+)\s+(and|then)\s+(write|type|create)\s+(.+)"
-            ],
-            "web_search": [
-                r"(search|google|find)\s+(for\s+)?(.+)",
-                r"(look up|check)\s+(.+)",
-                r"(browse|go to)\s+(.+)"
-            ],
-            "file_operation": [
-                r"(create|make|new)\s+(file|folder|document)",
-                r"(save|export)\s+(.+)\s+(as|to)\s+(.+)",
-                r"(delete|remove)\s+(file|folder)\s+(.+)"
-            ]
-        }
+        # Fix the conversation patterns - these are too broad
+        self.conversation_patterns = [
+            r'\b(hello|hi|hey|good morning|good afternoon|good evening)\b',
+            r'\b(how are you|hows it going|whats up|how do you do)\b',
+            r'\b(thank you|thanks|bye|goodbye|see you)\b',
+            r'\b(whats your name|who are you|tell me about yourself)\b',
+            r'\b(can you help|help me|i need help)\b'
+        ]
         
-        # App name mapping for better recognition
+        # Fix system control patterns - add specific app names
+        self.system_control_patterns = [
+            r'\b(open|launch|start|run)\s+(.+?)(?:\s+(?:for|please|now|app|application))*\s*$',
+            r'\b(close|exit|quit)\s+(.+?)(?:\s+(?:for|please|now|app|application))*\s*$',
+            r'\b(minimize|maximize)\s+(.+?)(?:\s+(?:for|please|now|app|application))*\s*$'
+        ]
+        
+        # Add app aliases with better matching
         self.app_aliases = {
-            "word": "microsoft word",
-            "excel": "microsoft excel",
-            "chrome": "google chrome",
-            "notepad": "notepad",
-            "firefox": "mozilla firefox",
-            "calculator": "calculator",
-            "vs code": "visual studio code",
-            "vscode": "visual studio code"
+            'notepad': ['notepad', 'text editor', 'note pad'],
+            'firefox': ['firefox', 'fire fox', 'browser'],
+            'chrome': ['chrome', 'google chrome', 'browser'],
+            'word': ['word', 'microsoft word', 'ms word'],
+            'excel': ['excel', 'microsoft excel', 'ms excel'],
+            'calculator': ['calculator', 'calc'],
+            'explorer': ['explorer', 'file explorer', 'files']
         }
         
         self.correction_history = []
@@ -51,121 +55,159 @@ class AdvancedIntentParser:
         if context is None:
             context = {}
 
-        user_input = user_input.strip().lower()
+        user_input = user_input.strip()
         
         self.logger.debug(f"Parsing command: '{user_input}'")
         
-        # Check for multi-step commands first (most complex)
-        multi_step = self._detect_multi_step(user_input)
-        if multi_step:
-            return self._plan_multi_step_execution(multi_step, context)
-        
-        # Single-step intent detection
-        intent_result = self._classify_intent(user_input)
-        return self._enhance_with_context(intent_result, context)
+        # Parse intent with error handling
+        try:
+            intent_result = self.parse_intent(user_input)
+            return self._enhance_with_context(intent_result, context)
+        except Exception as e:
+            self.logger.error(f"Intent parsing failed: {e}")
+            return {
+                "intent": "unknown", 
+                "confidence": 0.0,
+                "error": str(e)
+            }
     
-    def _detect_multi_step(self, command: str) -> Optional[Dict[str, Any]]:
-        """Detect commands that require multiple steps"""
-        for pattern in self.intent_patterns["multi_step"]:
-            match = re.search(pattern, command)
-            if match:
-                groups = match.groups()
-                return {
-                    "type": "multi_step",
-                    "primary_action": groups[0],  # open/launch
-                    "target": self._normalize_app_name(groups[8]),  # app name
-                    "connector": groups,  # and/then
-                    "secondary_action": groups if len(groups) > 3 else None,  # what to do
-                    "secondary_target": groups if len(groups) > 4 else None  # content/topic
-                }
-        return None
+    def parse_intent(self, user_input: str) -> Dict[str, Any]:
+        """Enhanced intent parsing with NVIDIA classifier integration"""
+        if not user_input or not user_input.strip():
+            return {"intent": "unknown", "confidence": 0.0}
+            
+        user_input_clean = user_input.strip().lower()
+        
+        # First, try to use NVIDIA classifier if available
+        if NVIDIA_CLASSIFIER_AVAILABLE:
+            try:
+                nvidia_result = self._parse_with_nvidia_classifier(user_input)
+                if nvidia_result and nvidia_result.get("confidence", 0) > 0.6:
+                    return nvidia_result
+            except Exception as e:
+                self.logger.warning(f"NVIDIA classifier failed: {e}, falling back to regex")
+        
+        # Fallback to regex patterns if NVIDIA classifier not available or failed
+        return self._parse_with_regex_patterns(user_input_clean)
     
-    def _classify_intent(self, command: str) -> Dict[str, Any]:
-        """Classify single-step intents with confidence scoring"""
-        best_match = {"intent": "conversation", "confidence": 0.3}
-        
-        for intent_type, patterns in self.intent_patterns.items():
-            if intent_type == "multi_step":
-                continue
-                
-            for pattern in patterns:
-                match = re.search(pattern, command)
-                if match:
-                    groups = match.groups()
-                    confidence = self._calculate_confidence(match, command)
-                    
-                    if confidence > best_match["confidence"]:
-                        best_match = {
-                            "intent": intent_type,
-                            "action": groups[0],
-                            "target": self._normalize_app_name(groups[8]) if len(groups) >= 2 else None,
-                            "additional": groups if len(groups) >= 3 else None,
-                            "confidence": confidence
-                        }
-        
-        return best_match
-    
-    def _plan_multi_step_execution(self, multi_step: Dict[str, Any], context: Dict[str, Any]) -> Dict[str, Any]:
-        """Plan execution for multi-step commands with AI enhancement"""
-        steps = []
-        
-        # Step 1: Open/Launch application
-        steps.append({
-            "order": 1,
-            "action": multi_step["primary_action"],
-            "target": multi_step["target"],
-            "type": "system_control",
-            "description": f"{multi_step['primary_action']} {multi_step['target']}"
-        })
-        
-        # Step 2: Execute secondary action
-        if multi_step["secondary_action"]:
-            step_2 = {
-                "order": 2,
-                "action": "execute_task",
-                "task_type": multi_step["secondary_action"],
-                "content": multi_step.get("secondary_target", ""),
-                "type": "automation",
-                "description": f"{multi_step['secondary_action']} content"
+    def _parse_with_nvidia_classifier(self, user_input: str) -> Dict[str, Any]:
+        """Parse intent using NVIDIA task classifier"""
+        try:
+            # Check if task_classifier is available
+            if task_classifier is None:
+                self.logger.warning("NVIDIA task classifier not initialized")
+                return {"intent": "unknown", "confidence": 0.0}
+            
+            classification = task_classifier.classify_prompt(user_input)
+            
+            result = {
+                "intent": classification["task_type"],
+                "confidence": classification["confidence"],
+                "complexity_score": classification["complexity_score"],
+                "model_used": classification["model_used"],
+                "detailed_analysis": classification["detailed_analysis"]
             }
             
-            # Enhanced content generation for specific tasks
-            if "write" in multi_step["secondary_action"] and multi_step.get("secondary_target"):
-                step_2["content_to_generate"] = multi_step["secondary_target"]
-                step_2["generation_type"] = "text"
+            # Extract action and app name for system control intents
+            if classification["task_type"] == "system_control":
+                # Try to extract action and app name from the input
+                action_match = re.search(r'\b(open|launch|start|close|quit|exit|minimize|maximize)\b', user_input.lower())
+                app_match = re.search(r'\b(open|launch|start|close|quit|exit|minimize|maximize)\s+(\w+)', user_input.lower())
+                
+                if action_match:
+                    result["action"] = action_match.group(1)
+                
+                if app_match and len(app_match.groups()) >= 2:
+                    app_name = app_match.group(2)
+                    result["app_name"] = self.resolve_app_alias(app_name)
+                    result["original_app_name"] = app_name
             
-            steps.append(step_2)
-        
-        return {
-            "intent": "multi_step_execution",
-            "steps": steps,
-            "confidence": 0.85,
-            "total_steps": len(steps),
-            "estimated_time": len(steps) * 3  # Rough estimate in seconds
-        }
-    
-    def _normalize_app_name(self, app_name: str) -> str:
-        """Normalize app names using aliases"""
-        if not app_name:
-            return app_name
+            self.logger.info(f"NVIDIA classifier result: {result}")
+            return result
             
-        normalized = app_name.lower().strip()
-        return self.app_aliases.get(normalized, normalized)
+        except Exception as e:
+            self.logger.error(f"Error in NVIDIA classifier parsing: {e}")
+            return {"intent": "unknown", "confidence": 0.0}
     
-    def _calculate_confidence(self, match, command: str) -> float:
-        """Calculate confidence score for pattern matches"""
-        base_confidence = 0.8
+    def _parse_with_regex_patterns(self, user_input_clean: str) -> Dict[str, Any]:
+        """Fallback parsing using regex patterns"""
+        # Check system control first (higher priority)
+        for pattern in self.system_control_patterns:
+            try:
+                match = re.search(pattern, user_input_clean, re.IGNORECASE)
+                if match:
+                    groups = match.groups()
+                    if len(groups) >= 2:  # Ensure we have enough groups
+                        action = groups[0]
+                        app_name = groups[1].strip()
+                        
+                        # Resolve app aliases
+                        resolved_app = self.resolve_app_alias(app_name)
+                        
+                        return {
+                            "intent": "system_control",
+                            "action": action,
+                            "app_name": resolved_app,
+                            "original_app_name": app_name,
+                            "confidence": 0.9,
+                            "context": {"command_type": "app_control"},
+                            "model_used": "regex_patterns"
+                        }
+                    elif len(groups) == 1:  # Only app name provided
+                        app_name = groups[0].strip()
+                        resolved_app = self.resolve_app_alias(app_name)
+                        
+                        return {
+                            "intent": "system_control", 
+                            "action": "open",  # Default action
+                            "app_name": resolved_app,
+                            "original_app_name": app_name,
+                            "confidence": 0.8,
+                            "context": {"command_type": "app_control"},
+                            "model_used": "regex_patterns"
+                        }
+            except Exception as e:
+                self.logger.error(f"Error in pattern matching: {e}")
+                continue
         
-        # Boost confidence for exact matches
-        if match.group(0) == command.strip():
-            base_confidence += 0.15
+        # Single word app names (like "firefox")
+        if user_input_clean in [alias for aliases in self.app_aliases.values() for alias in aliases]:
+            resolved_app = self.resolve_app_alias(user_input_clean)
+            return {
+                "intent": "system_control",
+                "action": "open",
+                "app_name": resolved_app,
+                "original_app_name": user_input_clean,
+                "confidence": 0.9,
+                "context": {"command_type": "app_control"},
+                "model_used": "regex_patterns"
+            }
         
-        # Boost for known app names
-        groups = match.groups()
-        if len(groups) >= 2 and groups[1] in self.app_aliases:
-            base_confidence += 0.05
+        # Then check conversation patterns
+        for pattern in self.conversation_patterns:
+            try:
+                if re.search(pattern, user_input_clean, re.IGNORECASE):
+                    return {
+                        "intent": "conversation", 
+                        "confidence": 0.8,
+                        "context": {"conversation_type": "greeting"},
+                        "model_used": "regex_patterns"
+                    }
+            except Exception as e:
+                self.logger.error(f"Error in conversation pattern matching: {e}")
+                continue
         
-        return min(1.0, base_confidence)
+        return {"intent": "unknown", "confidence": 0.0, "model_used": "regex_patterns"}
+    
+    def resolve_app_alias(self, app_name: str) -> str:
+        """Resolve app aliases to canonical names"""
+        app_name_lower = app_name.lower().strip()
+        
+        for canonical_name, aliases in self.app_aliases.items():
+            if app_name_lower in [alias.lower() for alias in aliases]:
+                return canonical_name
+                
+        return app_name_lower
     
     def _enhance_with_context(self, intent: Dict[str, Any], context: Dict[str, Any]) -> Dict[str, Any]:
         """Enhance intent with contextual information"""
@@ -178,7 +220,7 @@ class AdvancedIntentParser:
             }
             
             # Boost confidence if app is recently used
-            target = intent.get("target")
+            target = intent.get("app_name") or intent.get("target")
             if target and target in context.get("usage_patterns", {}):
                 intent["confidence"] = min(1.0, intent.get("confidence", 0.5) + 0.1)
         
@@ -222,6 +264,9 @@ class AdvancedIntentParser:
         # Look for app name corrections
         for orig_word, corr_word in zip(orig_words, corr_words):
             if orig_word != corr_word and "open" in original:
-                # Likely an app name correction
-                self.app_aliases[orig_word] = corr_word
-                self.logger.info(f"Added app alias: {orig_word} -> {corr_word}")
+                # Ensure the value is a list
+                if orig_word in self.app_aliases:
+                    self.app_aliases[orig_word].append(corr_word)
+                else:
+                    self.app_aliases[orig_word] = [corr_word]
+                self.logger.info(f"Updated app alias: {orig_word} -> {corr_word}")

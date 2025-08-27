@@ -1,4 +1,4 @@
-# Real-time Piper TTS Manager
+# Real-time Piper TTS Manager - Command Line Only Version
 import subprocess
 import tempfile
 import os
@@ -8,7 +8,7 @@ import wave
 import sys
 import re
 import numpy as np
-from typing import Optional, Union, Generator, Any, TYPE_CHECKING
+from typing import Optional, Any, TYPE_CHECKING
 import logging
 
 # Set encoding environment variables early
@@ -19,8 +19,6 @@ os.environ['LC_ALL'] = 'en_US.UTF-8'
 # Type checking imports
 if TYPE_CHECKING:
     import pyaudio as PyAudioModule
-    import piper
-    from piper import PiperVoice as PiperVoiceClass
 
 # Safe pyaudio import with explicit None assignment
 try:
@@ -34,16 +32,6 @@ except ImportError:
     PyAudioType = None
     paInt16_CONSTANT = None
 
-# Safe piper import with explicit None assignment
-try:
-    import piper
-    from piper import PiperVoice
-    PIPER_AVAILABLE = True
-except ImportError:
-    piper = None
-    PiperVoice = None
-    PIPER_AVAILABLE = False
-
 class PiperTTSManager:
     def __init__(self, model_path: Optional[str] = None, voice: str = "en_GB-cori-high"):
         self.logger = logging.getLogger(__name__)
@@ -53,11 +41,9 @@ class PiperTTSManager:
         self.is_speaking = False
         self.pyaudio_instance: Optional[Any] = None
         self.audio_stream: Optional[Any] = None
-        self.piper_voice: Optional[Any] = None
         
         # Store module references for safe access
         self.pyaudio_module = pyaudio if PYAUDIO_AVAILABLE else None
-        self.piper_module = piper if PIPER_AVAILABLE else None
         
         # Initialize PyAudio if available
         if PYAUDIO_AVAILABLE and PyAudioType is not None:
@@ -65,14 +51,6 @@ class PiperTTSManager:
                 self.pyaudio_instance = PyAudioType()
             except Exception as e:
                 self.logger.error(f"Failed to initialize PyAudio: {e}")
-        
-        # Initialize Piper voice if available
-        if PIPER_AVAILABLE and self.model_path and PiperVoice is not None:
-            try:
-                self.piper_voice = PiperVoice.load(self.model_path)
-                self.logger.info(f"Piper voice loaded: {self.model_path}")
-            except Exception as e:
-                self.logger.error(f"Failed to load Piper voice: {e}")
 
     def _clean_text_for_tts(self, text: str) -> str:
         """Remove or replace problematic Unicode characters for TTS"""
@@ -103,19 +81,23 @@ class PiperTTSManager:
     def _find_piper_model(self) -> str:
         """Find Piper model path"""
         possible_paths = [
-            "models/piper/en_GB-cori-high.onnx",
-            "./models/piper/en_GB-cori-high.onnx",
-            "en_GB-cori-high.onnx"
+            "../models/piper/en_GB-cori-high.onnx",  # From src directory
+            "models/piper/en_GB-cori-high.onnx",     # From project root
+            "./models/piper/en_GB-cori-high.onnx",   # From project root
+            "piper/en_GB-cori-high.onnx",            # Relative to current dir
+            "en_GB-cori-high.onnx"                   # Default
         ]
         
         for path in possible_paths:
             if os.path.exists(path):
+                print(f"Found Piper model at: {os.path.abspath(path)}")
                 return path
         
+        print("Warning: Piper model not found in any of the expected locations")
         return "en_GB-cori-high.onnx"  # Default
     
     def speak_async(self, text: str) -> bool:
-        """Speak text asynchronously using Piper TTS with direct audio playback"""
+        """Speak text asynchronously using command line Piper TTS"""
         def _speak():
             try:
                 self.is_speaking = True
@@ -127,11 +109,8 @@ class PiperTTSManager:
                     self.logger.warning("No valid text to speak after cleaning")
                     return
                 
-                # Try Piper module first, fallback to command line
-                if PIPER_AVAILABLE and self.piper_voice is not None:
-                    self._speak_with_piper_module(cleaned_text)
-                else:
-                    self._speak_with_command_line(cleaned_text)
+                # Use command line Piper (only method)
+                self._speak_with_command_line(cleaned_text)
                 
             except Exception as e:
                 self.logger.error(f"TTS error: {e}")
@@ -143,97 +122,8 @@ class PiperTTSManager:
         thread.start()
         return True
     
-    def _speak_with_piper_module(self, text: str):
-        """Speak using Piper Python module - WAV method (most reliable)"""
-        try:
-            if self.piper_voice is None:
-                raise RuntimeError("Piper voice not loaded")
-            
-            self.logger.info(f"Synthesizing with Piper WAV method: '{text}' (length: {len(text)})")
-            
-            # Method 1: Use Piper's built-in WAV file output (RECOMMENDED)
-            with tempfile.NamedTemporaryFile(suffix='.wav', delete=False) as temp_file:
-                temp_path = temp_file.name
-            
-            try:
-                # This is the correct and most reliable way to use Piper TTS
-                with wave.open(temp_path, 'wb') as wav_file:
-                    self.piper_voice.synthesize(text, wav_file)
-                
-                # Check if file was created and has content
-                if os.path.exists(temp_path) and os.path.getsize(temp_path) > 0:
-                    self.logger.info(f"Generated WAV file: {os.path.getsize(temp_path)} bytes")
-                    
-                    # Play the generated WAV file
-                    self._play_audio_file(temp_path)
-                    
-                    self.logger.info(f"Successfully played: {text[:50]}...")
-                else:
-                    self.logger.error("No WAV file generated or file is empty")
-                    raise RuntimeError("WAV generation failed")
-                
-            finally:
-                # Clean up temporary file
-                self._cleanup_temp_file(temp_path)
-                
-        except Exception as e:
-            self.logger.error(f"Piper WAV method failed: {e}")
-            # Try streaming method as fallback
-            self._try_streaming_method(text)
-    
-    def _try_streaming_method(self, text: str):
-        """Fallback streaming method for Piper"""
-        try:
-            if self.piper_voice is None:
-                raise RuntimeError("Piper voice not loaded")
-            
-            self.logger.info("Trying Piper streaming method as fallback")
-            
-            audio_chunks = []
-            
-            # Try to get raw audio stream if available
-            if hasattr(self.piper_voice, 'synthesize_stream_raw'):
-                self.logger.debug("Using synthesize_stream_raw method")
-                for audio_bytes in self.piper_voice.synthesize_stream_raw(text):
-                    if isinstance(audio_bytes, (bytes, bytearray)):
-                        audio_chunks.append(audio_bytes)
-            else:
-                # Process AudioChunk objects from regular synthesize
-                self.logger.debug("Processing AudioChunk objects")
-                for chunk in self.piper_voice.synthesize(text):
-                    if hasattr(chunk, 'audio'):
-                        # AudioChunk.audio contains the raw audio data
-                        audio_data = chunk.audio
-                        if hasattr(audio_data, 'tobytes'):
-                            audio_chunks.append(audio_data.tobytes())
-                        elif isinstance(audio_data, (bytes, bytearray)):
-                            audio_chunks.append(audio_data)
-                        elif hasattr(audio_data, '__array__'):
-                            # Convert numpy array to bytes
-                            arr = np.asarray(audio_data, dtype=np.int16)
-                            audio_chunks.append(arr.tobytes())
-            
-            if audio_chunks:
-                audio_bytes = b''.join(audio_chunks)
-                if len(audio_bytes) > 0:
-                    self.logger.info(f"Streaming method produced {len(audio_bytes)} bytes")
-                    # Convert to numpy array and play
-                    audio_array = np.frombuffer(audio_bytes, dtype=np.int16)
-                    sample_rate = getattr(self.piper_voice.config, 'sample_rate', 22050)
-                    self._play_audio_array(audio_array, sample_rate)
-                    self.logger.info(f"Successfully played streamed audio: {text[:50]}...")
-                    return
-            
-            # If streaming also fails, fallback to command line
-            raise RuntimeError("Streaming method failed")
-            
-        except Exception as e:
-            self.logger.error(f"Streaming method failed: {e}")
-            self.logger.info("Falling back to command line Piper")
-            self._speak_with_command_line(text)
-    
     def _speak_with_command_line(self, text: str):
-        """Fallback to command line Piper"""
+        """Use command line Piper for TTS"""
         try:
             # Create temporary file for audio
             with tempfile.NamedTemporaryFile(suffix='.wav', delete=False) as temp_file:
@@ -266,9 +156,11 @@ class PiperTTSManager:
                 return
             
             # Generate speech with Piper command line
+            # Use the absolute path to ensure command line Piper can find the model
+            absolute_model_path = os.path.abspath(self.model_path)
             cmd = [
                 piper_cmd, 
-                "--model", self.model_path,
+                "--model", absolute_model_path,
                 "--output-file", temp_path
             ]
             
@@ -298,48 +190,6 @@ class PiperTTSManager:
                 
         except Exception as e:
             self.logger.error(f"Command line Piper error: {e}")
-    
-    def _play_audio_array(self, audio_array: np.ndarray, sample_rate: int = 22050):
-        """Play audio array directly using PyAudio"""
-        try:
-            if not PYAUDIO_AVAILABLE or self.pyaudio_instance is None or paInt16_CONSTANT is None:
-                self.logger.warning("PyAudio not available for audio playback")
-                return
-                
-            # Stop any existing stream
-            if self.audio_stream is not None:
-                try:
-                    if hasattr(self.audio_stream, 'stop_stream'):
-                        self.audio_stream.stop_stream()
-                    if hasattr(self.audio_stream, 'close'):
-                        self.audio_stream.close()
-                except Exception:
-                    pass
-                self.audio_stream = None
-                
-            # Open audio stream with safe constant access
-            if hasattr(self.pyaudio_instance, 'open'):
-                self.audio_stream = self.pyaudio_instance.open(
-                    format=paInt16_CONSTANT,
-                    channels=1,
-                    rate=sample_rate,
-                    output=True
-                )
-                
-                # Play audio data
-                if self.audio_stream is not None and hasattr(self.audio_stream, 'write'):
-                    self.audio_stream.write(audio_array.tobytes())
-                
-                # Close stream
-                if self.audio_stream is not None:
-                    if hasattr(self.audio_stream, 'stop_stream'):
-                        self.audio_stream.stop_stream()
-                    if hasattr(self.audio_stream, 'close'):
-                        self.audio_stream.close()
-                    self.audio_stream = None
-                
-        except Exception as e:
-            self.logger.error(f"Audio playback error: {e}")
     
     def _play_audio_file(self, file_path: str):
         """Play audio file directly using PyAudio"""

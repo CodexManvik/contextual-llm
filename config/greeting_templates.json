@@ -1,0 +1,13 @@
+{
+    "morning": "Good morning! I'm ready to help you with your tasks today.",
+    "afternoon": "Good afternoon! How can I assist you?",
+    "evening": "Good evening! I'm here to help with whatever you need.",
+    "default": "Hello! I'm your AI assistant. How can I help you today?",
+    "personalized": {
+        "friendly": "Hey {name}! Great to see you. What can I help with today?",
+        "professional": "Good {time_of_day}, {name}. I'm ready to assist with your tasks.",
+        "casual": "Hi {name}! What's up? Ready to tackle some tasks together?"
+    },
+    "error": "I'm having trouble with my greeting system. How can I help you today?",
+    "welcome_back": "Welcome back, {name}! I'm ready to continue where we left off."
+}

@@ -72,11 +72,18 @@ def check_model_file():
     # Check for Whisper models (they're downloaded automatically by faster-whisper)
     try:
         from faster_whisper import WhisperModel
+        import torch
+        
+        # Check if CUDA is available
+        cuda_available = torch.cuda.is_available()
+        device = "cuda" if cuda_available else "cpu"
+        compute_type = "int8_float16" if cuda_available else "int8"
+        
         for model_size in whisper_models:
             try:
                 # This will trigger download if not present
-                model = WhisperModel(model_size, device="cpu", compute_type="int8")
-                models_found.append(f"Whisper {model_size}")
+                model = WhisperModel(model_size, device=device, compute_type=compute_type)
+                models_found.append(f"Whisper {model_size} ({device})")
                 break
             except Exception:
                 continue

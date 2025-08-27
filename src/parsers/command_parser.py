@@ -11,7 +11,7 @@ from datetime import datetime, timedelta
 from typing import Dict, List, Optional, Tuple
 
 class CommandParser:
-    def __init__(self, model_name="gemma2:2b"):
+    def __init__(self, model_name="qwen2.5:7b"):
         self.model_name = model_name
         self.nlp = spacy.load("en_core_web_sm")
         

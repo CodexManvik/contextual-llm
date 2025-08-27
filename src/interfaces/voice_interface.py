@@ -123,8 +123,8 @@ class VoiceInterface:
                 "fallback_system": "vosk",
                 "whisper": {
                     "model": "small",
-                    "device": "cpu",
-                    "compute_type": "int8",
+                    "device": "cuda",
+                    "compute_type": "int8_float16",
                     "language": "en",
                     "beam_size": 1,
                     "vad_filter": True

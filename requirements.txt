@@ -37,4 +37,4 @@ hf_xet
 chromadb>=0.4.0  # For local vector stores
 sentence-transformers>=2.2.0  # For embeddings
 watchdog>=2.1.0  # For filesystem watching
-psutil>=5.9.0  # For app telemetry
+spacy

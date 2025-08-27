@@ -34,9 +34,7 @@ def test_models():
     
     # Check Vosk models
     vosk_models = [
-        "models/vosk/vosk-model-small-en-us-0.15",
-        "models/vosk/vosk-model-en-us-0.22",
-        "models/vosk-model-small-en-us-0.15",
+        "models/vosk/vosk-model-small-en-in-0.5"
     ]
     
     vosk_found = False
@@ -51,9 +49,7 @@ def test_models():
     
     # Check Piper voices
     piper_voices = [
-        "models/piper/en-us-amy-medium.onnx",
-        "models/piper/en-gb-sarah-medium.onnx",
-        "models/piper/en-us-amy-low.onnx",
+        "models/piper/en_GB-cori-high.onnx"
     ]
     
     piper_found = False

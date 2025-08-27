@@ -5,7 +5,7 @@ import sys
 import os
 
 # Check if model exists
-model_path = "vosk-model-en-us-0.22"
+model_path = "vosk-model-en-in-0.5"
 if not os.path.exists(model_path):
     print(f"Model not found at {model_path}")
     print("Download from: https://alphacephei.com/vosk/models")

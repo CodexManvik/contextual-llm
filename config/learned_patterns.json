@@ -1,0 +1,52 @@
+{
+  "capabilities": {
+    "notepad": {
+      "primary_functions": [
+        "Document creation and editing",
+        "Text data entry",
+        "Basic text formatting"
+      ],
+      "common_tasks": [
+        "Writing notes or short documents",
+        "Creating to-do lists",
+        "Editing simple text files",
+        "Saving work in progress"
+      ],
+      "ui_elements": [
+        "New, Open, Save, and Exit buttons",
+        "Text area for typing",
+        "Font size and style dropdowns",
+        "Undo/Redo options"
+      ],
+      "keyboard_shortcuts": [
+        "Ctrl+N or Cmd+N: New document",
+        "Ctrl+O or Cmd+O: Open file",
+        "Ctrl+S or Cmd+S: Save file",
+        "Ctrl+Z or Cmd+Z: Undo",
+        "Ctrl+Y or Cmd+Shift+Z: Redo"
+      ],
+      "file_operations": [
+        "Text files (e.g., .txt)"
+      ]
+    },
+    "firefox": {
+      "primary_functions": [
+        "basic application"
+      ],
+      "common_tasks": [
+        "open",
+        "interact",
+        "close"
+      ],
+      "ui_elements": [
+        "window",
+        "controls"
+      ],
+      "keyboard_shortcuts": {},
+      "file_operations": []
+    }
+  },
+  "patterns": {},
+  "success_rates": {},
+  "last_updated": "2025-08-27T15:04:32.825908"
+}

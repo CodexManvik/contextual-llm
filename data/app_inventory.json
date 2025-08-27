@@ -1,5 +1,5 @@
 {
-  "_generated_at": 1755887871,
+  "_generated_at": 1755930656,
   "_dir_hash": "26bf04163d527baae1634df80b566ce09addb869",
   "apps": [
     {
@@ -1898,8 +1898,8 @@
     },
     {
       "app_name": "ie_to_edge_stub",
-      "main_exe": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\139.0.3405.102\\BHO\\ie_to_edge_stub.exe",
-      "folder": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\139.0.3405.102\\BHO",
+      "main_exe": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\139.0.3405.111\\BHO\\ie_to_edge_stub.exe",
+      "folder": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\139.0.3405.111\\BHO",
       "vendor": "",
       "version": "",
       "alternates": []
@@ -1908,6 +1908,14 @@
       "app_name": "ie_to_edge_stub",
       "main_exe": "C:\\Program Files (x86)\\Microsoft\\EdgeCore\\139.0.3405.102\\BHO\\ie_to_edge_stub.exe",
       "folder": "C:\\Program Files (x86)\\Microsoft\\EdgeCore\\139.0.3405.102\\BHO",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "ie_to_edge_stub",
+      "main_exe": "C:\\Program Files (x86)\\Microsoft\\EdgeCore\\139.0.3405.111\\BHO\\ie_to_edge_stub.exe",
+      "folder": "C:\\Program Files (x86)\\Microsoft\\EdgeCore\\139.0.3405.111\\BHO",
       "vendor": "",
       "version": "",
       "alternates": []
@@ -2295,21 +2303,21 @@
     },
     {
       "app_name": "msedge",
-      "main_exe": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\139.0.3405.102\\msedge.exe",
-      "folder": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\139.0.3405.102",
+      "main_exe": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\139.0.3405.111\\msedge.exe",
+      "folder": "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\139.0.3405.111",
       "vendor": "",
       "version": "",
       "alternates": [
-        "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\139.0.3405.102\\cookie_exporter.exe",
-        "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\139.0.3405.102\\elevated_tracing_service.exe",
-        "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\139.0.3405.102\\elevation_service.exe",
-        "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\139.0.3405.102\\identity_helper.exe",
-        "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\139.0.3405.102\\msedgewebview2.exe",
-        "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\139.0.3405.102\\msedge_proxy.exe",
-        "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\139.0.3405.102\\msedge_pwa_launcher.exe",
-        "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\139.0.3405.102\\notification_click_helper.exe",
-        "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\139.0.3405.102\\notification_helper.exe",
-        "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\139.0.3405.102\\pwahelper.exe"
+        "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\139.0.3405.111\\cookie_exporter.exe",
+        "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\139.0.3405.111\\elevated_tracing_service.exe",
+        "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\139.0.3405.111\\elevation_service.exe",
+        "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\139.0.3405.111\\identity_helper.exe",
+        "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\139.0.3405.111\\msedgewebview2.exe",
+        "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\139.0.3405.111\\msedge_proxy.exe",
+        "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\139.0.3405.111\\msedge_pwa_launcher.exe",
+        "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\139.0.3405.111\\notification_click_helper.exe",
+        "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\139.0.3405.111\\notification_helper.exe",
+        "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\139.0.3405.111\\pwahelper.exe"
       ]
     },
     {
@@ -2328,6 +2336,24 @@
         "C:\\Program Files (x86)\\Microsoft\\EdgeCore\\139.0.3405.102\\msedge_pwa_launcher.exe",
         "C:\\Program Files (x86)\\Microsoft\\EdgeCore\\139.0.3405.102\\notification_helper.exe",
         "C:\\Program Files (x86)\\Microsoft\\EdgeCore\\139.0.3405.102\\pwahelper.exe"
+      ]
+    },
+    {
+      "app_name": "msedge",
+      "main_exe": "C:\\Program Files (x86)\\Microsoft\\EdgeCore\\139.0.3405.111\\msedge.exe",
+      "folder": "C:\\Program Files (x86)\\Microsoft\\EdgeCore\\139.0.3405.111",
+      "vendor": "",
+      "version": "",
+      "alternates": [
+        "C:\\Program Files (x86)\\Microsoft\\EdgeCore\\139.0.3405.111\\cookie_exporter.exe",
+        "C:\\Program Files (x86)\\Microsoft\\EdgeCore\\139.0.3405.111\\elevated_tracing_service.exe",
+        "C:\\Program Files (x86)\\Microsoft\\EdgeCore\\139.0.3405.111\\elevation_service.exe",
+        "C:\\Program Files (x86)\\Microsoft\\EdgeCore\\139.0.3405.111\\identity_helper.exe",
+        "C:\\Program Files (x86)\\Microsoft\\EdgeCore\\139.0.3405.111\\msedgewebview2.exe",
+        "C:\\Program Files (x86)\\Microsoft\\EdgeCore\\139.0.3405.111\\msedge_proxy.exe",
+        "C:\\Program Files (x86)\\Microsoft\\EdgeCore\\139.0.3405.111\\msedge_pwa_launcher.exe",
+        "C:\\Program Files (x86)\\Microsoft\\EdgeCore\\139.0.3405.111\\notification_helper.exe",
+        "C:\\Program Files (x86)\\Microsoft\\EdgeCore\\139.0.3405.111\\pwahelper.exe"
       ]
     },
     {
@@ -2638,6 +2664,14 @@
       "app_name": "OfflineScannerShell",
       "main_exe": "C:\\Program Files\\Windows Defender\\Offline\\OfflineScannerShell.exe",
       "folder": "C:\\Program Files\\Windows Defender\\Offline",
+      "vendor": "",
+      "version": "",
+      "alternates": []
+    },
+    {
+      "app_name": "old_msedge",
+      "main_exe": "C:\\Program Files (x86)\\Microsoft\\Edge\\Temp\\scoped_dir9472_1166245813\\old_msedge.exe",
+      "folder": "C:\\Program Files (x86)\\Microsoft\\Edge\\Temp\\scoped_dir9472_1166245813",
       "vendor": "",
       "version": "",
       "alternates": []

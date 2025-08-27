@@ -1,0 +1,133 @@
+{
+  "command_variations": {},
+  "intent_templates": {
+    "system_control": {
+      "patterns": [
+        "{action} {app}",
+        "{action} the {app}",
+        "can you {action} {app}",
+        "please {action} {app} for me",
+        "I need you to {action} {app}",
+        "could you {action} {app} please"
+      ],
+      "actions": [
+        "open",
+        "launch",
+        "start",
+        "run",
+        "fire up",
+        "boot up"
+      ],
+      "variations": {
+        "open": [
+          "launch",
+          "start",
+          "run",
+          "fire up",
+          "boot up",
+          "initialize"
+        ],
+        "close": [
+          "quit",
+          "exit",
+          "shut down",
+          "terminate",
+          "kill",
+          "end"
+        ],
+        "minimize": [
+          "hide",
+          "shrink",
+          "reduce"
+        ],
+        "maximize": [
+          "expand",
+          "enlarge",
+          "full screen",
+          "make bigger"
+        ]
+      }
+    },
+    "multi_step": {
+      "patterns": [
+        "{action} {app} and {secondary_action}",
+        "{action} {app} then {secondary_action}",
+        "open {app} and {secondary_action}",
+        "launch {app} and {secondary_action}",
+        "start {app} and {secondary_action}"
+      ],
+      "secondary_actions": [
+        "write about {topic}",
+        "create a document about {topic}",
+        "make a file about {topic}",
+        "type something about {topic}",
+        "write a paragraph on {topic}"
+      ]
+    },
+    "web_search": {
+      "patterns": [
+        "search for {query}",
+        "google {query}",
+        "find information about {query}",
+        "look up {query}",
+        "search the web for {query}"
+      ]
+    }
+  },
+  "expected_behaviors": {
+    "system_control": {
+      "open_application": {
+        "steps": [
+          "parse_app_name",
+          "find_executable",
+          "launch_process",
+          "wait_for_window",
+          "confirm_success"
+        ],
+        "success_criteria": [
+          "application_running",
+          "window_visible"
+        ],
+        "failure_modes": [
+          "app_not_found",
+          "launch_failed",
+          "timeout"
+        ],
+        "recovery_actions": [
+          "suggest_similar",
+          "manual_browse",
+          "install_prompt"
+        ]
+      }
+    },
+    "multi_step": {
+      "open_and_write": {
+        "steps": [
+          "open_application",
+          "wait_for_ready",
+          "generate_content",
+          "type_content",
+          "confirm_completion"
+        ],
+        "success_criteria": [
+          "app_open",
+          "content_generated",
+          "text_typed"
+        ],
+        "failure_modes": [
+          "app_fail",
+          "generation_fail",
+          "typing_fail"
+        ],
+        "recovery_actions": [
+          "retry_open",
+          "fallback_content",
+          "manual_type"
+        ]
+      }
+    }
+  },
+  "failure_cases": {},
+  "user_patterns": {},
+  "last_updated": "2025-08-27T15:03:08.874413"
+}

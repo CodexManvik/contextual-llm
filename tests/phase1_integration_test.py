@@ -3,7 +3,7 @@ import time
 import json
 
 class AIAssistantPhase1:
-    def __init__(self, model_name="qwen2.5:7b"):
+    def __init__(self, model_name="gemma2:2b"):
         self.model_name = model_name
         print(f"Initializing AI Assistant with model: {model_name}")
     
